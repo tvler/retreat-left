@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Loool";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/TheSansMono/TheSansMono-W5Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/TheSansMono/TheSansMono-W5RegularItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/TheSansMono/TheSansMono-W6SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/TheSansMono/TheSansMono-W6SemiBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/TheSansMono/TheSansMono-W7Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/TheSansMono/TheSansMono-W7BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/TheSansMono/TheSansMono-W8ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/TheSansMono/TheSansMono-W8ExtraBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/TheSansMono/TheSansMono-W9Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Loool";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/TheSansMono/TheSansMono-W9BlackItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/work-sans/WorkSans-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/work-sans/WorkSans-Italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: normal;
+  font-weight: 500;
+  src: url(/work-sans/WorkSans-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: italic;
+  font-weight: 500;
+  src: url(/work-sans/WorkSans-MediumItalic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/work-sans/WorkSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/work-sans/WorkSans-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/work-sans/WorkSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/work-sans/WorkSans-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/work-sans/WorkSans-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/work-sans/WorkSans-ExtraBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/work-sans/WorkSans-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/work-sans/WorkSans-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/work-sans/WorkSans-Bold.woff2) format("woff2");
+}
+
+:root {
+  /* update with @media (min-width: 700px) */
+  --mw-grid: 350px;
+  font-family: "Test";
+  background-color: black;
+  cursor: default;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:
+    minmax(max-content, 1fr)
+    minmax(50%, var(--mw-grid));
+}
+
+.mw-grid {
+  max-width: var(--mw-grid);
+}
+
+.lh-1rem {
+  line-height: 1.15rem;
+}
+
+.mix-blend-mode-diff {
+  mix-blend-mode: difference;
+}
+
+.thesansmono {
+  font-family: "Loool";
+}
+
+.details-reset > summary::-webkit-details-marker {
+  display: none;
+}
+
+.ph-gutter {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.break-word {
+  overflow-wrap: break-word;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.details-indicator::before {
+  display: inline;
+  content: "";
+}
+
+details:not([open]) .details-indicator::before {
+  content: attr(data-closed);
+}
+
+details[open] .details-indicator::before {
+  content: attr(data-opened);
+}
+
+@supports (margin-bottom: max(0px)) {
+  .left-dotted-line {
+    left: max(calc(0px), calc(50% - var(--mw-grid)));
+  }
+}
+
+/* update with --mw-grid */
+@media (min-width: 700px) {
+  :root {
+    font-size: 21px;
+  }
+}
