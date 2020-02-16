@@ -161,10 +161,20 @@
 
 :root {
   /* update with @media (min-width: 700px) */
-  --mw-grid: 350px;
+  --mw-grid: 375px;
+  --cool-black: #2f2f2f;
   font-family: "Test";
-  background-color: black;
+  background-color: var(--cool-black);
+  color: var(--cool-black);
   cursor: default;
+}
+
+.cool-black {
+  color: var(--cool-black);
+}
+
+.bg-cool-black {
+  background-color: var(--cool-black);
 }
 
 .grid {
@@ -195,8 +205,8 @@
 }
 
 .ph-gutter {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: var(--gutter-width);
+  padding-right: var(--gutter-width);
 }
 
 .break-word {
@@ -227,8 +237,16 @@ details[open] .details-indicator::before {
 }
 
 /* update with --mw-grid */
-@media (min-width: 700px) {
+@media (max-width: 749px) {
   :root {
-    font-size: 21px;
+    font-size: 16px;
+    --gutter-width: 10px;
+  }
+}
+
+@media (min-width: 750px) {
+  :root {
+    font-size: 20px;
+    --gutter-width: 20px;
   }
 }

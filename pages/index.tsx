@@ -236,14 +236,32 @@ const Home: NextPage = () => (
           <span className="fw6 ph-gutter f6 tracked-tight">March 3, 2020</span>
         </div>
       </div>
-      <div className="bg-black pt4 pb3 ph-gutter flex items-end">
-        <span className="f6 tracked-tight white lh-title">
-          A mobile version of the{" "}
+      <div className="pt4 pb3 ph-gutter flex flex-column  mw-grid">
+        <span className="f6 tracked-tight white lh-1rem">
+          A mobile-friendly version of the{" "}
           <a
             href="https://www.dsa-la.org/2020_primary_voter_guide"
-            className="color-inherit"
+            className="color-inherit fw6"
           >
-            DSA LA voter guide
+            DSA-LA 2020 voter guide
+          </a>
+          . Great for taking with you to the polls as a reference while voting.
+        </span>
+        <span className="f6 tracked-tight white lh-1rem mt3">
+          Want to get emailed a new voter guide every election?{" "}
+          <a
+            href="https://tinyletter.com/retreat-left"
+            className="color-inherit fw6"
+          >
+            Subscribe
+          </a>
+          .
+        </span>
+
+        <span className="f6 tracked-tight white lh-1rem mt3">
+          Built by{" "}
+          <a href="https://www.tylerdeitz.com/" className="color-inherit fw6">
+            Tyler
           </a>
           .
         </span>
@@ -265,7 +283,7 @@ const Home: NextPage = () => (
             </div>
           </div>
 
-          <div className="bg-black white pv3 ph-gutter flex flex-column lh-1rem mw-grid">
+          <div className="white pv3 ph-gutter flex flex-column lh-1rem mw-grid">
             {value.map(({ title, subtitle, desc }, i) => (
               <details
                 key={title + subtitle}
