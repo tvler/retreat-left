@@ -259,7 +259,14 @@ const Home: NextPage = () => (
         </span>
 
         <span className="f6 tracked-tight white lh-1rem mt3">
-          Built by{" "}
+          Source on{" "}
+          <a
+            className="color-inherit fw6"
+            href="https://github.com/tvler/retreat-left"
+          >
+            GitHub
+          </a>
+          . Built by{" "}
           <a href="https://www.tylerdeitz.com/" className="color-inherit fw6">
             Tyler
           </a>
