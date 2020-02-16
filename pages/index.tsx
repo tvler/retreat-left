@@ -245,7 +245,8 @@ const Home: NextPage = () => (
           >
             DSA-LA 2020 voter guide
           </a>
-          . Great for taking with you to the polls as a reference while voting.
+          . Great for bringing to the polls and using as a reference while
+          voting.
         </span>
         <span className="f6 tracked-tight white lh-1rem mt3">
           Want to get emailed a new voter guide every election?{" "}
