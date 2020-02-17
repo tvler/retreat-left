@@ -5,11 +5,11 @@ import { NextPage } from "next";
 type Recomendation = Readonly<{
   subtitle?: string;
   title: string;
-  desc: ReadonlyArray<string>;
+  desc: ReadonlyArray<ReactNode>;
   link: string;
 }>;
 
-type RecomendationCategory = string | ReactNode;
+type RecomendationCategory = ReactNode;
 
 const data: ReadonlyArray<[
   RecomendationCategory,
@@ -378,6 +378,352 @@ const data: ReadonlyArray<[
           `Democrat Andrew Rodriguez has the dubious pleasure of running against the Republican incumbent, Phillip Chen. AD 55 has been Republican since at least 2012, although Chen was within 10 points of being unseated in 2018. With a potential upset within reach, it’s strange that Rodriguez is running unopposed. He hasn’t updated his social media since April 2019, and the platform listed on his website gives short platitudes lifted, apparently, from the April 2019 issue of “Campaign Boilerplate.” He’s the 27-year-old Mayor of Walnut, California (being within AD55), but there is precious little to recommend him. He holds a Masters of Real Estate Development, which probably tells you all you need to know.`,
         ],
       },
+      {
+        subtitle: "Dist. 57",
+        title: "Vanessa Tyson",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly57",
+        desc: [
+          `In a busy race in a center-left district, Vanessa is not a loudly progressive candidate (her Twitter account indicates that she supports Warren, and has an endorsement from Melissa Harris Parry), but she’s clearly about climate change, housing, and education for all. Her life’s work in women’s shelters and in academia suggests a real commitment to encouraging marginalized groups to participate in the political process. Also, she is facing other well-backed candidates with ties to some shady business interests (Rubio and Calderon) and, in the case of Lisa Calderon, family ties to the people who’ve been ousted from this very seat for corruption. Josue Alvarado posits himself as too pro-business for us to trust the lacking specifics of his platform, while the other candidate’s platform clarity fails to meet our standard for considering a recommendation. We do not fully support any of these candidates but we do want to make sure the best candidate is highlighted, in this case it’s Tyson.`,
+        ],
+      },
+      {
+        subtitle: "Dist. 58",
+        title: "Margaret Villa",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly58",
+        desc: [
+          `The incumbent, Cristina Garcia, received large contributions from landlord and developer lobbies after abstaining on state rent cap, just cause eviction, and opposing public banking. She doesn't advocate for Medicare for All. Her only challenger, Margaret Villa, supports Medicare for All, rent control, the Green New Deal, and free public college tuition. Villa is the  obvious choice here.`,
+        ],
+      },
+      {
+        subtitle: "Dist. 59",
+        title: "Reginald Jones-Sawyer",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly59",
+        desc: [
+          `Reginald Jones-Sawyer is running for his fifth consecutive assembly district term. He formed and chairs the Progressive Caucus that serves as the main opposition to the business-democrat “Mod Squad,” boasts good endorsements (including labor groups, teachers, and farm workers), and has a progressive voting record to back it all up. His challengers are uninspiring. Efren Martinez (D) was allegedly involved in a Huntington Park City Council kickback scheme, is endorsed by law enforcement lobbying groups, and focuses his campaign around his military service and Chamber of Commerce ties. Marcello Villeda (R) has declined to share any information about his campaign contributions, platform, or personal history other than to state where he attends church. The easy choice here is Jones-Sawyer.`,
+        ],
+      },
+      {
+        subtitle: "Dist. 62",
+        title: "No recommendation",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly62",
+        desc: [
+          `Democrat Autumn Burke is far from this year’s best candidate for State Assembly district representative, but her opponent Republican Robert Steele might just be the worst. Burke has no published platform, has allegations of sexual misconduct levied against her, and is endorsed by charter schools. Steele, on the other hand, unironically advocates for arming teachers to prevent school shootings and thinks that California’s high cost of living is best tackled by relaxing air-quality regulations on gasoline and encouraging gas stations to buy wholesale from Arizona.`,
+        ],
+      },
+      {
+        subtitle: "Dist. 63",
+        title: "Maria Estrada",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly63",
+        desc: [
+          `Maria Estrada first ran against Anthony Rendon in 2018, after he single-handedly tabled CA’s single-payer healthcare bill SB562, (after having accepted over $700k in campaign contributions from health insurance companies, natch.)  On her website she indicates she is the sixth of seven children, mother of two, and a grandmother of two more. She received her entire education in Lynwood in the 63rd district and has been working since she was 15. She lost that race by just under 10 points 54.3% - 45.7%, hopefully with the momentum of the presidential primary on her side, she will make those 10 points up in November. In her 2018 candidate questionnaire returned to Democratic Socialists of America, Estrada also voices support of universal basic income, clean elections, investment in education and infrastructure, public banks, federal jobs guarantee, abolishing ICE, banning private prisons, protecting unions, stopping the expansion of charter schools, and support of Prop 10.`,
+          `She has been canvassing for Bernie Sanders in the 2020 primary. Estrada’s platform is strongly progressive, but there are reasons to be concerned about her candidacy this year. Her 2018 campaign website is gone, and the campaign now seems to be running entirely via Facebook, and Estrada herself has gotten into trouble with other progressive activists for public posts praising anti-Semitic preacher Louis Farrakhan and for other spats with activists. Still, electing Estrada, long-shot though it may be, would be a clear repudiation of the Democratic Party’s most corrupt, centrist tendencies, and that is sufficient reason to suggest voting for Estrada.`,
+        ],
+      },
+      {
+        subtitle: "Dist. 64",
+        title: "Fatima S. Iqbal-Zubair",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly64",
+        desc: [
+          `Big Oil has a stranglehold over District 64. More than 80% of the people living in District 64 are people of color, and they are massively affected by pollution and public health issues stemming from the oil and gas industry. Incumbent Mike Gipson frequently votes for legislation favoring these industries, and takes money from Big Oil as well. His challenger, Fatima S. Iqbal-Zubair, is a former public school teacher who has made addressing environmental racism a key platform item in her campaign. We recommend a vote for Fatima to help get this district out from under Big Oil’s thumb.`,
+        ],
+      },
+      {
+        subtitle: "Dist. 66",
+        title: "No recommendation",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly66",
+        desc: [
+          `Incumbent Al Muratsuchi is running in a comfortably Democratic district against a Republican. He was first elected to the assembly in 2012, lost in 2014, and then won his seat back in 2016. Muratsuchi is a former prosecutor and deputy attorney general who earned a 100% pro-public safety voting score from the California Police Chiefs Association. He appears to be a “tough on crime” candidate. We have no recommendation for him.`,
+        ],
+      },
+      {
+        subtitle: "Dist. 70",
+        title: "No recommendation",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly70",
+        desc: [
+          `Incumbent Patrick O'Donnell misrepresents a district heavily burdened with pollution by voting against oil and gas well testing requirements, public notification of health impacts of industrial projects, and reduced emissions from electrical generation. He also voted to retain mandatory sentencing enhancements and failed to vote for the statewide rent cap and just cause eviction protections.`,
+        ],
+      },
+    ],
+  ],
+  [
+    "LA City Council",
+    [
+      {
+        subtitle: "Dist. 2",
+        title: "No recommendation",
+        desc: [
+          `38% of households in CD2 are living 200% below the federal poverty level. A whopping 77% of public school children are eligible for free or reduced lunch programs, and 54% of households are spending over one third of their income on housing. The incumbent Paul Krekorian has been sitting in that seat since 2009, and has had ample time to help his constituents. Clearly, he has not. His opponents are Republican Rudy Melendez and Independent Ayinde Jones, who don't have any actual policy positions or proposals available for us. Unfortunately for Los Angeles, Paul Krekorian is moonwalking his way into a third and final term as councilperson of CD2.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#cc2",
+      },
+      {
+        subtitle: "Dist. 4",
+        title: "Nithya Raman",
+        desc: [
+          `Incumbent David Ryu has raised upwards of a million dollars in campaign contributions, including donations from predatory housing developers and oil industry lobbyists. Ryu framed himself as the government outsider in his initial victory, but has quickly embedded himself as a pro-establishment Democrat. Nithya Raman has displayed courageous leadership in her role as Executive Director of the #TimesUp movement, worked as a City Administrative Officer for Los Angeles, and has worked tirelessly on behalf of the unhoused population in southern California. Nithya is a dues-paying member of DSA-LA, and she is the only local candidate our chapter has endorsed in this election cycle. Nithya’s has also been endorsed by other organizations such as the Sunrise Movement, LA League of Conservation Voters, Our Revolution, and the National Women’s Political Caucus. We endorse Nithya Raman for Los Angeles City Council District 4.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#cc4",
+      },
+      {
+        subtitle: "Dist. 6",
+        title: "Bill Haller",
+        desc: [
+          `The incumbent, Nury Martinez, began her new role as City Council President this year by criticizing the city's homeless sweeps for not being aggressive enough in disposing of homeless people's possessions. One challenger, Benito Benny Bernal, is a pro-Trump Republican who runs for a different race every year, rarely collecting more than 20% of the vote. The other, Bill Haller, is a current Lake Balboa Neighborhood Councilmember and a former Sierra Club air quality committee chair who supports climate justice and transit investment, but his campaign presence appears to be just one Facebook page with 47 likes.  Martinez is almost certainly going to roll this race, but since Bernal is not a viable challenger, we recommend voting for Haller.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#cc6",
+      },
+      {
+        subtitle: "Dist. 8",
+        title: "Marqueece Harris-Dawson",
+        desc: [
+          `Incumbent Marqueece Harris-Dawson is running uncontested. Before he was a Council Member, Harris-Dawson had a leading role at Community Coalition, a social justice organization in South LA focused on creating safe neighborhoods with access to quality education and community. Harris-Dawson's current platform includes working towards affordable housing, infrastructure repair, public transportation investment, economic development, and homelessness prevention. No sitting councilperson on a city council that has overseen Los Angeles’ drastic increase in homelessness while voting unanimously over 99% can be truly called progressive or leftist, but Harris-Dawson is about as close as you can get; he was the second council-person, after Mike Bonin, to come out in opposition to Los Angeles’ draconian anti-homeless sleeping ordinance 41.18.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#cc8",
+      },
+      {
+        subtitle: "Dist. 10",
+        title: "Aura Vasquez",
+        desc: [
+          <>
+            Aura is a Columbian-born immigrant with a long history of community
+            organizing for progessive policies. Her efforts include helping
+            undocumented residents obtain a driver’s licence, fighting for
+            affordable housing as chair of the Land Use Committee, leading the
+            Sierra Club’s campaign to eliminate coal dependency, banning
+            single-use plastic bags, helping establish a rooftop solar program,
+            and bringing supplies to Standing Rock. She is running on a platform
+            pushing for 100% renewable energy, affordable housing and homeless
+            services, and free public transit. Aura’s endorsements include
+            Sunrise movement and Our Revolution. Aura’s primary opponent is Mark
+            Ridley-Thomas (MRT, for short), a titan of establishment corruption
+            with fingers in every major Democratic Party pot in the country.
+            Most notably, MRT made sure his failson, Sebastian, who had resigned
+            from the state assembly to get ahead of a{" "}
+            <a
+              className="color-inherit fw6"
+              href="http://www.latimes.com/local/lanow/la-me-ln-ridley-thomas-investigation-20180814-story.html"
+            >
+              sexual harassment allegation
+            </a>
+            .
+          </>,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#cc10",
+      },
+      {
+        subtitle: "Dist. 12",
+        title: "Loraine Lundquist",
+        desc: [
+          `Incumbent Repubican John Lee is the last remaining Republican holding a seat on the Los Angeles City Council. Lee is supported by the police and fire association, as well as pro business groups including oil lobbyists, predatory housing developers, and right wing elements throughout southern California. We recommend Lorain Lundquist for Los Angeles City Council District 12. Lundquist is a physicist teaching sustainability at Cal State Northridge. She has supported the Democratic Socialists of America and many other grassroots organizations on campaigns including Keep Families Together, the UTLA Teachers Strike, Aliso Canyon, and Prop 10.`,
+          `Her highest priority is bringing a Green New Deal to Los Angeles, modelled in part after Alexandria Ocasio-Cortez’s plan. Lundquist has received numerous endorsements including the National Union of Healthcare Workers, Muslim Democratic Club of Southern California, Our Revolution, Stonewall Democratic Club, International Longshore Workers Union - Southern California District Council, Los Angeles League of Conservation Voters, United Teachers Los Angeles, and the National Women’s Political Caucus California.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#cc12",
+      },
+      {
+        subtitle: "Dist. 14",
+        title: "Cyndi Otteson",
+        desc: [
+          <>
+            The big name in the race is{" "}
+            <a
+              className="color-inherit fw6"
+              href="https://www.kevindeleon.com/"
+            >
+              Kevin de León
+            </a>
+            , the former state senate President Pro Tem. Kevin wields a lot of
+            power in Los Angeles, as does the other primary contender Mónica
+            Garcia. Garcia served 13 years on the LAUSD board, spending a good
+            chunk of that time as the board president as well. Ultimately, these
+            two candidates are running large, well-oiled campaigns. Cyndi
+            Otteson, however, is the candidate we are most interested in.
+            Otteson supports a rent freeze and vacancy tax. This is big,
+            especially when you consider D14 is home to some of the highest
+            concentration of unhoused people in the country. Per her campaign
+            website, she rejects money from developers, corporations, fossil
+            fuel interests, and the charter school lobby. She also believes the
+            city should eminent domain vacant commercial properties to build
+            more affordable housing.
+          </>,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#cc14",
+      },
+    ],
+  ],
+  [
+    <>
+      LA Unified
+      <br />
+      School District
+    </>,
+    [
+      {
+        subtitle: "Dist. 1",
+        title: "George McKenna",
+        desc: [
+          `LAUSD School Board races are significant, because they are the subject of a massive ongoing battle between organized labor and would-be education privatizers. UTLA, one of the most militant and effective teachers unions in the country, is fighting for public education as a public good, and securing some serious victories. Charter schools and the monied interests supporting them, who look to privatize and cash-in on education, are on the opposing side, we can’t let them win. We don’t have time to go into it in depth here, but suffice to say: we’re with the union. Incumbent George McKenna is with the union too. He has held this seat since 2014, is endorsed by UTLA, and is running opposed only by a write-in candidate.`,
+          <>
+            That candidate, Michael Batie, seems nice enough – he’s particularly
+            campaigned on improving STEM education for black students for
+            several years. Still, McKenna has been an educator in LAUSD for 58
+            years, starting out as a math teacher in 1962.{" "}
+            <a
+              className="color-inherit fw6"
+              href="http://laschoolreport.com/a-recipe-for-teaching-from-lausd-board-member-george-mckenna-whos-been-at-it-55-years/"
+            >
+              McKenna’s fierce advocacy
+            </a>{" "}
+            for improving LA schools, particularly for the non-white students he
+            taught in South LA has become so legendary that he was played by
+            Denzel Washington in a{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/The_George_McKenna_Story"
+              className="color-inherit fw6"
+            >
+              1986 movie about him
+            </a>
+            . While that story is somewhat fictionalized, the takeaway is not:
+            vote for George McKenna.
+          </>,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#school1",
+      },
+      {
+        subtitle: "Dist. 3",
+        title: "Scott Schmerelson",
+        desc: [
+          `Scott Schmerelson wants to lower class sizes, stop evaluating teachers based on test scores, and prioritize public schools over charter schools. He is endorsed by UTLA and Education Workers United.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#school3",
+      },
+      {
+        subtitle: "Dist. 5",
+        title: "Jackie Goldberg",
+        desc: [
+          `Jackie is a Democratic Socialists of America-LA member and a decades-long socialist. Goldberg’s platform focuses on reducing class sizes, reforming the budget, and allocating resources directly to the classroom. She strongly advocates for improving learning conditions and protecting LAUSD schools from attacks by the federal government. Goldberg has supported teacher strikes and is endorsed by UTLA, CHIRLA, Dolores Huerta and Our Revolution.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#school5",
+      },
+      {
+        subtitle: "Dist. 7",
+        title: "Patricia Castellanos",
+        desc: [
+          `Our recommendation for Castellanos comes alongside UTLA, who wrote, “UTLA is endorsing an LAUSD parent who is committed to the fight against privatization and for fully funded schools. Patricia Castellanos is a founding member of Reclaim Our Schools LA, the parent-community coalition that was with us during our strike, walking the picket lines and protesting outside privatizers' homes. She is a former deputy director for L.A. Alliance for a New Economy (LAANE) and led campaigns with unions and the community for better working conditions for employees and stronger neighborhoods for families.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#school7",
+      },
+    ],
+  ],
+  [
+    <>
+      LA County
+      <br />
+      Supervisor
+    </>,
+    [
+      {
+        subtitle: "Dist. 2",
+        title: "Holly Mitchell",
+        desc: [
+          "This is one of the biggest local races in Los Angeles this year, featuring a three-way battle between long-time titans of the Los Angeles Democratic Party establishment. LA County Supervisors wield an enormous amount of power – with only five supervisors reigning over county services for roughly 12 million people – earning themselves the nickname the “five little kings”. Races for County Supervisor are almost exclusively won by well-established politicians with massive name recognition and internal Democratic Party support.",
+          <>
+            The current supervisor in District 2, Mark Ridley-Thomas (MRT), is a
+            titan of establishment corruption, with fingers in every major
+            Democratic Party pot in the county. Most notably, MRT made sure his
+            failson, Sebastian, who had resigned from the State Assembly to get
+            ahead of a{" "}
+            <a
+              className="color-inherit fw7"
+              href="http://www.latimes.com/local/lanow/la-me-ln-ridley-thomas-investigation-20180814-story.html"
+            >
+              sexual harassment allegation
+            </a>
+            , landed softly, by{" "}
+            <a
+              className="color-inherit fw7"
+              href="http://www.latimes.com/local/lanow/la-me-ln-ridley-thomas-investigation-20180814-story.html"
+            >
+              bribing USC to give him a professorship
+            </a>{" "}
+            (Sebastian was fired after this bribery was investigated by the
+            press). Now, MRT is termed out, so he and corrupt establishment
+            mainstay Herb Wesson, who just termed out of his reign as president
+            of LA City Council in District 10, decided to swap seats. Healthy
+            democracy, right?
+          </>,
+          `Wesson’s failures as city council president are expansive. As Council President, he orchestrated the past term in which Los Angeles faced skyrocketing rents and homelessness and responded almost exclusively with criminalization and neglect. Over 99% of city council votes have been unanimous, and the few times the city council walked back its own inhumane criminalization, such as when it finally voted down the city’s criminalization ordinance of sidewalk sleeping, the result was orchestrated by a revolt of the council’s “progressive” wing (Mike Bonin and Marqueece Harris-Dawson) against Wesson’s rule, in responsive to massive grassroots pressure. He’s also been named (though not indicted) as a person of interest in an FBI investigation into bribery and corruption, centered on Jose Huizar and hotel developments in Downtown Los Angeles. Still, he’s heading into this race as a massive favorite, with well over a million dollars raised and endorsements from the County Democratic Party, most local unions, and an army of establishment city politicians.`,
+          `But there’s a hitch. Wesson is facing two other candidates with support from the party establishment. Former City Councilwoman Jan Perry has long been a political opponent of Herb Wesson, with numerous political clashes during their shared time on the city council culminating in Wesson overseeing a redistricting of City Council districts explicitly to break up Perry’s base. Jan Perry has raised over $700,000 for this race, and is endorsed by an array of establishment politicians, albeit a much smaller array. While Jan Perry is probably more progressive than Wesson, it’s not by much. Her most recent position was in Mayor Eric Garcetti’s pro-business “Economic and Workforce Development Department”.`,
+          <>
+            Finally, there’s Holly Mitchell. Mitchell is a current state senator
+            representing Crenshaw, Culver City, South Central, and parts of
+            Downtown Los Angeles and Inglewood. As State Senator, Mitchell has
+            been called the{" "}
+            <a
+              href="https://www.latimes.com/politics/la-pol-sac-holly-mitchell-budget-20170228-htmlstory.html"
+              className="color-inherit fw6"
+            >
+              “social conscience of the California Senate” and chaired the
+              powerful budget committee
+            </a>
+            . She’s been a fierce voice in support of funding and expanding
+            social services, as well as unions. She supported the board of
+            supervisors granting subpoena power to civilian oversight committees
+            which, when properly equipped, can represent a meaningful check on
+            the police. Though by no means a leftist, Holly Mitchell is among
+            the most progressive establishment politicians in California. She
+            has raised about $900,000 for this race, and has endorsements from a
+            block of influential unions including SEIU, UFW and NUHW, grassroots
+            organizations including the Sierra Club, Council of American-Islamic
+            Relations (CAIR), and Planned Parenthood, as well as a wide array of
+            state politicians, most notably Governor Gavin Newsom and former
+            Governor Jerry Brown. Mitchell is probably a favorite over Perry to
+            make the runoff against Wesson, but with local races, as always, the
+            lack of polling makes it tough to tell.
+          </>,
+          `There are five other candidates, none of whom stand a realistic shot of making the runoff. Of them, Jorge Nuño is the most progressive. Nuño is a longtime progressive and organizer who has been working to raise the quality of life with kids in south central with the Big House project. It's now the home to the Bernie Sanders campaign office. He’s raised $4000 for this race, with $3000 coming from his own money.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#sup2",
+      },
+      {
+        subtitle: "Dist. 4",
+        title: "No recommendation",
+        desc: [
+          `LA County’s 4th District is massive, probably too massive, stretching from Marina Del Rey down through Diamond Bar. The incumbent Janice Hahn is a relatively generic California liberal, and backed by the entire Democratic coalition of California. Hahn is the scion of a long-ruling dynasty of Los Angeles politics – her father, Kenneth, was on the Board for 40(!!) years, and her brother, James, served as city attorney through the 1990s before becoming a one term mayor from 2001-2005. Janice put in good work on housing issues, got Measure H on the ballot, and subsequently used that money towards shower programs and urgent care beds in San Pedro. She also pushed a rent stabilization ordinance in unincorporated LA County that caps rent increases at 3% and requires just cause for eviction. Contradicting these efforts is her vote to support efforts in overturning Martin v. Boise. Worse still, Hahn supported the appointment of Nicole Tinkham as Interim Public Defender in 2018. Tinkham had no criminal law experience, is a big proponent of law enforcement, and provided civil defense to Sheriff’s Deputy Scott Sorrow after he shot 15-year-old William Fetters in the back while he was biking with his friends.`,
+          `Challenging her is Desiree T. Washington, who currently practices business law in the private sector. Her marquee issues are housing and homelessness. However, none of her solutions include any sort of expansion of tenant rights, zoning for affordable housing, bridge housing, or making the places homeless people currently live, safer for them. There is a lot of platitudes about mental illness, substance abuse, job training programs and, “encouraging more job creation in less dense areas of the county to better support any movement of working class homeless peoples to those areas.” This loosely translates to “Ship them to Lancaster.” She wants to reduce traffic but also reduce the county gas tax. Her plans for this are based on the actions of employers and police enforcement. None of them are infrastructure related.`,
+          `Hahn is cruising into re-election here. In a world where she can do better, we’re not recommending anyone for this race.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#sup4",
+      },
+      {
+        subtitle: "Dist. 5",
+        title: "Dual recommendation of John C. Harabedian and Darrell Park",
+        desc: [
+          <>
+            John C. Harabedian holds a law degree from Stanford Law School and a
+            Master of Science degree in comparative social policy from the
+            University of Oxford. He has both impressive educational credentials
+            for this role and genuine progressive vision. Harabedian supports
+            ending cash bail, eliminating the death penalty, and kicking ICE out
+            of LA County. He’s endorsed by San Francisco’s newly elected
+            progressive DA, Chesa Boudin, an ally to the Black Lives Matter
+            movement. Another challenger, Darrell Park, is an environmentalist
+            and businessman who supports 100% renewable electricity for the
+            county by 2030 and free public transportation. He has agreed to the{" "}
+            <a
+              className="color-inherit fw6"
+              href="https://www.curbed.com/2020/1/29/21112405/aoc-squad-peoples-housing-platform-congress-legislation-housing"
+            >
+              Housing Guarantee
+            </a>{" "}
+            and has been endorsed by Ground Game LA. As Harabedian and Park are
+            the only two challengers running against a single incumbent, we feel
+            comfortable recommending a vote for either of them for this seat.
+            Both will be strong progressive challengers against incumbent
+            Kathryn Barger.
+          </>,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#sup5",
+      },
     ],
   ],
 ];
@@ -485,7 +831,7 @@ const Home: NextPage = () => (
 
                 {desc.map((p, i, { length }) => (
                   <span
-                    key={p}
+                    key={i}
                     style={{ textIndent: "2.5em" }}
                     className="db f6 tj tracked-tight mt1"
                   >
