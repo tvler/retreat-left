@@ -162,7 +162,7 @@
 :root {
   /* update with @media (min-width: 700px) */
   --mw-grid: 375px;
-  --cool-black: #2f2f2f;
+  --cool-black: #202020;
   font-family: "Test";
   background-color: var(--cool-black);
   color: var(--cool-black);
@@ -200,6 +200,10 @@
   font-family: "Loool";
 }
 
+.details-reset summary:focus {
+  outline: none;
+}
+
 .details-reset > summary::-webkit-details-marker {
   display: none;
 }
@@ -226,8 +230,16 @@ details:not([open]) .details-indicator::before {
   content: attr(data-closed);
 }
 
-details[open] .details-indicator::before {
-  content: attr(data-opened);
+details[open] .open-bg-white {
+  background-color: white;
+}
+
+details[open] .open-cool-black {
+  color: var(--cool-black);
+}
+
+details[open] .open-b--white {
+  border-color: white;
 }
 
 @supports (margin-bottom: max(0px)) {

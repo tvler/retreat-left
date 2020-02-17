@@ -317,7 +317,7 @@ const Home: NextPage = () => (
                         src="/bernie.jpeg"
                       />
                     )}
-                    <span className="f7 ph2 mt1 br-pill ba b--solid lh-copy ttu tracked-tight">
+                    <span className="f7 ph2 mt1 br-pill ba b--solid lh-copy ttu tracked-tight open-bg-white open-cool-black open-b--white">
                       Info
                     </span>
                   </div>
@@ -328,7 +328,7 @@ const Home: NextPage = () => (
                     <span
                       key={p}
                       style={{ textIndent: "2.5em" }}
-                      className="flex f6 tj tracked-tight mt1 lh-title"
+                      className="flex f6 tj tracked-tight mt1"
                     >
                       {p}
                     </span>
