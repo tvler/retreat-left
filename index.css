@@ -252,13 +252,13 @@ details[open] .open-b--white {
 @media (max-width: 749px) {
   :root {
     font-size: 16px;
-    --gutter-width: 10px;
+    --gutter-width: 9px;
   }
 }
 
 @media (min-width: 750px) {
   :root {
     font-size: 20px;
-    --gutter-width: 20px;
+    --gutter-width: 16px;
   }
 }

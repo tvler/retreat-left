@@ -2,18 +2,18 @@ import React, { Fragment, ReactNode } from "react";
 import Head from "next/head";
 import { NextPage } from "next";
 
-type Recomendation = Readonly<{
+type Recommendation = Readonly<{
   subtitle?: string;
   title: string;
-  desc: ReadonlyArray<ReactNode>;
+  desc?: ReadonlyArray<ReactNode>;
   link: string;
 }>;
 
-type RecomendationCategory = ReactNode;
+type RecommendationCategory = ReactNode;
 
 const data: ReadonlyArray<[
-  RecomendationCategory,
-  ReadonlyArray<Recomendation>
+  RecommendationCategory,
+  ReadonlyArray<Recommendation>
 ]> = [
   [
     <>
@@ -49,7 +49,7 @@ const data: ReadonlyArray<[
       },
       {
         subtitle: "Dist. 25",
-        title: "No recomendation",
+        title: "No recommendation",
         desc: [
           "This race is fraught with a wide range of unrelated controversies, making it maybe the most fascinating congressional seat to watch. On paper, Cenk Uygur is the obvious progressive choice, even though it would be his first elected office. He aligns specifically with the platform of Democratic Socialists of America and The Future Left. However, it would be risky to go where even Bernie Sanders won’t (he’s previously pulled an endorsement for Uygur) and we must take the concerns about him very seriously regarding allegations of sexism and Armenian Genocide denial. Christy Smith’s neoliberal platform, including her lack of support for Medicare for All, makes her highly questionable as an alternative and certainly undeserving of a recommendation.",
         ],
@@ -129,7 +129,7 @@ const data: ReadonlyArray<[
       },
       {
         subtitle: "Dist. 37",
-        title: "No recomendation",
+        title: "No recommendation",
         desc: [
           "Karen Bass is the head of the Congressional Black Caucus, a ranking member on the House Foreign Affairs Committee, and a co-sponsor of Rep. Pramila Jayapal’s Medicare for All Act of 2019. She supports DACA and the DREAM ACT, and worked on Proposition 47. She started the Congressional Caucus on Foster Youth, “a vehicle to organize members of Congress to come together to work for passage of legislation to improve the child welfare system.” Bass is also one of the authors of FOSTA/SESTA, and was in a position to change the bill so it didn’t endanger sex workers but didn’t do so. We are standing in solidarity with our fellow workers who have been put in danger by FOSTA/SESTA and are not recommending anyone in this race.",
         ],
@@ -446,7 +446,11 @@ const data: ReadonlyArray<[
     ],
   ],
   [
-    "LA City Council",
+    <>
+      LA City
+      <br />
+      Council
+    </>,
     [
       {
         subtitle: "Dist. 2",
@@ -726,6 +730,115 @@ const data: ReadonlyArray<[
       },
     ],
   ],
+  [
+    <>
+      LA District
+      <br />
+      Attorney
+    </>,
+    [
+      {
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#da",
+        title: "Rachel Rossi",
+        desc: [
+          `This is perhaps the most important local race in 2020. The Los Angeles County District Attorney’s office is the largest in the country, so the race has fittingly received national attention. There’s a nationwide trend of so-called “progressive prosecutors” running for office, and now we have the chance to vote in one of our own. Our current DA Jackie Lacey has spent the last eight years prosecuting poor people of color at appalling rates while failing to hold any law enforcement accountable for the over 500 extrajudicial killings they have meted out during her tenure. She supports capital punishment and has fought against all kinds of reforms. We stand with Black Lives Matter and our coalition partners in demanding that Jackie Lacey Must Go!`,
+          `Lacey has two opponents.The former DA of San Francisco George Gascón is a career police officer and prosecutor who promises to be a reformer. There is little doubt he would be better than Lacey, but that is an extremely low bar. Much like Lacey, he has come under fire for not prosecuting killer cops in San Francisco, leading to weekly protests in front of the Hall of Justice. Sound familiar?`,
+          `The other contender is Rachel Rossi, a public defender who has never been in law enforcement. While many of her proposals are similar to Gascón’s, her rhetoric during the campaign has skewed to the left of him. She is more emphatic about decreasing the filing of charges, increasing pre-trial diversions, and creating systems of accountability for the DA’s office. She speaks openly about the long-standing conflict of interest between prosecutors and law enforcement. She advocates for decriminalizing sex work and homelessness, and abandoning gang enhancements. As abolitionist organizations, we typically avoid making recommendations in DA races, but the harm reduction inherent in having non-cop as DA is too significant to ignore. We recommend Rossi.`,
+        ],
+      },
+    ],
+  ],
+  [
+    <>
+      Judge of the
+      <br />
+      Superior Court
+    </>,
+    [
+      {
+        subtitle: "Office 42",
+        title: "Linda Sun",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#judge42",
+      },
+      {
+        subtitle: "Office 72",
+        title: "Myanna Dellinger",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#judge72",
+      },
+      {
+        subtitle: "Office 80",
+        title: "Klint James McKay",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#judge80",
+      },
+      {
+        subtitle: "Office 97",
+        title: "Sherry L. Powell",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#judge97",
+      },
+      {
+        subtitle: "Office 129",
+        title: "Ken Fuller",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#judge129",
+      },
+      {
+        subtitle: "Office 145",
+        title: "Troy Slaten",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#judge145",
+      },
+      {
+        subtitle: "Office 150",
+        title: "Tom Parsekian",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#judge150",
+      },
+      {
+        subtitle: "Office 162",
+        title: "David D. Diamond",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#judge162",
+      },
+    ],
+  ],
+  [
+    <>
+      Pasadena
+      <br />
+      City Council
+    </>,
+    [
+      {
+        subtitle: "Dist. 6",
+        title: "Ryan Bell",
+        desc: [
+          `Pasadena City Council District 6 includes southern and western Pasadena. Twenty-year Incumbent Steve Madison is facing two challengers. One of them is endorsed by pro-ICE former LA County Sheriff Jim McDonnell. The other, Ryan Bell, is running on a tenants-rights platform to be the only tenant on the council. As an active member of the Pasadena Tenants Union, a strong supporter of Bernie Sanders, and former director of PATH (People Assisting the Homeless). He’s likely a long-shot candidate.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#pasadena",
+      },
+    ],
+  ],
+  [
+    <>
+      Ballot
+      <br />
+      Measures
+    </>,
+    [
+      {
+        subtitle: "Proposition 13",
+        title: "Yes",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+        desc: [
+          `Proposition 13 would authorize $15 billion in bonds for school and college facilities in California, including $9 billion for preschool and K-12 schools, $4 billion for universities, and $2 billion for community colleges. Bond measures are one of the quickest methods of rapidly acquiring financing, but also one of the most frustrating. This matters more than ever for Prop 13, which is the largest school construction bond in state history. The immense amount of support for the bill and the virtual nonexistence of an opposition to it make it hard to argue with. The bill’s focus on matters of safety and not on dubious plans of modernization also make it attractive. The added detail that subsequent construction projects will prioritize union labor makes this YES endorsement a confident one.`,
+        ],
+      },
+      {
+        subtitle: "Measure R",
+        title: "Yes",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#measurer",
+        desc: [
+          `Lead by Reform L.A. Jails, Measure R aims to prevent and reduce jail population, incarceration, and unseen corruption within these systems. By investing in rehabilitation and mental health treatment instead of incarceration, reducing the jail population, and rooting out corruption. Measure R will help to curb abuses by the Jails and Sheriff’s Department.  Measure R is supported by Black Lives Matter LA, JusticeLA, ACLU, and Community Coalition, among others.`,
+        ],
+      },
+    ],
+  ],
 ];
 
 const Home: NextPage = () => (
@@ -829,24 +942,34 @@ const Home: NextPage = () => (
                   </div>
                 </summary>
 
-                {desc.map((p, i, { length }) => (
-                  <span
-                    key={i}
-                    style={{ textIndent: "2.5em" }}
-                    className="db f6 tj tracked-tight mt1"
-                  >
-                    {p}
-                    {i === length - 1 && (
-                      <>
-                        {" ["}
-                        <a className="color-inherit fw6" href={link}>
-                          Source
-                        </a>
-                        {"]"}
-                      </>
-                    )}
+                {desc ? (
+                  desc.map((p, i, { length }) => (
+                    <span
+                      key={i}
+                      style={{ textIndent: "2.5em" }}
+                      className="db f6 tj tracked-tight mt1"
+                    >
+                      {p}
+                      {i === length - 1 && (
+                        <>
+                          {" ["}
+                          <a className="color-inherit fw6" href={link}>
+                            Source
+                          </a>
+                          {"]"}
+                        </>
+                      )}
+                    </span>
+                  ))
+                ) : (
+                  <span className="db f6 tj tracked-tight mt1">
+                    [
+                    <a className="color-inherit fw6" href={link}>
+                      Source
+                    </a>
+                    ]
                   </span>
-                ))}
+                )}
               </details>
             ))}
           </div>
