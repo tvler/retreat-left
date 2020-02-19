@@ -185,6 +185,6 @@ details[open] .open-b--white {
 @media (min-width: 750px) {
   :root {
     font-size: 20px;
-    --gutter-width: 16px;
+    --gutter-width: 12px;
   }
 }
