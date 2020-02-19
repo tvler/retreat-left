@@ -946,7 +946,7 @@ const Home: NextPage = () => (
                   desc.map((p, i, { length }) => (
                     <span
                       key={i}
-                      style={{ textIndent: "2.5em" }}
+                      style={{ textIndent: "2em" }}
                       className="db f6 tj tracked-tight mt1"
                     >
                       {p}

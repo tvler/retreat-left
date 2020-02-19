@@ -1,159 +1,89 @@
 @font-face {
-  font-family: "Loool";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/TheSansMono/TheSansMono-W5Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/TheSansMono/TheSansMono-W5RegularItalic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/TheSansMono/TheSansMono-W6SemiBold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: italic;
-  font-weight: 600;
-  src: url("/TheSansMono/TheSansMono-W6SemiBoldItalic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/TheSansMono/TheSansMono-W7Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/TheSansMono/TheSansMono-W7BoldItalic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: normal;
-  font-weight: 800;
-  src: url("/TheSansMono/TheSansMono-W8ExtraBold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: italic;
-  font-weight: 800;
-  src: url("/TheSansMono/TheSansMono-W8ExtraBoldItalic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: normal;
-  font-weight: 900;
-  src: url("/TheSansMono/TheSansMono-W9Black.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Loool";
-  font-style: italic;
-  font-weight: 900;
-  src: url("/TheSansMono/TheSansMono-W9BlackItalic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
   src: url(/work-sans/WorkSans-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: italic;
   font-weight: 400;
   src: url(/work-sans/WorkSans-Italic.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
   src: url(/work-sans/WorkSans-Medium.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: italic;
   font-weight: 500;
   src: url(/work-sans/WorkSans-MediumItalic.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
   src: url("/work-sans/WorkSans-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: italic;
   font-weight: 600;
   src: url("/work-sans/WorkSans-SemiBoldItalic.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
   src: url("/work-sans/WorkSans-Bold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: italic;
   font-weight: 700;
   src: url("/work-sans/WorkSans-BoldItalic.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 800;
   src: url("/work-sans/WorkSans-ExtraBold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: italic;
   font-weight: 800;
   src: url("/work-sans/WorkSans-ExtraBoldItalic.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 900;
   src: url("/work-sans/WorkSans-Black.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: italic;
   font-weight: 900;
   src: url("/work-sans/WorkSans-BlackItalic.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Test";
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
   src: url(/work-sans/WorkSans-Bold.woff2) format("woff2");
@@ -163,7 +93,7 @@
   /* update with @media (min-width: 700px) */
   --mw-grid: 375px;
   --cool-black: #202020;
-  font-family: "Test";
+  font-family: "Work Sans";
   background-color: var(--cool-black);
   color: var(--cool-black);
   cursor: default;
@@ -217,10 +147,6 @@
   overflow-wrap: break-word;
 }
 
-:root {
-  font-size: 16px;
-}
-
 .details-indicator::before {
   display: inline;
   content: "";
@@ -252,7 +178,7 @@ details[open] .open-b--white {
 @media (max-width: 749px) {
   :root {
     font-size: 16px;
-    --gutter-width: 9px;
+    --gutter-width: 8px;
   }
 }
 
