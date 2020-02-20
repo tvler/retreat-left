@@ -122,7 +122,7 @@
   max-width: var(--mw-grid);
 }
 
-.lh-1rem {
+.lh-static {
   line-height: 1.15rem;
 }
 
@@ -184,6 +184,10 @@ details[open] .open-cool-black {
 
 details[open] .open-b--white {
   border-color: white;
+}
+
+.left-dotted-line {
+  left: 0;
 }
 
 @supports (margin-bottom: max(0px)) {

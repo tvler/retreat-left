@@ -21,14 +21,14 @@ const Home: NextPage = () => (
     </Head>
 
     <div className="grid">
-      <div className="bg-white  pt4 pb3 flex flex-column">
+      <div className="bg-white pt4 pb3 flex flex-column">
         <div className="mw-grid w-100 ml-auto flex flex-column">
           <span className="fw9 ph-gutter f2 i lh-solid">CA</span>
           <span className="fw6 ph-gutter f6 tracked-tight">March 3, 2020</span>
         </div>
       </div>
-      <div className="pt4 pb3 ph-gutter flex flex-column  mw-grid">
-        <span className="f6 tracked-tight white lh-1rem">
+      <div className="pt4 pb3 ph-gutter flex flex-column mw-grid">
+        <span className="f6 tracked-tight white lh-static">
           A mobile-friendly version of the{" "}
           <a
             href="https://www.dsa-la.org/2020_primary_voter_guide"
@@ -39,7 +39,7 @@ const Home: NextPage = () => (
           . Great for bringing to the polls and using as a reference while
           voting.
         </span>
-        <span className="f6 tracked-tight white lh-1rem mt3">
+        <span className="f6 tracked-tight white lh-static mt3">
           Want to get emailed a new voter guide every election?{" "}
           <a
             href="https://tinyletter.com/retreat-left"
@@ -50,7 +50,7 @@ const Home: NextPage = () => (
           .
         </span>
 
-        <span className="f6 tracked-tight white lh-1rem mt3">
+        <span className="f6 tracked-tight white lh-static mt3">
           Source on{" "}
           <a
             className="color-inherit fw6"
@@ -70,16 +70,16 @@ const Home: NextPage = () => (
         <Fragment key={key}>
           <div className="bg-white flex flex-column">
             {!!i && (
-              <div className="white mix-blend-mode-diff absolute left-0 left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
+              <div className="white mix-blend-mode-diff absolute left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
             )}
             <div className="mw-grid ml-auto w-100 flex-grow-1">
-              <span className="sticky pv3 ph-gutter tracked-tight top-0 break-word lh-1rem f6 db">
+              <span className="sticky pv3 ph-gutter tracked-tight top-0 break-word lh-static f6 db">
                 {key}
               </span>
             </div>
           </div>
 
-          <div className="white pv3 ph-gutter flex flex-column lh-1rem mw-grid">
+          <div className="white pv3 ph-gutter flex flex-column lh-static mw-grid">
             {value.map(({ title, subtitle, desc, link }, i) => (
               <details
                 key={title + subtitle}
