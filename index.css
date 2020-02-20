@@ -93,10 +93,14 @@
   /* update with @media (min-width: 700px) */
   --mw-grid: 375px;
   --cool-black: #202020;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   background-color: var(--cool-black);
   color: var(--cool-black);
   cursor: default;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .cool-black {
@@ -110,7 +114,7 @@
 .grid {
   display: grid;
   grid-template-columns:
-    minmax(max-content, 1fr)
+    minmax(min-content, 1fr)
     minmax(50%, var(--mw-grid));
 }
 
@@ -120,6 +124,20 @@
 
 .lh-1rem {
   line-height: 1.15rem;
+}
+
+.ti4 {
+  text-indent: 2em;
+}
+
+.aspect-ratio-bernie {
+  position: relative;
+}
+
+.aspect-ratio-bernie::after {
+  content: "";
+  display: block;
+  padding-bottom: 124.8%; /* 936px / 768px */
 }
 
 .mix-blend-mode-diff {
