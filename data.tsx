@@ -716,7 +716,7 @@ export const data: ReadonlyArray<[
         title: "Rachel Rossi",
         desc: [
           `This is perhaps the most important local race in 2020. The Los Angeles County District Attorney’s office is the largest in the country, so the race has fittingly received national attention. There’s a nationwide trend of so-called “progressive prosecutors” running for office, and now we have the chance to vote in one of our own. Our current DA Jackie Lacey has spent the last eight years prosecuting poor people of color at appalling rates while failing to hold any law enforcement accountable for the over 500 extrajudicial killings they have meted out during her tenure. She supports capital punishment and has fought against all kinds of reforms. We stand with Black Lives Matter and our coalition partners in demanding that Jackie Lacey Must Go!`,
-          `Lacey has two opponents.The former DA of San Francisco George Gascón is a career police officer and prosecutor who promises to be a reformer. There is little doubt he would be better than Lacey, but that is an extremely low bar. Much like Lacey, he has come under fire for not prosecuting killer cops in San Francisco, leading to weekly protests in front of the Hall of Justice. Sound familiar?`,
+          `Lacey has two opponents. The former DA of San Francisco George Gascón is a career police officer and prosecutor who promises to be a reformer. There is little doubt he would be better than Lacey, but that is an extremely low bar. Much like Lacey, he has come under fire for not prosecuting killer cops in San Francisco, leading to weekly protests in front of the Hall of Justice. Sound familiar?`,
           `The other contender is Rachel Rossi, a public defender who has never been in law enforcement. While many of her proposals are similar to Gascón’s, her rhetoric during the campaign has skewed to the left of him. She is more emphatic about decreasing the filing of charges, increasing pre-trial diversions, and creating systems of accountability for the DA’s office. She speaks openly about the long-standing conflict of interest between prosecutors and law enforcement. She advocates for decriminalizing sex work and homelessness, and abandoning gang enhancements. As abolitionist organizations, we typically avoid making recommendations in DA races, but the harm reduction inherent in having non-cop as DA is too significant to ignore. We recommend Rossi.`,
         ],
       },
@@ -726,6 +726,11 @@ export const data: ReadonlyArray<[
     "Judge of the Superior Court",
     [
       {
+        subtitle: "Office 17",
+        title: "No recommendation",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide",
+      },
+      {
         subtitle: "Office 42",
         title: "Linda Sun",
         link: "https://www.dsa-la.org/2020_primary_voter_guide#judge42",
@@ -734,6 +739,11 @@ export const data: ReadonlyArray<[
         subtitle: "Office 72",
         title: "Myanna Dellinger",
         link: "https://www.dsa-la.org/2020_primary_voter_guide#judge72",
+      },
+      {
+        subtitle: "Office 76",
+        title: "No recommendation",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide",
       },
       {
         subtitle: "Office 80",
@@ -749,6 +759,16 @@ export const data: ReadonlyArray<[
         subtitle: "Office 129",
         title: "Ken Fuller",
         link: "https://www.dsa-la.org/2020_primary_voter_guide#judge129",
+      },
+      {
+        subtitle: "Office 131",
+        title: "No recommendation",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide",
+      },
+      {
+        subtitle: "Office 141",
+        title: "No recommendation",
+        link: "https://www.dsa-la.org/2020_primary_voter_guide",
       },
       {
         subtitle: "Office 145",
