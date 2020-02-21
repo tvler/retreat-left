@@ -92,7 +92,6 @@ const Home: NextPage = () => (
                     {title === "Bernie Sanders" && (
                       <div className="mv1 w-100 aspect-ratio-bernie">
                         <img
-                          loading="lazy"
                           alt=""
                           className="absolute absolute--fill"
                           src="/bernie.jpg"
