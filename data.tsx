@@ -801,6 +801,18 @@ export const data: ReadonlyArray<[
     ],
   ],
   [
+    "Glendale City Council",
+    [
+      {
+        title: "Dan Brotman",
+        desc: [
+          `Dan Brotman climate activist and economist. Brotman founded the Glendale Environmental Coalition and mobilized 1,200 protesters to successfully pressure Glendale City Council to invest in renewables rather than a new fossil fuel power plant. Brotman prioritizers renter protections and progressive electoral reforms, such as districting and matching funds. He has more than twice as many small-dollar contributions as all 7 other candidates in the race combined. He has already earned the support of our allies in Ground Game LA, Sunrise Movement LA, and the Glendale Tenant's Union.`,
+        ],
+        link: "https://www.dsa-la.org/2020_primary_voter_guide#glendale",
+      },
+    ],
+  ],
+  [
     "Ballot Measures",
     [
       {
