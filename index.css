@@ -1,7 +1,7 @@
 :root {
   /* update with @media (min-width: 700px) */
   --mw-grid: 375px;
-  --cool-black: #1e1e1e;
+  --cool-black: #1c1c1c;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
   background-color: var(--cool-black);
