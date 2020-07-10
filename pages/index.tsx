@@ -82,7 +82,7 @@ const Home: NextPage = () => (
                 <a
                   href={`#${recommendationCategoryId}`}
                   id={recommendationCategoryId}
-                  className="cool-black no-underline sticky pv3 ph-gutter top-0 break-word fw3 lh-static f6 db"
+                  className="cool-black no-underline sticky pv3 ph-gutter top-0 break-word lh-static f6 db"
                 >
                   {key}
                 </a>
