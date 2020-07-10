@@ -24,11 +24,11 @@ const Home: NextPage = () => (
       <div className="bg-white pt4 pb3 flex flex-column">
         <div className="mw-grid w-100 ml-auto flex flex-column">
           <span className="fw9 ph-gutter f2 i lh-solid">CA</span>
-          <span className="fw6 ph-gutter f6 tracked-tight">March 3, 2020</span>
+          <span className="fw6 ph-gutter f6">March 3, 2020</span>
         </div>
       </div>
       <div className="pt4 pb3 ph-gutter flex flex-column mw-grid">
-        <span className="f6 tracked-tight white lh-static">
+        <span className="f6 white lh-static">
           A mobile-friendly version of the{" "}
           <a
             href="https://www.dsa-la.org/2020_primary_voter_guide"
@@ -39,7 +39,8 @@ const Home: NextPage = () => (
           . Great for bringing to the polls and using as a reference while
           voting.
         </span>
-        <span className="f6 tracked-tight white lh-static mt3">
+
+        <span className="f6 white lh-static mt3">
           Want to get emailed a new voter guide every election?{" "}
           <a
             href="https://tinyletter.com/retreat-left"
@@ -50,7 +51,7 @@ const Home: NextPage = () => (
           .
         </span>
 
-        <span className="f6 tracked-tight white lh-static mt3">
+        <span className="f6 white lh-static mt3">
           Source on{" "}
           <a
             className="color-inherit fw6"
@@ -81,14 +82,14 @@ const Home: NextPage = () => (
                 <a
                   href={`#${recommendationCategoryId}`}
                   id={recommendationCategoryId}
-                  className="cool-black no-underline sticky pv3 ph-gutter tracked-tight top-0 break-word lh-static f6 db"
+                  className="cool-black no-underline sticky pv3 ph-gutter top-0 break-word fw3 lh-static f6 db"
                 >
                   {key}
                 </a>
               </div>
             </div>
 
-            <div className="white pv3 ph-gutter flex flex-column lh-static mw-grid">
+            <div className="white pv3 ph-gutter flex flex-column lh-static measure">
               {value.map(({ title, subtitle, desc, link }, i) => (
                 <details
                   key={title + subtitle}
@@ -97,9 +98,9 @@ const Home: NextPage = () => (
                   <summary className="flex flex-column">
                     <div className="flex flex-column items-start">
                       {subtitle && <span className="flex f6">{subtitle}</span>}
-                      <span className="tracked-tight fw6">{title}</span>
+                      <span className="fw6">{title}</span>
                       {title === "Bernie Sanders" && (
-                        <div className="mv1 w-100 aspect-ratio-bernie">
+                        <div className="mv1 w-100 aspect-ratio-bernie mw-bernie">
                           <img
                             alt=""
                             className="absolute absolute--fill"
@@ -107,7 +108,7 @@ const Home: NextPage = () => (
                           />
                         </div>
                       )}
-                      <span className="f7 ph2 mt1 br-pill ba b--solid lh-copy ttu tracked-tight open-bg-white open-cool-black open-b--white">
+                      <span className="f7 ph2 mt1 br-pill ba b--solid lh-copy ttu open-bg-white open-cool-black open-b--white">
                         Info
                       </span>
                     </div>
@@ -117,7 +118,7 @@ const Home: NextPage = () => (
                     desc.map((paragraph, j, { length }) => (
                       <span
                         key={key + j}
-                        className="db f6 tj tracked-tight mt1 ti4"
+                        className="db f6 tj mt1 ti4"
                       >
                         {paragraph}
                         {j === length - 1 && (
@@ -132,7 +133,7 @@ const Home: NextPage = () => (
                       </span>
                     ))
                   ) : (
-                    <span className="db f6 tj tracked-tight mt1">
+                    <span className="db f6 tj mt1">
                       [
                       <a className="color-inherit fw6" href={link}>
                         Source
