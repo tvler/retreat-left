@@ -70,7 +70,7 @@ const Home: NextPage = () => {
 
           {selectedHeaderItem === "about" && (
             <>
-              <span className="f6 white lh-copy">
+              <span className="f6 white lh-static">
                 A mobile-friendly version of the{" "}
                 <a
                   href="https://www.dsa-la.org/2020_primary_voter_guide"
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
                 voting.
               </span>
 
-              <span className="f6 white lh-copy mt2">
+              <span className="f6 white lh-static mt2">
                 Want to get emailed a new voter guide every election?{" "}
                 <a
                   href="https://tinyletter.com/retreat-left"
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                 .
               </span>
 
-              <span className="f6 white lh-copy mt2">
+              <span className="f6 white lh-static mt2">
                 Source on{" "}
                 <a
                   className="color-inherit fw6"
