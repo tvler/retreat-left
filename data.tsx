@@ -9,10 +9,20 @@ type Recommendation = Readonly<{
 
 type RecommendationCategory = string;
 
-export const data: ReadonlyArray<[
+export const filterableRecommendationCategories = new Set([
+  "House of Representatives",
+  "State Senate",
+  "State Assembly",
+  "LA City Council",
+  "LA Unified School District",
+  "LA County Supervisor",
+  "Judge of the Superior Court",
+]);
+
+export const data: Map<
   RecommendationCategory,
   ReadonlyArray<Recommendation>
-]> = [
+> = new Map([
   [
     "President of the United States",
     [
@@ -833,4 +843,4 @@ export const data: ReadonlyArray<[
       },
     ],
   ],
-];
+]);

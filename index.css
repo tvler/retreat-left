@@ -9,6 +9,10 @@
   cursor: default;
 }
 
+.touch-action-manipulation {
+  touch-action: manipulation;
+}
+
 .sticky {
   position: sticky;
 }
@@ -77,15 +81,6 @@
 
 .break-word {
   overflow-wrap: break-word;
-}
-
-.details-indicator::before {
-  display: inline;
-  content: "";
-}
-
-details:not([open]) .details-indicator::before {
-  content: attr(data-closed);
 }
 
 details[open] .open-bg-white {

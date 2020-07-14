@@ -2,12 +2,14 @@ import React, { Fragment, useState } from "react";
 import Head from "next/head";
 import { NextPage } from "next";
 
-import { data } from "../data";
+import { data, filterableRecommendationCategories } from "../data";
 
 const Home: NextPage = () => {
   const [selectedHeaderItem, setSelectedHeaderItem] = useState<
     null | "about" | "filter"
   >(null);
+
+  const [filter, setFilter] = useState<Record<string, string | null>>({});
 
   return (
     <>
@@ -26,15 +28,15 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="grid">
-        <div className="bg-white pt4 pb3 flex flex-column">
+        <div className="bg-white pt4 pb3 flex">
           <div className="mw-grid w-100 ml-auto flex flex-column">
             <span className="fw5 ph-gutter f5 lh-title fw8">Los Angeles</span>
-            <span className="fw5 ph-gutter f6 lh-title fw6">Nov 3, 2020</span>
+            <span className="fw5 ph-gutter f6 lh-title fw6">March 8, 2020</span>
           </div>
         </div>
 
         <div className="pt4 pb3 ph-gutter flex measure items-start flex-column">
-          <div className="flex mb2">
+          <div className="flex">
             <button
               onClick={() => {
                 setSelectedHeaderItem(
@@ -45,7 +47,7 @@ const Home: NextPage = () => {
                 (selectedHeaderItem === "about"
                   ? "bg-white cool-black"
                   : "bg-cool-black white") +
-                " outline-none-focus b--white f5 ph2 mt1 br-pill ba b--solid lh-copy ttu"
+                " outline-none-focus b--white f6 ph2 br-pill ba b--solid lh-copy ttu touch-action-manipulation"
               }
             >
               About
@@ -61,7 +63,7 @@ const Home: NextPage = () => {
                 (selectedHeaderItem === "filter"
                   ? "bg-white cool-black"
                   : "bg-cool-black white") +
-                " ml2 outline-none-focus b--white f5 ph2 mt1 br-pill ba b--solid lh-copy ttu"
+                " ml2 outline-none-focus b--white f6 ph2 br-pill ba b--solid lh-copy ttu touch-action-manipulation"
               }
             >
               Filter +
@@ -70,7 +72,7 @@ const Home: NextPage = () => {
 
           {selectedHeaderItem === "about" && (
             <>
-              <span className="f6 white lh-static">
+              <span className="white lh-title mt3">
                 A mobile-friendly version of the{" "}
                 <a
                   href="https://www.dsa-la.org/2020_primary_voter_guide"
@@ -82,7 +84,7 @@ const Home: NextPage = () => {
                 voting.
               </span>
 
-              <span className="f6 white lh-static mt2">
+              <span className="white lh-title mt3">
                 Want to get emailed a new voter guide every election?{" "}
                 <a
                   href="https://tinyletter.com/retreat-left"
@@ -93,7 +95,11 @@ const Home: NextPage = () => {
                 .
               </span>
 
-              <span className="f6 white lh-static mt2">
+              <span className="white lh-title mt3">
+                This site does not track you.
+              </span>
+
+              <span className="white lh-title mt3">
                 Source on{" "}
                 <a
                   className="color-inherit fw6"
@@ -112,16 +118,55 @@ const Home: NextPage = () => {
               </span>
             </>
           )}
+
+          {selectedHeaderItem === "filter" &&
+            Array.from(data).map(([category, values]) => {
+              if (!filterableRecommendationCategories.has(category)) {
+                return null;
+              }
+
+              return (
+                <div key={category} className="mt3 lh-title relative f5">
+                  <select
+                    value={filter[category] || "All"}
+                    className="absolute absolute--fill f5 w-100 h-100 o-0"
+                    onChange={({ target: { value } }) => {
+                      setFilter({
+                        ...filter,
+                        [category]: value === "All" ? null : value,
+                      });
+                    }}
+                  >
+                    <option disabled={true}>{category}</option>
+
+                    <option value="All">All</option>
+
+                    {values.map((value) => {
+                      return (
+                        <option key={value.subtitle} value={value.subtitle}>
+                          {value.subtitle}
+                        </option>
+                      );
+                    })}
+                  </select>
+
+                  <span className="white">{category}: </span>
+                  <span className="fw7 underline white">
+                    {filter[category] || "All"}
+                  </span>
+                </div>
+              );
+            })}
         </div>
 
-        {data.map(([key, value], i) => {
+        {Array.from(data).map(([key, value], i) => {
           const recommendationCategoryId = encodeURIComponent(
             key.replace(/\s+/g, "-").toLowerCase()
           );
 
           return (
             <Fragment key={key}>
-              <div className="bg-white flex flex-column">
+              <div className="bg-white flex">
                 {!!i && (
                   <div className="white mix-blend-mode-diff absolute left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
                 )}
@@ -129,7 +174,7 @@ const Home: NextPage = () => {
                   <a
                     href={`#${recommendationCategoryId}`}
                     id={recommendationCategoryId}
-                    className="cool-black no-underline sticky pv3 ph-gutter top-0 break-word lh-static f6 db"
+                    className="cool-black no-underline sticky pv3 ph-gutter top-0 break-word lh-static f6 db outline-none-focus"
                   >
                     {key}
                   </a>
