@@ -125,28 +125,39 @@ const Home: NextPage = () => {
                 return null;
               }
 
+              const allValue = "All";
+              const filterValue = filter[category] || allValue;
+
               return (
                 <div
                   key={category}
                   className="mt3 lh-copy relative f6 bg-white-15 br3 pv1 ph2"
                 >
                   <select
-                    value={filter[category] || "All"}
+                    value={filterValue}
                     className="absolute absolute--fill f5 w-100 h-100 o-0 input-reset"
-                    onChange={({ target: { value } }) => {
+                    onChange={(ev) => {
                       setFilter({
                         ...filter,
-                        [category]: value === "All" ? null : value,
+                        [category]:
+                          ev.target.value === allValue ? null : ev.target.value,
                       });
                     }}
                   >
                     <option disabled={true}>{category}</option>
 
-                    <option value="All">All</option>
+                    <option value={allValue}>All</option>
 
                     {values.map((value) => {
+                      if (!value.subtitle) {
+                        return null;
+                      }
+
                       return (
-                        <option key={value.subtitle} value={value.subtitle}>
+                        <option
+                          key={category + value.subtitle}
+                          value={value.subtitle}
+                        >
                           {value.subtitle}
                         </option>
                       );
@@ -154,7 +165,7 @@ const Home: NextPage = () => {
                   </select>
 
                   <span className="white">{category}: </span>
-                  <span className="fw7 white">{filter[category] || "All"}</span>
+                  <span className="fw7 white">{filterValue}</span>
                 </div>
               );
             })}
