@@ -47,7 +47,7 @@ const Home: NextPage = () => {
                 (selectedHeaderItem === "about"
                   ? "bg-white cool-black"
                   : "bg-cool-black white") +
-                " outline-none-focus b--white f6 ph2 br-pill ba b--solid lh-copy ttu touch-action-manipulation"
+                " outline-none-focus input-reset b--white f6 ph2 pv1 br4 ba b--solid lh-title ttu touch-action-manipulation"
               }
             >
               About
@@ -63,10 +63,10 @@ const Home: NextPage = () => {
                 (selectedHeaderItem === "filter"
                   ? "bg-white cool-black"
                   : "bg-cool-black white") +
-                " ml2 outline-none-focus b--white f6 ph2 br-pill ba b--solid lh-copy ttu touch-action-manipulation"
+                " ml2 outline-none-focus input-reset b--white f6 ph2 pv1 br4 ba b--solid lh-title ttu touch-action-manipulation"
               }
             >
-              Filter +
+              Filter
             </button>
           </div>
 
@@ -126,10 +126,13 @@ const Home: NextPage = () => {
               }
 
               return (
-                <div key={category} className="mt3 lh-title relative f5">
+                <div
+                  key={category}
+                  className="mt3 lh-copy relative f6 bg-white-15 br3 pv1 ph2"
+                >
                   <select
                     value={filter[category] || "All"}
-                    className="absolute absolute--fill f5 w-100 h-100 o-0"
+                    className="absolute absolute--fill f5 w-100 h-100 o-0 input-reset"
                     onChange={({ target: { value } }) => {
                       setFilter({
                         ...filter,
@@ -151,9 +154,7 @@ const Home: NextPage = () => {
                   </select>
 
                   <span className="white">{category}: </span>
-                  <span className="fw7 underline white">
-                    {filter[category] || "All"}
-                  </span>
+                  <span className="fw7 white">{filter[category] || "All"}</span>
                 </div>
               );
             })}

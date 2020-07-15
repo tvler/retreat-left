@@ -17,6 +17,10 @@
   position: sticky;
 }
 
+.bg-white-15 {
+  background-color: hsla(0, 0%, 100%, 0.13);
+}
+
 .cool-black {
   color: var(--cool-black);
 }
