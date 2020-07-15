@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     null | "about" | "filter"
   >(null);
 
-  const [filter, setFilter] = useState<Record<string, string | null>>({});
+  const [filter, setFilter] = useState<Record<string, string | undefined>>({});
 
   return (
     <>
@@ -140,7 +140,9 @@ const Home: NextPage = () => {
                       setFilter({
                         ...filter,
                         [category]:
-                          ev.target.value === allValue ? null : ev.target.value,
+                          ev.target.value === allValue
+                            ? undefined
+                            : ev.target.value,
                       });
                     }}
                   >
