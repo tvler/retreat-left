@@ -32,12 +32,16 @@ const useFilter = (
       delete newFilter[category];
     }
 
-    router.replace({ pathname: router.pathname, query: newFilter });
+    router.replace({ pathname: router.pathname, query: newFilter }, undefined, {
+      shallow: true,
+    });
     setFilterWithoutUrlEvent(newFilter);
   };
 
   const resetFilter = () => {
-    router.replace({ pathname: router.pathname, query: {} });
+    router.replace({ pathname: router.pathname, query: {} }, undefined, {
+      shallow: true,
+    });
     setFilterWithoutUrlEvent({});
   };
 
@@ -55,7 +59,7 @@ const Home: NextPage<InferGetServerSidePropsType<
 >> = ({ initialFilter }) => {
   const { filter, setFilter, resetFilter } = useFilter(initialFilter);
 
-  const hasFilters = !!Object.keys(initialFilter).length;
+  const hasFilters = !!Object.keys(filter).length;
 
   const [selectedHeaderItem, setSelectedHeaderItem] = useState<
     null | "about" | "filter"
