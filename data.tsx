@@ -19,10 +19,10 @@ export const filterableRecommendationCategories = new Set([
   "Judge of the Superior Court",
 ]);
 
-export const data: Map<
+export const data: ReadonlyArray<[
   RecommendationCategory,
   ReadonlyArray<Recommendation>
-> = new Map([
+]> = [
   [
     "President of the United States",
     [
@@ -843,4 +843,4 @@ export const data: Map<
       },
     ],
   ],
-]);
+];

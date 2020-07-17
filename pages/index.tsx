@@ -18,9 +18,20 @@ type Props = {
 
 const useFilter = (
   initialFilter: Filter
-): { filter: Filter; setFilter: SetFilter; resetFilter: () => void } => {
+): {
+  filter: Readonly<Filter>;
+  setFilter: SetFilter;
+  resetFilter: () => void;
+} => {
   const router = useRouter();
   const [filter, setFilterWithoutUrlEvent] = useState<Filter>(initialFilter);
+
+  const setFilterWithUrlEvent = (filter: Filter) => {
+    router.replace({ pathname: router.pathname, query: filter }, undefined, {
+      shallow: true,
+    });
+    setFilterWithoutUrlEvent(filter);
+  };
 
   const setFilter: SetFilter = (category, value) => {
     const newFilter: Filter = { ...filter };
@@ -31,17 +42,11 @@ const useFilter = (
       delete newFilter[category];
     }
 
-    router.replace({ pathname: router.pathname, query: newFilter }, undefined, {
-      shallow: true,
-    });
-    setFilterWithoutUrlEvent(newFilter);
+    setFilterWithUrlEvent(newFilter);
   };
 
   const resetFilter = () => {
-    router.replace({ pathname: router.pathname, query: {} }, undefined, {
-      shallow: true,
-    });
-    setFilterWithoutUrlEvent({});
+    setFilterWithUrlEvent({});
   };
 
   return { filter, setFilter, resetFilter };
