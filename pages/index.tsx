@@ -115,7 +115,7 @@ const Home: NextPage<InferGetServerSidePropsType<
 
         {selectedHeaderItem === "about" && (
           <>
-            <span className="white lh-title mt3">
+            <span className="white lh-static f6 mt3">
               A mobile-friendly version of the{" "}
               <a
                 href="https://www.dsa-la.org/2020_primary_voter_guide"
@@ -127,7 +127,7 @@ const Home: NextPage<InferGetServerSidePropsType<
               voting.
             </span>
 
-            <span className="white lh-title mt3">
+            <span className="white lh-static f6 mt3">
               Want to get emailed a new voter guide every election?{" "}
               <a
                 href="https://tinyletter.com/retreat-left"
@@ -138,11 +138,11 @@ const Home: NextPage<InferGetServerSidePropsType<
               .
             </span>
 
-            <span className="white lh-title mt3">
+            <span className="white lh-static f6 mt3">
               This site does not track you.
             </span>
 
-            <span className="white lh-title mt3">
+            <span className="white lh-static f6 mt3">
               Source on{" "}
               <a
                 className="color-inherit fw6"
