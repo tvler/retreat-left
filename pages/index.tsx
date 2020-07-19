@@ -67,7 +67,7 @@ const Home: NextPage<InferGetServerSidePropsType<
 
   const [selectedHeaderItem, setSelectedHeaderItem] = useState<
     null | "about" | "filter"
-  >(hasFilters ? "filter" : null);
+  >("filter");
 
   return (
     <div className="grid">
@@ -164,7 +164,7 @@ const Home: NextPage<InferGetServerSidePropsType<
 
         {selectedHeaderItem === "filter" && (
           <>
-            {Array.from(data).map(([category, values]) => {
+            {data.map(([category, values]) => {
               if (!filterableRecommendationCategories.has(category)) {
                 return null;
               }
@@ -227,7 +227,7 @@ const Home: NextPage<InferGetServerSidePropsType<
         )}
       </div>
 
-      {Array.from(data).map(([category, options], i) => {
+      {data.map(([category, options], i) => {
         const recommendationCategoryId = encodeURIComponent(
           category.replace(/\s+/g, "-").toLowerCase()
         );
