@@ -239,14 +239,10 @@ const Home: NextPage<InferGetServerSidePropsType<
                 <div className="white mix-blend-mode-diff absolute left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
               )}
               <div className="mw-grid ml-auto w-100 flex-grow-1">
-                <a
-                  href={`#${recommendationCategoryId}`}
-                  id={recommendationCategoryId}
-                  className="scroll-bahavior-smooth cool-black no-underline sticky pv3 ph-gutter top-0 break-word lh-static f6 db outline-none-focus flex flex-column"
-                >
+                <span className="sticky pv3 ph-gutter top-0 break-word lh-static f6 flex flex-column">
                   <span>{category}</span>
                   {filter[category] && <span className="f7">(Filtered)</span>}
-                </a>
+                </span>
               </div>
             </div>
 
