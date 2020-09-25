@@ -12,10 +12,6 @@ type Filter = Record<string, string | string[] | undefined>;
 
 type SetFilter = (category: string, value: string | undefined) => void;
 
-type Props = {
-  initialFilter: Filter;
-};
-
 const useFilter = (
   initialFilter: Filter
 ): {
@@ -52,9 +48,9 @@ const useFilter = (
   return { filter, setFilter, resetFilter };
 };
 
-export const getServerSideProps: GetServerSideProps<Props> = async (
-  context
-) => ({
+export const getServerSideProps: GetServerSideProps<{
+  initialFilter: Filter;
+}> = async (context) => ({
   props: { initialFilter: context.query },
 });
 
@@ -218,7 +214,7 @@ const Home: NextPage<InferGetServerSidePropsType<
             {hasFilters && (
               <button
                 onClick={resetFilter}
-                className="mt3 bg-cool-black white outline-none-focus input-reset b--white f7 ph2 pv1 br4 ba b--solid lh-title ttu touch-action-manipulation"
+                className="mt3 bg-cool-black white outline-none-focus input-reset b--white f6 ph2 pv1 br4 ba b--solid lh-title ttu touch-action-manipulation"
               >
                 Reset filter
               </button>
@@ -227,86 +223,78 @@ const Home: NextPage<InferGetServerSidePropsType<
         )}
       </div>
 
-      {data.map(([category, options], i) => {
-        const recommendationCategoryId = encodeURIComponent(
-          category.replace(/\s+/g, "-").toLowerCase()
-        );
-
-        return (
-          <Fragment key={category}>
-            <div className="bg-white flex">
-              {!!i && (
-                <div className="white mix-blend-mode-diff absolute left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
-              )}
-              <div className="mw-grid ml-auto w-100 flex-grow-1">
-                <span className="sticky pv3 ph-gutter top-0 break-word lh-static f6 flex flex-column">
-                  <span>{category}</span>
-                  {filter[category] && <span className="f7">(Filtered)</span>}
-                </span>
-              </div>
+      {data.map(([category, options], i) => (
+        <Fragment key={category}>
+          <div className="bg-white flex">
+            {!!i && (
+              <div className="white mix-blend-mode-diff absolute left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
+            )}
+            <div className="mw-grid ml-auto w-100 flex-grow-1">
+              <span className="sticky pv3 ph-gutter top-0 break-word lh-static f6 flex flex-column">
+                <span>{category}</span>
+                {filter[category] && <span className="f7">(Filtered)</span>}
+              </span>
             </div>
+          </div>
 
-            <div className="white pv3 ph-gutter flex flex-column lh-static measure">
-              {options
-                .filter((option) =>
-                  filter[category] ? filter[category] === option.subtitle : true
-                )
-                .map(({ title, subtitle, desc, link }, i) => (
-                  <details
-                    key={title + subtitle}
-                    className={"details-reset" + (i ? " mt4" : "")}
-                  >
-                    <summary className="flex flex-column">
-                      <div className="flex flex-column items-start">
-                        {subtitle && (
-                          <span className="flex f6">{subtitle}</span>
-                        )}
-                        <span className="fw6">{title}</span>
-                        {title === "Bernie Sanders" && (
-                          <div className="mv1 w-100 aspect-ratio-bernie mw-bernie">
-                            <img
-                              alt=""
-                              className="absolute absolute--fill"
-                              src="/bernie.jpg"
-                            />
-                          </div>
-                        )}
-                        <span className="f7 ph2 mt1 br-pill ba b--solid lh-title pv1 ttu open-bg-white open-cool-black open-b--white">
-                          Info
-                        </span>
-                      </div>
-                    </summary>
-
-                    {desc ? (
-                      desc.map((paragraph, j, { length }) => (
-                        <span key={category + j} className="db f6 tj mt1 ti4">
-                          {paragraph}
-                          {j === length - 1 && (
-                            <>
-                              {" ["}
-                              <a className="color-inherit fw6" href={link}>
-                                Source
-                              </a>
-                              {"]"}
-                            </>
-                          )}
-                        </span>
-                      ))
-                    ) : (
-                      <span className="db f6 tj mt1">
-                        [
-                        <a className="color-inherit fw6" href={link}>
-                          Source
-                        </a>
-                        ]
+          <div className="white pv3 ph-gutter flex flex-column lh-static measure">
+            {options
+              .filter((option) =>
+                filter[category] ? filter[category] === option.subtitle : true
+              )
+              .map(({ title, subtitle, desc, link }, i) => (
+                <details
+                  key={title + subtitle}
+                  className={"details-reset" + (i ? " mt4" : "")}
+                >
+                  <summary className="flex flex-column">
+                    <div className="flex flex-column items-start">
+                      {subtitle && <span className="flex f6">{subtitle}</span>}
+                      <span className="fw6">{title}</span>
+                      {title === "Bernie Sanders" && (
+                        <div className="mv1 w-100 aspect-ratio-bernie mw-bernie">
+                          <img
+                            alt=""
+                            className="absolute absolute--fill"
+                            src="/bernie.jpg"
+                          />
+                        </div>
+                      )}
+                      <span className="f7 ph2 mt1 br-pill ba b--solid lh-solid pv1 ttu open-bg-white open-cool-black open-b--white">
+                        Info
                       </span>
-                    )}
-                  </details>
-                ))}
-            </div>
-          </Fragment>
-        );
-      })}
+                    </div>
+                  </summary>
+
+                  {desc ? (
+                    desc.map((paragraph, j, { length }) => (
+                      <span key={category + j} className="db f6 tj mt1 ti4">
+                        {paragraph}
+                        {j === length - 1 && (
+                          <>
+                            {" ["}
+                            <a className="color-inherit fw6" href={link}>
+                              Source
+                            </a>
+                            {"]"}
+                          </>
+                        )}
+                      </span>
+                    ))
+                  ) : (
+                    <span className="db f6 tj mt1">
+                      [
+                      <a className="color-inherit fw6" href={link}>
+                        Source
+                      </a>
+                      ]
+                    </span>
+                  )}
+                </details>
+              ))}
+          </div>
+        </Fragment>
+      ))}
     </div>
   );
 };
