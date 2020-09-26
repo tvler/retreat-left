@@ -24,7 +24,7 @@ export const data: ReadonlyArray<[
   ReadonlyArray<Recommendation>
 ]> = [
   [
-    "President of the United States",
+    "POTUS",
     [
       {
         title: "Bernie Sanders",
@@ -37,7 +37,7 @@ export const data: ReadonlyArray<[
     ],
   ],
   [
-    "House of Representatives",
+    "House of Rep’s",
     [
       {
         subtitle: "Dist. 23",
