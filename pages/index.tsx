@@ -7,7 +7,6 @@ import {
 } from "next";
 
 import { data, filterableRecommendationCategories } from "../data";
-import { info } from "console";
 
 type Filter = Record<string, string | string[] | undefined>;
 
@@ -228,111 +227,109 @@ const Home: NextPage<InferGetServerSidePropsType<
         )}
       </div>
 
-      {data.map(([category, options], i) => {
-        return (
-          <Fragment key={category}>
-            <div className="bg-white flex">
-              {!!i && (
-                <div className="white mix-blend-mode-diff absolute left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
-              )}
-              <div className="mw-grid ml-auto w-100 flex-grow-1">
-                <span className="sticky pv3 ph-gutter top-0 break-word lh-static f6 flex flex-column">
-                  <span id={category.split(" ").join("-").toLowerCase()}>
-                    {category}
-                  </span>
-                  {filter[category] && <span className="f7">(Filtered)</span>}
+      {data.map(([category, options], i) => (
+        <Fragment key={category}>
+          <div className="bg-white flex">
+            {!!i && (
+              <div className="white mix-blend-mode-diff absolute left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
+            )}
+            <div className="mw-grid ml-auto w-100 flex-grow-1">
+              <span className="sticky pv3 ph-gutter top-0 break-word lh-static f6 flex flex-column">
+                <span id={category.split(" ").join("-").toLowerCase()}>
+                  {category}
                 </span>
-              </div>
+                {filter[category] && <span className="f7">(Filtered)</span>}
+              </span>
             </div>
+          </div>
 
-            <div className="white pv3 ph-gutter flex flex-column lh-static measure">
-              {options
-                .filter((option) =>
-                  filter[category] ? filter[category] === option.subtitle : true
-                )
-                .map(({ title, subtitle, desc, link }, i) => {
-                  const infoId = [category, title, subtitle]
-                    .join("-")
-                    .split(" ")
-                    .join("-")
-                    .replace(/\./g, "")
-                    .toLowerCase();
-                  const historyTitle = [
-                    "Retreat Left |",
-                    category,
-                    title,
-                    subtitle,
-                  ].join(" ");
-                  return (
-                    <details
-                      key={title + subtitle}
-                      className={"details-reset" + (i ? " mt4" : "")}
+          <div className="white pv3 ph-gutter flex flex-column lh-static measure">
+            {options
+              .filter((option) =>
+                filter[category] ? filter[category] === option.subtitle : true
+              )
+              .map(({ title, subtitle, desc, link }, i) => {
+                const infoId = [category, title, subtitle]
+                  .join("-")
+                  .split(" ")
+                  .join("-")
+                  .replace(/\./g, "")
+                  .toLowerCase();
+                const historyTitle = [
+                  "Retreat Left |",
+                  category,
+                  title,
+                  subtitle,
+                ].join(" ");
+                return (
+                  <details
+                    key={title + subtitle}
+                    className={"details-reset" + (i ? " mt4" : "")}
+                  >
+                    <summary
+                      id={infoId}
+                      className="flex flex-column"
+                      onClick={(e) =>
+                        history.replaceState(
+                          {},
+                          historyTitle,
+                          (e.currentTarget?.parentElement as HTMLDetailsElement)
+                            .open
+                            ? `/${queryString}`
+                            : `/${queryString}#${infoId}`
+                        )
+                      }
                     >
-                      <summary
-                        id={infoId}
-                        className="flex flex-column"
-                        onClick={(e) =>
-                          history.replaceState(
-                            {},
-                            historyTitle,
-                            (e.currentTarget
-                              ?.parentElement as HTMLDetailsElement).open
-                              ? `/${queryString}`
-                              : `/${queryString}#${infoId}`
-                          )
-                        }
-                      >
-                        <div className="flex flex-column items-start">
-                          {subtitle && (
-                            <span className="flex f6">{subtitle}</span>
-                          )}
-                          <span className="fw6">{title}</span>
-                          {title === "Bernie Sanders" && (
-                            <div className="mv1 w-100 aspect-ratio-bernie mw-bernie">
-                              <img
-                                alt=""
-                                className="absolute absolute--fill"
-                                src="/bernie.jpg"
-                              />
-                            </div>
-                          )}
-                          <span className="f7 ph2 mt1 br-pill ba b--solid lh-solid pv1 ttu open-bg-white open-cool-black open-b--white">
-                            Info
-                          </span>
-                        </div>
-                      </summary>
-
-                      {desc ? (
-                        desc.map((paragraph, j, { length }) => (
-                          <span key={category + j} className="db f6 tj mt1 ti4">
-                            {paragraph}
-                            {j === length - 1 && (
-                              <>
-                                {" ["}
-                                <a className="color-inherit fw6" href={link}>
-                                  Source
-                                </a>
-                                {"]"}
-                              </>
-                            )}
-                          </span>
-                        ))
-                      ) : (
-                        <span className="db f6 tj mt1">
-                          [
-                          <a className="color-inherit fw6" href={link}>
-                            Source
-                          </a>
-                          ]
+                      <div className="flex flex-column items-start">
+                        {subtitle && (
+                          <span className="flex f6">{subtitle}</span>
+                        )}
+                        <span className="fw6">{title}</span>
+                        {title === "Bernie Sanders" && (
+                          <div className="mv1 w-100 aspect-ratio-bernie mw-bernie">
+                            <img
+                              alt=""
+                              className="absolute absolute--fill"
+                              src="/bernie.jpg"
+                            />
+                          </div>
+                        )}
+                        <span className="f7 ph2 mt1 br-pill ba b--solid lh-solid pv1 ttu open-bg-white open-cool-black open-b--white">
+                          Info
                         </span>
-                      )}
-                    </details>
-                  );
-                })}
-            </div>
-          </Fragment>
-        );
-      })}
+                      </div>
+                    </summary>
+
+                    {desc ? (
+                      desc.map((paragraph, j, { length }) => (
+                        <span key={category + j} className="db f6 tj mt1 ti4">
+                          {paragraph}
+                          {j === length - 1 && (
+                            <>
+                              {" ["}
+                              <a className="color-inherit fw6" href={link}>
+                                Source
+                              </a>
+                              {"]"}
+                            </>
+                          )}
+                        </span>
+                      ))
+                    ) : (
+                      <span className="db f6 tj mt1">
+                        [
+                        <a className="color-inherit fw6" href={link}>
+                          Source
+                        </a>
+                        ]
+                      </span>
+                    )}
+                  </details>
+                );
+              })}
+          </div>
+        </Fragment>
+      ))}
     </div>
   );
 };
