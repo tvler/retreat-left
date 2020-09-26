@@ -3,9 +3,10 @@
   --mw-grid: 375px;
   font-family: "StyreneB", -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  background-color: var(--white);
-  color: var(--black);
+  background-color: white;
+  color: black;
   cursor: default;
+  --gutter-width: 16px;
 }
 
 @font-face {
@@ -60,6 +61,10 @@ hr {
 .info img {
   left: 5px;
   top: -2px;
+}
+
+.page-container {
+  max-width: 680px;
 }
 
 .gray {
@@ -128,20 +133,10 @@ details[open] .title {
 }
 
 /* update with --mw-grid */
-@media (max-width: 749px) {
-  :root {
-    font-size: 16px;
-    --gutter-width: 16px;
-  }
-}
-
 @media (min-width: 750px) {
-  :root {
-    --gutter-width: 24px;
-  }
   .grid {
     grid-template-columns:
       minmax(min-content, 192px)
-      minmax(50%, 600px);
+      minmax(min-content, max-content);
   }
 }

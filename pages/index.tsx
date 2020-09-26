@@ -67,96 +67,107 @@ const Home: NextPage<InferGetServerSidePropsType<
 
   return (
     <>
-      <div className="mw-grid w-100 flex flex-column ph-gutter">
-        <img
-          alt="DSA logo"
-          src="/logo@2x.png"
-          className="pt5 pb3"
-          width="64"
-          height="64"
-        />
-        <span className="f1 fw7">
-          DSA
-          <br />
-          Voter
-          <br />
-          Guide
-        </span>
-        <span className="f4 fw7  lh-copy pt3">
-          Nov ‘20 General Election
-          <br />
-          Los Angeles County
-        </span>
-        <span className="f6 pv3 pr4 pr0-ns lh-copy">
-          Endorsements (<span className="red fw7">*</span>) and recommendations
-          by the <a href="https://www.dsausa.org/">DSA</a>. Want a new Los
-          Angeles County voter guide every election?{" "}
-          <a href="https://tinyletter.com/retreat-left">Subscribe</a>.
-        </span>
-      </div>
-      <div className="grid">
-        {data.map(([category, options], i) => (
-          <Fragment key={category}>
-            <div className="flex">
-              <div className="mw-grid ml-auto w-100 flex-grow-1">
-                <hr className="ml3 mt3 mb0" />
-                <span className="sticky pt3 ttu top-0 break-word lh-static f7 fw7 flex flex-column">
-                  <span className="pl3">{category}</span>
-                </span>
+      <div className="page-container center pb6">
+        <div className="mw-grid w-100 flex flex-column ph-gutter pb0 pb3-ns">
+          <img
+            alt="DSA logo"
+            src="/logo@2x.png"
+            className="pt5 pb3 pb4-ns"
+            width="64"
+            height="64"
+          />
+          <span className="f1 fw7">
+            DSA
+            <br />
+            Voter
+            <br />
+            Guide
+          </span>
+          <span className="f4 fw7  lh-copy pt3">
+            Nov ‘20 General Election
+            <br />
+            Los Angeles County
+          </span>
+          <span className="f6 pv3 pr4 pr0-ns lh-copy">
+            Endorsements (<span className="red fw7">*</span>) and
+            recommendations by the <a href="https://www.dsausa.org/">DSA</a>.
+            Want a new Los Angeles County voter guide every election?{" "}
+            <a href="https://tinyletter.com/retreat-left">Subscribe</a>.
+          </span>
+        </div>
+        <div className="grid">
+          {data.map(([category, options], i) => (
+            <Fragment key={category}>
+              <div className="flex">
+                <div className="mw-grid ml-auto w-100 flex-grow-1">
+                  <hr className="ml3 mt3 mb0" />
+                  <span className="sticky pt3 ttu top-0 break-word lh-static f7 fw7 flex flex-column">
+                    <span className="pl3 pr0 pr3-ns">{category}</span>
+                  </span>
+                </div>
               </div>
-            </div>
 
-            <div className="pv3 pr3 flex flex-column lh-static measure">
-              <div className="hr-container">
-                <hr className="mt0 mb3" />
+              <div className="pv3 pr3 flex flex-column lh-static">
+                <div className="hr-container">
+                  <hr className="mt0 mb3" />
+                </div>
+                {options
+                  .filter((option) =>
+                    filter[category]
+                      ? filter[category] === option.subtitle
+                      : true
+                  )
+                  .map(({ title, subtitle, desc, link }, i) => (
+                    <details
+                      key={title + subtitle}
+                      className={"details-reset" + (i ? " mt3" : "")}
+                    >
+                      <summary className="flex flex-column">
+                        <div className="flex flex-column items-start pointer">
+                          <span className="fw6 title">
+                            {title}
+                            <span className="info dib br-100">
+                              <img
+                                className="relative"
+                                alt="Info"
+                                src="/i.svg"
+                              />
+                            </span>
+                          </span>
+
+                          {subtitle && (
+                            <span className="flex f7 pt1 lh-solid gray">
+                              {subtitle}
+                            </span>
+                          )}
+                        </div>
+                      </summary>
+
+                      {desc ? (
+                        desc.map((paragraph, j, { length }) => (
+                          <span
+                            key={category + j}
+                            className="db f6 mt2 lh-copy"
+                          >
+                            {paragraph}
+                            {j === length - 1 && <a href={link}> [source]</a>}
+                          </span>
+                        ))
+                      ) : (
+                        <span className="db f6 mt1">
+                          [
+                          <a className="color-inherit fw6" href={link}>
+                            Source
+                          </a>
+                          ]
+                        </span>
+                      )}
+                    </details>
+                  ))}
               </div>
-              {options
-                .filter((option) =>
-                  filter[category] ? filter[category] === option.subtitle : true
-                )
-                .map(({ title, subtitle, desc, link }, i) => (
-                  <details
-                    key={title + subtitle}
-                    className={"details-reset" + (i ? " mt3" : "")}
-                  >
-                    <summary className="flex flex-column">
-                      <div className="flex flex-column items-start pointer">
-                        <span className="fw6 title">
-                          {title}
-                          <span className="info dib br-100">
-                            <img className="relative" alt="Info" src="/i.svg" />
-                          </span>
-                        </span>
-
-                        {subtitle && (
-                          <span className="flex f7 pt1 lh-solid gray">
-                            {subtitle}
-                          </span>
-                        )}
-                      </div>
-                    </summary>
-
-                    {desc ? (
-                      desc.map((paragraph, j, { length }) => (
-                        <span key={category + j} className="db f6 mt2 lh-copy">
-                          {paragraph}
-                          {j === length - 1 && <a href={link}> [source]</a>}
-                        </span>
-                      ))
-                    ) : (
-                      <span className="db f6 mt1">
-                        [
-                        <a className="color-inherit fw6" href={link}>
-                          Source
-                        </a>
-                        ]
-                      </span>
-                    )}
-                  </details>
-                ))}
-            </div>
-          </Fragment>
-        ))}
+            </Fragment>
+          ))}
+        </div>
       </div>
     </>
   );
