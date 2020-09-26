@@ -67,7 +67,7 @@ const Home: NextPage<InferGetServerSidePropsType<
 
   return (
     <>
-      <div className="page-container center pb6">
+      <div className="page-container center pb6-ns pb5">
         <div className="mw-grid w-100 flex flex-column ph-gutter pb0 pb3-ns">
           <img
             alt="DSA logo"
@@ -167,6 +167,15 @@ const Home: NextPage<InferGetServerSidePropsType<
               </div>
             </Fragment>
           ))}
+        </div>
+        <div className="w-100 flex flex-column ph-gutter pt4">
+          <span className="f7 lh-copy gray bt b--light-gray pt3 pr0-ns pr4">
+            This site does not track you. Built in LA by{" "}
+            <a href="https://www.tylerdeitz.com/">Tyler</a> and friends. Source
+            on <a href="https://github.com/tvler/retreat-left">GitHub</a>. Want
+            to publish a voter guide for your county?{" "}
+            <a href="mailto:tylerdeitz@gmail.com">Get in touch</a>.
+          </span>
         </div>
       </div>
     </>
