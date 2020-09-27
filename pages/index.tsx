@@ -1,70 +1,11 @@
-import React, { Fragment, useEffect, useState } from "react";
+import { Fragment } from "react";
 import { useRouter } from "next/router";
-import {
-  GetServerSideProps,
-  InferGetServerSidePropsType,
-  NextPage,
-} from "next";
+import { NextPage } from "next";
 
-import { data, filterableRecommendationCategories } from "../data";
+import { data } from "../data";
 
-type Filter = Record<string, string | string[] | undefined>;
-
-type SetFilter = (category: string, value: string | undefined) => void;
-
-const useFilter = (
-  initialFilter: Filter
-): {
-  filter: Readonly<Filter>;
-  setFilter: SetFilter;
-  resetFilter: () => void;
-} => {
+const Home: NextPage = () => {
   const router = useRouter();
-  const [filter, setFilterWithoutUrlEvent] = useState<Filter>(initialFilter);
-
-  const setFilterWithUrlEvent = (filter: Filter) => {
-    router.replace({ pathname: router.pathname, query: filter }, undefined, {
-      shallow: true,
-    });
-    setFilterWithoutUrlEvent(filter);
-  };
-
-  const setFilter: SetFilter = (category, value) => {
-    const newFilter: Filter = { ...filter };
-
-    if (value) {
-      newFilter[category] = value;
-    } else {
-      delete newFilter[category];
-    }
-
-    setFilterWithUrlEvent(newFilter);
-  };
-
-  const resetFilter = () => {
-    setFilterWithUrlEvent({});
-  };
-
-  return { filter, setFilter, resetFilter };
-};
-
-export const getServerSideProps: GetServerSideProps<{
-  initialFilter: Filter;
-}> = async (context) => ({
-  props: { initialFilter: context.query },
-});
-
-const Home: NextPage<InferGetServerSidePropsType<
-  typeof getServerSideProps
->> = ({ initialFilter }) => {
-  const router = useRouter();
-  const { filter, setFilter, resetFilter } = useFilter(initialFilter);
-
-  const hasFilters = !!Object.keys(filter).length;
-
-  const [selectedHeaderItem, setSelectedHeaderItem] = useState<
-    null | "about" | "filter"
-  >("filter");
 
   const urlParts = router.asPath.split("?");
   const queryString = urlParts.length > 1 ? "?" + urlParts[1] : "";
@@ -100,7 +41,7 @@ const Home: NextPage<InferGetServerSidePropsType<
           </span>
         </div>
         <div className="grid">
-          {data.map(([category, options], i) => (
+          {data.map(([category, options]) => (
             <Fragment key={category}>
               <div className="flex">
                 <div className="mw-grid ml-auto w-100 flex-grow-1">
@@ -115,86 +56,80 @@ const Home: NextPage<InferGetServerSidePropsType<
                 <div className="hr-container">
                   <hr className="mt0 mb3" />
                 </div>
-                {options
-                  .filter((option) =>
-                    filter[category]
-                      ? filter[category] === option.subtitle
-                      : true
-                  )
-                  .map(({ title, subtitle, desc, link }, i) => {
-                    const infoId = [category, title, subtitle]
-                      .join("-")
-                      .split(" ")
-                      .join("-")
-                      .replace(/\./g, "")
-                      .toLowerCase();
-                    const historyTitle = [
-                      "Retreat Left |",
-                      category,
-                      title,
-                      subtitle,
-                    ].join(" ");
-                    return (
-                      <details
-                        key={title + subtitle}
-                        className={"details-reset" + (i ? " mt3" : "")}
+                {options.map(({ title, subtitle, desc, link }, i) => {
+                  const infoId = [category, title, subtitle]
+                    .join("-")
+                    .split(" ")
+                    .join("-")
+                    .replace(/\./g, "")
+                    .toLowerCase();
+                  const historyTitle = [
+                    "Retreat Left |",
+                    category,
+                    title,
+                    subtitle,
+                  ].join(" ");
+                  return (
+                    <details
+                      key={title + subtitle}
+                      className={"details-reset" + (i ? " mt3" : "")}
+                    >
+                      <summary
+                        id={infoId}
+                        className="flex flex-column"
+                        onClick={(e) =>
+                          history.replaceState(
+                            {},
+                            historyTitle,
+                            (e.currentTarget
+                              ?.parentElement as HTMLDetailsElement).open
+                              ? `/${queryString}`
+                              : `/${queryString}#${infoId}`
+                          )
+                        }
                       >
-                        <summary
-                          id={infoId}
-                          className="flex flex-column"
-                          onClick={(e) =>
-                            history.replaceState(
-                              {},
-                              historyTitle,
-                              (e.currentTarget
-                                ?.parentElement as HTMLDetailsElement).open
-                                ? `/${queryString}`
-                                : `/${queryString}#${infoId}`
-                            )
-                          }
-                        >
-                          <div className="flex flex-column items-start pointer">
-                            <span className="fw6 title">
-                              {title}
-                              <span className="info dib br-100">
-                                <img
-                                  className="relative"
-                                  alt="Info"
-                                  src="/i.svg"
-                                />
-                              </span>
+                        <div className="flex flex-column items-start pointer">
+                          <span className="fw6 title">
+                            {title}
+                            <span className="info dib br-100">
+                              <img
+                                className="relative"
+                                alt="Info"
+                                src="/i.svg"
+                              />
                             </span>
-
-                            {subtitle && (
-                              <span className="flex f7 pt1 lh-solid gray">
-                                {subtitle}
-                              </span>
-                            )}
-                          </div>
-                        </summary>
-
-                        {desc ? (
-                          desc.map((paragraph, j, { length }) => (
-                            <span
-                              key={category + j}
-                              className="db f6 mt2 lh-copy"
-                            >
-                              {paragraph}
-                              {j === length - 1 && <a href={link}> [source]</a>}
-                            </span>
-                          ))
-                        ) : (
-                          <span className="db f6 mt1">
-                            [
-                            <a className="color-inherit fw6" href={link}>
-                              Source
-                            </a>
-                            ]
                           </span>
-                        )}
-                      </details>
-                    );
-                  })}
+
+                          {subtitle && (
+                            <span className="flex f7 pt1 lh-solid gray">
+                              {subtitle}
+                            </span>
+                          )}
+                        </div>
+                      </summary>
+
+                      {desc ? (
+                        desc.map((paragraph, j, { length }) => (
+                          <span
+                            key={category + j}
+                            className="db f6 mt2 lh-copy"
+                          >
+                            {paragraph}
+                            {j === length - 1 && <a href={link}> [source]</a>}
+                          </span>
+                        ))
+                      ) : (
+                        <span className="db f6 mt1">
+                          [
+                          <a className="color-inherit fw6" href={link}>
+                            Source
+                          </a>
+                          ]
+                        </span>
+                      )}
+                    </details>
+                  );
+                })}
               </div>
             </Fragment>
           ))}

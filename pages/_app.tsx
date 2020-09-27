@@ -1,9 +1,25 @@
+import { useEffect } from "react";
 import { AppProps } from "next/app";
 import "tachyons/css/tachyons.min.css";
 import "../index.css";
 import Head from "next/head";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+  // This is a mechanism for not showing focus outlines when using a cursor,
+  // but keeping them visible and accessible when using keyboard nav.
+  useEffect(() => {
+    document.body.addEventListener("mousedown", () => {
+      document.body.classList.add("using-pointer");
+    });
+    document.body.addEventListener("keydown", (e) => {
+      const keyCode = e.keyCode || e.which;
+      // show focus on TAB
+      if (keyCode === 9) {
+        document.body.classList.remove("using-pointer");
+      }
+    });
+  }, []);
+
   return (
     <>
       <Head>
