@@ -26,6 +26,10 @@
     url("/StyreneB-Bold.woff") format("woff");
 }
 
+.using-pointer *:focus {
+  outline: none;
+}
+
 a,
 a:visited {
   color: #eb2128;
@@ -83,10 +87,6 @@ hr {
   position: sticky;
 }
 
-.outline-none-focus:focus {
-  outline: none;
-}
-
 .grid {
   display: grid;
   grid-template-columns:
@@ -100,10 +100,6 @@ hr {
 
 .lh-static {
   line-height: 1.15rem;
-}
-
-.details-reset summary:focus {
-  outline: none;
 }
 
 .details-reset > summary::-webkit-details-marker {
