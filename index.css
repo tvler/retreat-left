@@ -8,13 +8,13 @@
   color: black;
   cursor: default;
   --gutter-width: 16px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @font-face {
   font-family: "StyreneB";
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
   src: url("/StyreneB-Regular.woff2") format("woff2"),
     url("/StyreneB-Regular.woff") format("woff");
 }
@@ -22,7 +22,6 @@
   font-family: "StyreneB";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
   src: url("/StyreneB-Bold.woff2") format("woff2"),
     url("/StyreneB-Bold.woff") format("woff");
 }
