@@ -6,7 +6,7 @@ import {
   NextPage,
 } from "next";
 
-import { data, filterableRecommendationCategories } from "../data";
+import { data } from "../data";
 
 type Filter = Record<string, string | string[] | undefined>;
 
