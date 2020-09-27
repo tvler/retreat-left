@@ -37,10 +37,7 @@ a:visited {
   text-decoration: none;
 }
 
-hr {
-  border: 0px;
-  height: 1px;
-  display: block;
+.dotted-border {
   background-image: linear-gradient(
     to right,
     black 50%,
@@ -49,10 +46,9 @@ hr {
   background-position: top;
   background-size: 2.5px 1px;
   background-repeat: repeat-x;
-}
-
-.hr-container {
-  padding-left: 1px;
+  height: 1px;
+  position: absolute;
+  width: 100%;
 }
 
 .info {
@@ -123,7 +119,13 @@ details[open] img {
   filter: brightness(250%);
 }
 
-.title:hover,
+@media not all and (hover: none) {
+  .underline-pointer-hover:hover {
+    text-decoration: underline;
+  }
+}
+
+/* .title:hover, */
 details[open] .title {
   text-decoration: underline;
 }

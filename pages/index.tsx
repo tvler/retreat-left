@@ -13,6 +13,7 @@ const Home: NextPage = () => {
   return (
     <>
       <div className="page-container center pb6-ns pb5">
+        {/* Header */}
         <div className="mw-grid w-100 flex flex-column ph-gutter pb0 pb3-ns">
           <img
             alt="DSA logo"
@@ -40,22 +41,22 @@ const Home: NextPage = () => {
             <a href="https://tinyletter.com/retreat-left">Subscribe</a>.
           </span>
         </div>
-        <div className="grid">
+
+        {/* Grid */}
+        <div className="grid relative">
           {data.map(([category, options]) => (
             <Fragment key={category}>
-              <div className="flex">
-                <div className="mw-grid ml-auto w-100 flex-grow-1">
-                  <hr className="ml3 mt3 mb0" />
-                  <span className="sticky pt3 ttu top-0 break-word lh-static f7 fw7 flex flex-column">
-                    <span className="pl3 pr0 pr3-ns">{category}</span>
-                  </span>
-                </div>
+              {/* Left */}
+              <div>
+                <div className="dotted-border" />
+
+                <span className="db sticky pt3 ttu top-0 break-word lh-static f7 fw7">
+                  {category}
+                </span>
               </div>
 
+              {/* Right */}
               <div className="pv3 pr3 flex flex-column lh-static">
-                <div className="hr-container">
-                  <hr className="mt0 mb3" />
-                </div>
                 {options.map(({ title, subtitle, desc, link }, i) => {
                   const infoId = [category, title, subtitle]
                     .join("-")
@@ -89,7 +90,7 @@ const Home: NextPage = () => {
                         }
                       >
                         <div className="flex flex-column items-start pointer">
-                          <span className="fw6 title">
+                          <span className="fw6 title underline-pointer-hover">
                             {title}
                             <span className="info dib br-100">
                               <img
@@ -134,6 +135,8 @@ const Home: NextPage = () => {
             </Fragment>
           ))}
         </div>
+
+        {/* Footer */}
         <div className="w-100 flex flex-column ph-gutter pt4">
           <span className="f7 lh-copy gray bt b--light-gray pt3 pr0-ns pr4">
             This site does not track you. Built in LA by{" "}
