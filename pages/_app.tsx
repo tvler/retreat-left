@@ -4,7 +4,7 @@ import "tachyons/css/tachyons.min.css";
 import "../index.css";
 import Head from "next/head";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   // This is a mechanism for not showing focus outlines when using a cursor,
   // but keeping them visible and accessible when using keyboard nav.
   useEffect(() => {
