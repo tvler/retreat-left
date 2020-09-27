@@ -70,267 +70,146 @@ const Home: NextPage<InferGetServerSidePropsType<
   const queryString = urlParts.length > 1 ? "?" + urlParts[1] : "";
 
   return (
-    <div className="grid">
-      <div className="bg-white pt4 pb3 flex">
-        <div className="mw-grid w-100 ml-auto flex flex-column">
-          <span className="fw5 ph-gutter f5 lh-title fw8">Los Angeles</span>
-          <span className="fw5 ph-gutter f6 lh-title fw6">March 8, 2020</span>
+    <>
+      <div className="page-container center pb6-ns pb5">
+        <div className="mw-grid w-100 flex flex-column ph-gutter pb0 pb3-ns">
+          <img
+            alt="DSA logo"
+            src="/logo@2x.png"
+            className="pt5 pb3 pb4-ns"
+            width="64"
+            height="64"
+          />
+          <span className="f1 fw7">
+            DSA
+            <br />
+            Voter
+            <br />
+            Guide
+          </span>
+          <span className="f4 fw7  lh-copy pt3">
+            Nov ‘20 General Election
+            <br />
+            Los Angeles County
+          </span>
+          <span className="f6 pv3 pr4 pr0-ns lh-copy">
+            Endorsements (<span className="red fw7">*</span>) and
+            recommendations by the <a href="https://www.dsausa.org/">DSA</a>.
+            Want a new Los Angeles County voter guide every election?{" "}
+            <a href="https://tinyletter.com/retreat-left">Subscribe</a>.
+          </span>
         </div>
-      </div>
-
-      <div className="pt4 pb3 ph-gutter flex measure items-start flex-column">
-        <div className="flex">
-          <button
-            onClick={() => {
-              setSelectedHeaderItem(
-                selectedHeaderItem === "about" ? null : "about"
-              );
-            }}
-            className={
-              (selectedHeaderItem === "about"
-                ? "bg-white cool-black"
-                : "bg-cool-black white") +
-              " outline-none-focus input-reset b--white f6 ph2 pv1 br4 ba b--solid lh-title ttu touch-action-manipulation"
-            }
-          >
-            About
-          </button>
-
-          <button
-            onClick={() => {
-              setSelectedHeaderItem(
-                selectedHeaderItem === "filter" ? null : "filter"
-              );
-            }}
-            className={
-              (selectedHeaderItem === "filter"
-                ? "bg-white cool-black"
-                : "bg-cool-black white") +
-              " ml2 outline-none-focus input-reset b--white f6 ph2 pv1 br4 ba b--solid lh-title ttu touch-action-manipulation"
-            }
-          >
-            Filter
-          </button>
-        </div>
-
-        {selectedHeaderItem === "about" && (
-          <>
-            <span className="white lh-static f6 mt3">
-              A mobile-friendly version of the{" "}
-              <a
-                href="https://www.dsa-la.org/2020_primary_voter_guide"
-                className="color-inherit fw6"
-              >
-                DSA-LA 2020 voter guide
-              </a>
-              . Great for bringing to the polls and using as a reference while
-              voting.
-            </span>
-
-            <span className="white lh-static f6 mt3">
-              Want to get emailed a new voter guide every election?{" "}
-              <a
-                href="https://tinyletter.com/retreat-left"
-                className="color-inherit fw6"
-              >
-                Subscribe
-              </a>
-              .
-            </span>
-
-            <span className="white lh-static f6 mt3">
-              This site does not track you.
-            </span>
-
-            <span className="white lh-static f6 mt3">
-              Source on{" "}
-              <a
-                className="color-inherit fw6"
-                href="https://github.com/tvler/retreat-left"
-              >
-                GitHub
-              </a>
-              . Built by{" "}
-              <a
-                href="https://www.tylerdeitz.com/"
-                className="color-inherit fw6"
-              >
-                Tyler
-              </a>
-              .
-            </span>
-          </>
-        )}
-
-        {selectedHeaderItem === "filter" && (
-          <>
-            {data.map(([category, values]) => {
-              if (!filterableRecommendationCategories.has(category)) {
-                return null;
-              }
-
-              const allValue = "All";
-              const filterValue = filter[category] || allValue;
-
-              return (
-                <div
-                  key={category}
-                  className="mt3 lh-copy relative f6 bg-white-15 br3 pv1 ph2"
-                >
-                  <select
-                    value={filterValue}
-                    className="absolute absolute--fill f5 w-100 h-100 o-0 input-reset"
-                    onChange={(ev) => {
-                      setFilter(
-                        category,
-                        ev.target.value === allValue
-                          ? undefined
-                          : ev.target.value
-                      );
-                    }}
-                  >
-                    <option disabled={true}>{category}</option>
-
-                    <option value={allValue}>All</option>
-
-                    {values.map((value) => {
-                      if (!value.subtitle) {
-                        return null;
-                      }
-
-                      return (
-                        <option
-                          key={category + value.subtitle}
-                          value={value.subtitle}
-                        >
-                          {value.subtitle}
-                        </option>
-                      );
-                    })}
-                  </select>
-
-                  <span className="white">{category}: </span>
-                  <span className="fw6 white">{filterValue}</span>
+        <div className="grid">
+          {data.map(([category, options], i) => (
+            <Fragment key={category}>
+              <div className="flex">
+                <div className="mw-grid ml-auto w-100 flex-grow-1">
+                  <hr className="ml3 mt3 mb0" />
+                  <span className="sticky pt3 ttu top-0 break-word lh-static f7 fw7 flex flex-column">
+                    <span className="pl3 pr0 pr3-ns">{category}</span>
+                  </span>
                 </div>
-              );
-            })}
+              </div>
 
-            {hasFilters && (
-              <button
-                onClick={resetFilter}
-                className="mt3 bg-cool-black white outline-none-focus input-reset b--white f6 ph2 pv1 br4 ba b--solid lh-title ttu touch-action-manipulation"
-              >
-                Reset filter
-              </button>
-            )}
-          </>
-        )}
-      </div>
+              <div className="pv3 pr3 flex flex-column lh-static">
+                <div className="hr-container">
+                  <hr className="mt0 mb3" />
+                </div>
+                {options
+                  .filter((option) =>
+                    filter[category]
+                      ? filter[category] === option.subtitle
+                      : true
+                  )
+                  .map(({ title, subtitle, desc, link }, i) => {
+                    const infoId = [category, title, subtitle]
+                      .join("-")
+                      .split(" ")
+                      .join("-")
+                      .replace(/\./g, "")
+                      .toLowerCase();
+                    const historyTitle = [
+                      "Retreat Left |",
+                      category,
+                      title,
+                      subtitle,
+                    ].join(" ");
+                    return (
+                      <details
+                        key={title + subtitle}
+                        className={"details-reset" + (i ? " mt3" : "")}
+                      >
+                        <summary
+                          id={infoId}
+                          className="flex flex-column"
+                          onClick={(e) =>
+                            history.replaceState(
+                              {},
+                              historyTitle,
+                              (e.currentTarget
+                                ?.parentElement as HTMLDetailsElement).open
+                                ? `/${queryString}`
+                                : `/${queryString}#${infoId}`
+                            )
+                          }
+                        >
+                          <div className="flex flex-column items-start pointer">
+                            <span className="fw6 title">
+                              {title}
+                              <span className="info dib br-100">
+                                <img
+                                  className="relative"
+                                  alt="Info"
+                                  src="/i.svg"
+                                />
+                              </span>
+                            </span>
 
-      {data.map(([category, options], i) => (
-        <Fragment key={category}>
-          <div className="bg-white flex">
-            {!!i && (
-              <div className="white mix-blend-mode-diff absolute left-dotted-line right-0 bt b--dash b--dashed bl-0 bb-0 br-0" />
-            )}
-            <div className="mw-grid ml-auto w-100 flex-grow-1">
-              <span className="sticky pv3 ph-gutter top-0 break-word lh-static f6 flex flex-column">
-                <span id={category.split(" ").join("-").toLowerCase()}>
-                  {category}
-                </span>
-                {filter[category] && <span className="f7">(Filtered)</span>}
-              </span>
-            </div>
-          </div>
-
-          <div className="white pv3 ph-gutter flex flex-column lh-static measure">
-            {options
-              .filter((option) =>
-                filter[category] ? filter[category] === option.subtitle : true
-              )
-              .map(({ title, subtitle, desc, link }, i) => {
-                const infoId = [category, title, subtitle]
-                  .join("-")
-                  .split(" ")
-                  .join("-")
-                  .replace(/\./g, "")
-                  .toLowerCase();
-                const historyTitle = [
-                  "Retreat Left |",
-                  category,
-                  title,
-                  subtitle,
-                ].join(" ");
-                return (
-                  <details
-                    key={title + subtitle}
-                    className={"details-reset" + (i ? " mt4" : "")}
-                  >
-                    <summary
-                      id={infoId}
-                      className="flex flex-column"
-                      onClick={(e) =>
-                        history.replaceState(
-                          {},
-                          historyTitle,
-                          (e.currentTarget?.parentElement as HTMLDetailsElement)
-                            .open
-                            ? `/${queryString}`
-                            : `/${queryString}#${infoId}`
-                        )
-                      }
-                    >
-                      <div className="flex flex-column items-start">
-                        {subtitle && (
-                          <span className="flex f6">{subtitle}</span>
-                        )}
-                        <span className="fw6">{title}</span>
-                        {title === "Bernie Sanders" && (
-                          <div className="mv1 w-100 aspect-ratio-bernie mw-bernie">
-                            <img
-                              alt=""
-                              className="absolute absolute--fill"
-                              src="/bernie.jpg"
-                            />
+                            {subtitle && (
+                              <span className="flex f7 pt1 lh-solid gray">
+                                {subtitle}
+                              </span>
+                            )}
                           </div>
-                        )}
-                        <span className="f7 ph2 mt1 br-pill ba b--solid lh-solid pv1 ttu open-bg-white open-cool-black open-b--white">
-                          Info
-                        </span>
-                      </div>
-                    </summary>
+                        </summary>
 
-                    {desc ? (
-                      desc.map((paragraph, j, { length }) => (
-                        <span key={category + j} className="db f6 tj mt1 ti4">
-                          {paragraph}
-                          {j === length - 1 && (
-                            <>
-                              {" ["}
-                              <a className="color-inherit fw6" href={link}>
-                                Source
-                              </a>
-                              {"]"}
-                            </>
-                          )}
-                        </span>
-                      ))
-                    ) : (
-                      <span className="db f6 tj mt1">
-                        [
-                        <a className="color-inherit fw6" href={link}>
-                          Source
-                        </a>
-                        ]
-                      </span>
-                    )}
-                  </details>
-                );
-              })}
-          </div>
-        </Fragment>
-      ))}
-    </div>
+                        {desc ? (
+                          desc.map((paragraph, j, { length }) => (
+                            <span
+                              key={category + j}
+                              className="db f6 mt2 lh-copy"
+                            >
+                              {paragraph}
+                              {j === length - 1 && <a href={link}> [source]</a>}
+                            </span>
+                          ))
+                        ) : (
+                          <span className="db f6 mt1">
+                            [
+                            <a className="color-inherit fw6" href={link}>
+                              Source
+                            </a>
+                            ]
+                          </span>
+                        )}
+                      </details>
+                    );
+                  })}
+              </div>
+            </Fragment>
+          ))}
+        </div>
+        <div className="w-100 flex flex-column ph-gutter pt4">
+          <span className="f7 lh-copy gray bt b--light-gray pt3 pr0-ns pr4">
+            This site does not track you. Built in LA by{" "}
+            <a href="https://www.tylerdeitz.com/">Tyler</a> and friends. Source
+            on <a href="https://github.com/tvler/retreat-left">GitHub</a>. Want
+            to publish a voter guide for your county?{" "}
+            <a href="mailto:tylerdeitz@gmail.com">Get in touch</a>.
+          </span>
+        </div>
+      </div>
+    </>
   );
 };
 

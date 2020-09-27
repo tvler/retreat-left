@@ -1,12 +1,79 @@
 :root {
   /* update with @media (min-width: 700px) */
   --mw-grid: 375px;
-  --cool-black: #1c1c1c;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  background-color: var(--cool-black);
-  color: var(--cool-black);
+  font-family: "StyreneB", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  background-color: white;
+  font-weight: 400;
+  color: black;
   cursor: default;
+  --gutter-width: 16px;
+}
+
+@font-face {
+  font-family: "StyreneB";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/StyreneB-Regular.woff2") format("woff2"),
+    url("/StyreneB-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "StyreneB";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/StyreneB-Bold.woff2") format("woff2"),
+    url("/StyreneB-Bold.woff") format("woff");
+}
+
+a,
+a:visited {
+  color: #eb2128;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+hr {
+  border: 0px;
+  height: 1px;
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    black 50%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: top;
+  background-size: 2.5px 1px;
+  background-repeat: repeat-x;
+}
+
+.hr-container {
+  padding-left: 1px;
+}
+
+.info {
+  width: 15px;
+  height: 15px;
+  background: #eaeaea;
+  margin-left: 6px;
+}
+
+.info img {
+  left: 5px;
+  top: -2px;
+}
+
+.page-container {
+  max-width: 680px;
+}
+
+.gray {
+  color: #666;
+}
+
+.f7 {
+  font-size: 12px;
 }
 
 .touch-action-manipulation {
@@ -15,18 +82,6 @@
 
 .sticky {
   position: sticky;
-}
-
-.bg-white-15 {
-  background-color: hsla(0, 0%, 100%, 0.13);
-}
-
-.cool-black {
-  color: var(--cool-black);
-}
-
-.bg-cool-black {
-  background-color: var(--cool-black);
 }
 
 .outline-none-focus:focus {
@@ -48,28 +103,6 @@
   line-height: 1.15rem;
 }
 
-.ti4 {
-  text-indent: 2em;
-}
-
-.aspect-ratio-bernie {
-  position: relative;
-}
-
-.aspect-ratio-bernie::after {
-  content: "";
-  display: block;
-  padding-bottom: 124.8%; /* 936px / 768px */
-}
-
-.mw-bernie {
-  max-width: 310px;
-}
-
-.mix-blend-mode-diff {
-  mix-blend-mode: difference;
-}
-
 .details-reset summary:focus {
   outline: none;
 }
@@ -87,33 +120,24 @@
   overflow-wrap: break-word;
 }
 
-details[open] .open-bg-white {
-  background-color: white;
+details[open] .info {
+  background-color: #eb2128;
 }
 
-details[open] .open-cool-black {
-  color: var(--cool-black);
+details[open] img {
+  filter: brightness(250%);
 }
 
-details[open] .open-b--white {
-  border-color: white;
-}
-
-.left-dotted-line {
-  left: max(0.001px, calc(50% - var(--mw-grid)));
+.title:hover,
+details[open] .title {
+  text-decoration: underline;
 }
 
 /* update with --mw-grid */
-@media (max-width: 749px) {
-  :root {
-    font-size: 16px;
-    --gutter-width: 8px;
-  }
-}
-
 @media (min-width: 750px) {
-  :root {
-    font-size: 20px;
-    --gutter-width: 12px;
+  .grid {
+    grid-template-columns:
+      minmax(min-content, 192px)
+      minmax(min-content, max-content);
   }
 }
