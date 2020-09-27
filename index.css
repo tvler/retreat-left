@@ -8,6 +8,7 @@
   color: black;
   cursor: default;
   --gutter-width: 16px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @font-face {
