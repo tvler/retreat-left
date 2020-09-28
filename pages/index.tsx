@@ -1,12 +1,9 @@
 import { Fragment } from "react";
 import { NextPage } from "next";
-import { useRouter } from "next/router";
 
 import { data } from "../data";
 
 const Home: NextPage = () => {
-  const router = useRouter();
-
   return (
     <>
       <div className="mw-app center pb6-ns pb5 ph-app">
