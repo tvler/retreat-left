@@ -9,16 +9,6 @@ type Recommendation = Readonly<{
 
 type RecommendationCategory = string;
 
-export const filterableRecommendationCategories = new Set([
-  "House of Representatives",
-  "State Senate",
-  "State Assembly",
-  "LA City Council",
-  "LA Unified School District",
-  "LA County Supervisor",
-  "Judge of the Superior Court",
-]);
-
 export const data: ReadonlyArray<[
   RecommendationCategory,
   ReadonlyArray<Recommendation>
@@ -500,7 +490,7 @@ export const data: ReadonlyArray<[
             Most notably, MRT made sure his failson, Sebastian, who had resigned
             from the state assembly to get ahead of a{" "}
             <a
-              className="color-inherit fw6"
+              className="cool-red no-underline fw6"
               href="http://www.latimes.com/local/lanow/la-me-ln-ridley-thomas-investigation-20180814-story.html"
             >
               sexual harassment allegation
@@ -526,7 +516,7 @@ export const data: ReadonlyArray<[
           <>
             The big name in the race is{" "}
             <a
-              className="color-inherit fw6"
+              className="cool-red no-underline fw6"
               href="https://www.kevindeleon.com/"
             >
               Kevin de León
@@ -564,7 +554,7 @@ export const data: ReadonlyArray<[
             several years. Still, McKenna has been an educator in LAUSD for 58
             years, starting out as a math teacher in 1962.{" "}
             <a
-              className="color-inherit fw6"
+              className="cool-red no-underline fw6"
               href="http://laschoolreport.com/a-recipe-for-teaching-from-lausd-board-member-george-mckenna-whos-been-at-it-55-years/"
             >
               McKenna’s fierce advocacy
@@ -574,7 +564,7 @@ export const data: ReadonlyArray<[
             Denzel Washington in a{" "}
             <a
               href="https://en.wikipedia.org/wiki/The_George_McKenna_Story"
-              className="color-inherit fw6"
+              className="cool-red no-underline fw6"
             >
               1986 movie about him
             </a>
@@ -625,14 +615,14 @@ export const data: ReadonlyArray<[
             failson, Sebastian, who had resigned from the State Assembly to get
             ahead of a{" "}
             <a
-              className="color-inherit fw7"
+              className="cool-red no-underline fw7"
               href="http://www.latimes.com/local/lanow/la-me-ln-ridley-thomas-investigation-20180814-story.html"
             >
               sexual harassment allegation
             </a>
             , landed softly, by{" "}
             <a
-              className="color-inherit fw7"
+              className="cool-red no-underline fw7"
               href="http://www.latimes.com/local/lanow/la-me-ln-ridley-thomas-investigation-20180814-story.html"
             >
               bribing USC to give him a professorship
@@ -652,7 +642,7 @@ export const data: ReadonlyArray<[
             been called the{" "}
             <a
               href="https://www.latimes.com/politics/la-pol-sac-holly-mitchell-budget-20170228-htmlstory.html"
-              className="color-inherit fw6"
+              className="cool-red no-underline fw6"
             >
               “social conscience of the California Senate” and chaired the
               powerful budget committee
@@ -702,7 +692,7 @@ export const data: ReadonlyArray<[
             and businessman who supports 100% renewable electricity for the
             county by 2030 and free public transportation. He has agreed to the{" "}
             <a
-              className="color-inherit fw6"
+              className="cool-red no-underline fw6"
               href="https://www.curbed.com/2020/1/29/21112405/aoc-squad-peoples-housing-platform-congress-legislation-housing"
             >
               Housing Guarantee
