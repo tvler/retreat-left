@@ -1,14 +1,15 @@
 :root {
-  /* update with @media (min-width: 700px) */
-  --mw-grid: 375px;
+  --cool-red: #eb2128;
+
   font-family: "StyreneB", -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   background-color: white;
-  font-weight: 400;
-  color: black;
   cursor: default;
-  --gutter-width: 16px;
   -webkit-tap-highlight-color: transparent;
+}
+
+.mw-app {
+  max-width: 680px;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
   src: url("/StyreneB-Regular.woff2") format("woff2"),
     url("/StyreneB-Regular.woff") format("woff");
 }
+
 @font-face {
   font-family: "StyreneB";
   font-style: normal;
@@ -30,17 +32,24 @@
   outline: none;
 }
 
-a,
-a:visited {
-  color: #eb2128;
-  font-weight: 700;
-  text-decoration: none;
+.ph-app {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-hr {
-  border: 0px;
-  height: 1px;
-  display: block;
+.cool-red {
+  color: var(--cool-red);
+}
+
+.translate-x--100 {
+  transform: translateX(-100%);
+}
+
+.mw-header-copy {
+  max-width: 360px;
+}
+
+.dotted-border {
   background-image: linear-gradient(
     to right,
     black 50%,
@@ -49,38 +58,9 @@ hr {
   background-position: top;
   background-size: 2.5px 1px;
   background-repeat: repeat-x;
-}
-
-.hr-container {
-  padding-left: 1px;
-}
-
-.info {
-  width: 15px;
-  height: 15px;
-  background: #eaeaea;
-  margin-left: 6px;
-}
-
-.info img {
-  left: 5px;
-  top: -2px;
-}
-
-.page-container {
-  max-width: 680px;
-}
-
-.gray {
-  color: #666;
-}
-
-.f7 {
-  font-size: 12px;
-}
-
-.touch-action-manipulation {
-  touch-action: manipulation;
+  height: 1px;
+  position: absolute;
+  width: 100%;
 }
 
 .sticky {
@@ -89,13 +69,16 @@ hr {
 
 .grid {
   display: grid;
+  gap: 1rem 0.7rem;
   grid-template-columns:
     minmax(min-content, 1fr)
-    minmax(50%, var(--mw-grid));
+    minmax(50%, 472px);
 }
 
-.mw-grid {
-  max-width: var(--mw-grid);
+@media screen and (min-width: 30em) {
+  .mt-grid-ns {
+    margin-top: 3rem;
+  }
 }
 
 .lh-static {
@@ -106,33 +89,24 @@ hr {
   display: none;
 }
 
-.ph-gutter {
-  padding-left: var(--gutter-width);
-  padding-right: var(--gutter-width);
-}
-
 .break-word {
   overflow-wrap: break-word;
 }
 
-details[open] .info {
-  background-color: #eb2128;
+details[open] .details-open--cool-red {
+  color: var(--cool-red);
 }
 
-details[open] img {
-  filter: brightness(250%);
+details[open] .details-open--white {
+  color: white;
 }
 
-.title:hover,
-details[open] .title {
+details[open] .details-open--underline {
   text-decoration: underline;
 }
 
-/* update with --mw-grid */
-@media (min-width: 750px) {
-  .grid {
-    grid-template-columns:
-      minmax(min-content, 192px)
-      minmax(min-content, max-content);
+@media not all and (hover: none) {
+  .underline-pointer-hover:hover {
+    text-decoration: underline;
   }
 }
