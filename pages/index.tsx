@@ -6,10 +6,16 @@ import { data } from "../data";
 const Home: NextPage = () => {
   return (
     <>
-      <div className="mw-app center pb6-ns pb5 ph-app">
+      <div className="mw-app center pb6-ns pb5 pt5 ph-app">
         {/* Header */}
         <div className="flex flex-column">
-          <img alt="DSA logo" src="/logo@2x.png" className="pt5 w3 h3" />
+          <div className="relative aspect-ratio--dsa-la-logo w--dsa-la-logo">
+            <img
+              alt="DSA logo"
+              src="/dsa-la.png"
+              className="absolute absolute--fill w-100"
+            />
+          </div>
 
           <span className="f1 fw7 pt3 pt4-ns">
             DSA
