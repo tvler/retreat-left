@@ -63,10 +63,6 @@
   width: 100%;
 }
 
-.touch-action-manipulation {
-  touch-action: manipulation;
-}
-
 .sticky {
   position: sticky;
 }
