@@ -35,14 +35,14 @@ const Home: NextPage = () => {
             Endorsements (<span className="cool-red fw7">*</span>) and
             recommendations by the{" "}
             <a
-              className="cool-red fw6 no-underline"
+              className="cool-red fw6 no-underline underline-hover"
               href="https://www.dsausa.org/"
             >
               DSA
             </a>
             . Want a new Los Angeles County voter guide every election?{" "}
             <a
-              className="cool-red fw6 no-underline"
+              className="cool-red fw6 no-underline underline-hover"
               href="https://tinyletter.com/retreat-left"
             >
               Subscribe
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
                       key={title + subtitle}
                       className="details-reset mt3"
                     >
-                      <summary className="flex flex-column">
+                      <summary className="flex flex-column pointer">
                         <span className="fw6 lh-static">
                           <span className="details-open--underline">
                             {title}
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
                             <path
                               fill="currentColor"
                               d="M8.76 9.85l-.08.35-.6.22c-.16.05-.33.08-.53.08-.3 0-.54-.07-.7-.22a.72.72 0 01-.26-.57 2 2 0 01.08-.59l.31-1.1a5.3 5.3 0 00.1-.57c0-.14-.03-.24-.09-.3-.06-.05-.17-.08-.33-.08a.87.87 0 00-.25.04l-.22.07.08-.34c.2-.09.4-.16.6-.22.18-.06.36-.09.53-.09.3 0 .53.07.7.22.16.15.24.34.24.57a3.21 3.21 0 01-.08.59l-.31 1.1a3.08 3.08 0 00-.1.57c0 .15.03.25.1.3.06.06.18.08.34.08a1.44 1.44 0 00.47-.11zm.08-4.65c0 .2-.07.36-.22.5a.75.75 0 01-.53.2.75.75 0 01-.53-.2.65.65 0 01-.22-.5c0-.2.08-.36.22-.5.15-.13.33-.2.53-.2s.38.07.53.2c.15.14.22.3.22.5z"
-                              className="details-open--white gray"
+                              className="details-open--white black"
                             />
                           </svg>
                         </span>
@@ -141,21 +141,21 @@ const Home: NextPage = () => {
         <span className="db f7 lh-copy gray bt b--light-gray pt3 pr0-ns pr4 mt4">
           This site does not track you. Built in LA by{" "}
           <a
-            className="cool-red fw6 no-underline"
+            className="cool-red fw6 no-underline underline-hover"
             href="https://www.tylerdeitz.com/"
           >
             Tyler
           </a>{" "}
           and friends. Source on{" "}
           <a
-            className="cool-red fw6 no-underline"
+            className="cool-red fw6 no-underline underline-hover"
             href="https://github.com/tvler/retreat-left"
           >
             GitHub
           </a>
           . Want to publish a voter guide for your county?{" "}
           <a
-            className="cool-red fw6 no-underline"
+            className="cool-red fw6 no-underline underline-hover"
             href="mailto:tylerdeitz@gmail.com"
           >
             Get in touch
