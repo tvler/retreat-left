@@ -35,14 +35,14 @@ const Home: NextPage = () => {
             Endorsements (<span className="cool-red fw7">*</span>) and
             recommendations by the{" "}
             <a
-              className="cool-red fw6 no-underline underline-hover"
+              className="cool-red fw6 no-underline underline-pointer-hover"
               href="https://www.dsausa.org/"
             >
               DSA
             </a>
             . Want a new Los Angeles County voter guide every election?{" "}
             <a
-              className="cool-red fw6 no-underline underline-hover"
+              className="cool-red fw6 no-underline underline-pointer-hover"
               href="https://tinyletter.com/retreat-left"
             >
               Subscribe
@@ -68,7 +68,10 @@ const Home: NextPage = () => {
               <div className="flex flex-column mb3">
                 {options.map(({ title, subtitle, desc, link, endorsed }) => {
                   const sourceAnchorEl = (
-                    <a className="cool-red fw6 no-underline" href={link}>
+                    <a
+                      className="cool-red fw6 no-underline underline-pointer-hover"
+                      href={link}
+                    >
                       [source]
                     </a>
                   );
@@ -141,21 +144,21 @@ const Home: NextPage = () => {
         <span className="db f7 lh-copy gray bt b--light-gray pt3 pr0-ns pr4 mt4">
           This site does not track you. Built in LA by{" "}
           <a
-            className="cool-red fw6 no-underline underline-hover"
+            className="cool-red fw6 no-underline underline-pointer-hover"
             href="https://www.tylerdeitz.com/"
           >
             Tyler
           </a>{" "}
           and friends. Source on{" "}
           <a
-            className="cool-red fw6 no-underline underline-hover"
+            className="cool-red fw6 no-underline underline-pointer-hover"
             href="https://github.com/tvler/retreat-left"
           >
             GitHub
           </a>
           . Want to publish a voter guide for your county?{" "}
           <a
-            className="cool-red fw6 no-underline underline-hover"
+            className="cool-red fw6 no-underline underlinepointer-hover"
             href="mailto:tylerdeitz@gmail.com"
           >
             Get in touch
