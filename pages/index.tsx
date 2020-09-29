@@ -60,7 +60,7 @@ const Home: NextPage = () => {
 
               {/* Right */}
               <div className="flex flex-column mb3">
-                {options.map(({ title, subtitle, desc, link }) => {
+                {options.map(({ title, subtitle, desc, link, endorsed }) => {
                   const sourceAnchorEl = (
                     <a className="cool-red fw6 no-underline" href={link}>
                       [source]
@@ -74,7 +74,14 @@ const Home: NextPage = () => {
                     >
                       <summary className="flex flex-column">
                         <span className="fw6 lh-static">
-                          <span>{title}</span>
+                          <span className="details-open--underline">
+                            {title}
+                          </span>
+                          {endorsed && (
+                            <>
+                              &nbsp;<span className="cool-red fw7">*</span>
+                            </>
+                          )}
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <svg
                             viewBox="0 0 15 15"
