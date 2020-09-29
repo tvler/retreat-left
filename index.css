@@ -1,6 +1,5 @@
 :root {
   --cool-red: #eb2128;
-
   font-family: "StyreneB", -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   background-color: white;
@@ -9,17 +8,7 @@
 }
 
 .mw-app {
-  max-width: 680px;
-}
-
-.aspect-ratio--dsa-la-logo::before {
-  content: "";
-  display: block;
-  padding-bottom: 140.625%; /* 90 / 64 */
-}
-
-.w--dsa-la-logo {
-  width: 3rem;
+  max-width: 688px;
 }
 
 @font-face {
@@ -43,8 +32,8 @@
 }
 
 .ph-app {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .cool-red {
@@ -59,14 +48,26 @@
   max-width: 360px;
 }
 
-.dotted-border {
+.caret {
+  stroke: var(--cool-red);
+}
+
+.geo-caret {
+  top: 6px;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.dotted-divider {
   background-image: linear-gradient(
     to right,
     black 50%,
     rgba(255, 255, 255, 0) 0%
   );
   background-position: top;
-  background-size: 2.5px 1px;
+  background-size: 2px 1px;
   background-repeat: repeat-x;
   height: 1px;
   position: absolute;
@@ -93,6 +94,10 @@
 
 .lh-static {
   line-height: 1.15rem;
+}
+
+.lh-open {
+  line-height: 2.15rem;
 }
 
 .details-reset > summary::-webkit-details-marker {
