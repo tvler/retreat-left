@@ -25,6 +25,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
+        <meta name="keywords" content="DSA Voter Guide, 2020 Voter Guide" />
         <meta property="og:image" content="/og-image.jpg"></meta>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:title" content="DSA Voter Guide"></meta>
