@@ -1,4 +1,4 @@
-import { VoterGuide } from "../types";
+import { VoterGuide } from "../../types";
 
 export const data: VoterGuide = [
   [
