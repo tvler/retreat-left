@@ -27,7 +27,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         <meta charSet="utf-8" />
         <meta property="og:image" content="/og-image.jpg"></meta>
         <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:title" content="DSA 2020 Voter Guide"></meta>
+        <meta name="twitter:title" content="DSA Voter Guide"></meta>
         <meta
           name="twitter:description"
           content="DSA voter guide for the 2020 election in Los Angeles County. Great for bringing to the polls and using as a reference while voting."
@@ -42,7 +42,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
           name="Description"
           content="DSA voter guide for the 2020 election in Los Angeles County. Great for bringing to the polls and using as a reference while voting."
         />
-        <title>Retreat Left | DSA 2020 Voter Guide</title>
+        <title>Retreat Left | DSA Voter Guide</title>
       </Head>
       <Component {...pageProps} />
     </>
