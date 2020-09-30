@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { NextPage } from "next";
 import Link from "next/link";
 
-import { data } from "../data";
+import { data } from "./data";
 
 const LA: NextPage = () => {
   return (

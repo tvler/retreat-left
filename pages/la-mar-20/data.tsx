@@ -1,19 +1,6 @@
-import React, { ReactNode } from "react";
+import { VoterGuide } from "../types";
 
-type Recommendation = Readonly<{
-  subtitle?: string;
-  title: string;
-  desc?: ReadonlyArray<ReactNode>;
-  link: string;
-  endorsed: boolean;
-}>;
-
-type RecommendationCategory = string;
-
-export const data: ReadonlyArray<[
-  RecommendationCategory,
-  ReadonlyArray<Recommendation>
-]> = [
+export const data: VoterGuide = [
   [
     "POTUS",
     [
