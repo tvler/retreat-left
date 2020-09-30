@@ -72,7 +72,7 @@ const Home: NextPage = () => {
           </a>
           . Want to publish a voter guide for your county?{" "}
           <a
-            className="cool-red fw6 no-underline underlinepointer-hover"
+            className="cool-red fw6 no-underline underline-pointer-hover"
             href="mailto:tylerdeitz@gmail.com"
           >
             Get in touch
