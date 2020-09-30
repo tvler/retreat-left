@@ -3,12 +3,20 @@ import Link from "next/link";
 
 import { VoterGuide } from "./types";
 
-const VoterGuidePage: FC<{ data: VoterGuide }> = ({ data }) => (
+const VoterGuidePage: FC<{
+  data: VoterGuide;
+  logo?: JSX.Element;
+  chapter: string;
+}> = ({
+  data,
+  logo = <img alt="" src="/dsa@2x.png" className="h3" />,
+  chapter,
+}) => (
   <div className="mw-app center pb6-ns pb5 pt5 ph-app">
     {/* Header */}
-    <div className="flex flex-column">
+    <div className="flex flex-column items-start">
       <Link href="/">
-        <a className="cool-red f6 fw7 lh-solid no-underline underline-pointer-hover pb4 mb3">
+        <a className="cool-red f6 fw7 lh-solid no-underline underline-pointer-hover mb4.5">
           <svg
             width="7"
             height="10"
@@ -17,15 +25,18 @@ const VoterGuidePage: FC<{ data: VoterGuide }> = ({ data }) => (
             xmlns="http://www.w3.org/2000/svg"
             className="pr2"
           >
-            <path d="M6 9L2 5L6 1" className="caret" strokeWidth="2" />
+            <path
+              d="M6 9L2 5L6 1"
+              className="cool-red"
+              stroke="currentColor"
+              strokeWidth="2"
+            />
           </svg>
           All cities
         </a>
       </Link>
 
-      <div className="relative">
-        <img alt="DSA LA logo" src="/dsa-la@2x.png" className="h3 w-auto" />
-      </div>
+      {logo}
 
       <span className="f1 fw7 pt3 pt4-ns">
         DSA
@@ -36,7 +47,7 @@ const VoterGuidePage: FC<{ data: VoterGuide }> = ({ data }) => (
       </span>
 
       <span className="f4 fw7 lh-copy pt3">
-        Los Angeles County
+        {chapter}
         <br />
         November 3, 2020
       </span>
@@ -50,7 +61,7 @@ const VoterGuidePage: FC<{ data: VoterGuide }> = ({ data }) => (
         >
           DSA
         </a>
-        . Want a new Los Angeles County voter guide every election?{" "}
+        . Want a new {chapter} voter guide every election?{" "}
         <a
           className="cool-red fw7 no-underline underline-pointer-hover"
           href="https://tinyletter.com/retreat-left"

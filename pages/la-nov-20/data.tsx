@@ -1,4 +1,3 @@
-import React, { ReactNode } from "react";
 import { VoterGuide } from "../../types";
 
 export const data: VoterGuide = [

@@ -48,12 +48,8 @@
   max-width: 360px;
 }
 
-.caret {
-  stroke: var(--cool-red);
-}
-
-.geo-caret {
-  top: 6px;
+.mb4\.5 {
+  margin-bottom: 3rem;
 }
 
 .not-allowed {
@@ -94,10 +90,6 @@
 
 .lh-static {
   line-height: 1.15rem;
-}
-
-.lh-open {
-  line-height: 2.15rem;
 }
 
 .details-reset > summary::-webkit-details-marker {

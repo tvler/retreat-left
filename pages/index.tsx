@@ -26,12 +26,12 @@ const Home: NextPage = () => {
         </div>
 
         {/* Geographies */}
-        <div className="not-allowed pa3 mb3 w-100 f4 ba br1 b--dotted lh-open">
+        <div className="not-allowed ph3 mb3 w-100 f4 ba br1 b--dotted lh-solid h3 flex justify-between items-center">
           Denver
           <span className="fr ttu gray f7">Coming soon!</span>
         </div>
         <Link href="/la-nov-20">
-          <a className="pa3 mb3 w-100 db black no-underline underline-pointer-hover f4 ba br1 b--dotted lh-open">
+          <a className="ph3 mb3 w-100 black no-underline underline-pointer-hover f4 ba br1 b--dotted lh-solid h3 flex justify-between items-center">
             Los Angeles County
             <svg
               width="11"
@@ -39,17 +39,21 @@ const Home: NextPage = () => {
               viewBox="0 0 11 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="fr relative geo-caret"
             >
-              <path d="M1 1L9 9L1 17" className="caret" strokeWidth="2" />
+              <path
+                d="M1 1L9 9L1 17"
+                className="cool-red"
+                stroke="currentColor"
+                strokeWidth="2"
+              />
             </svg>
           </a>
         </Link>
-        <div className="not-allowed pa3 mb3 w-100 f4 ba br1 b--dotted lh-open">
+        <div className="not-allowed ph3 mb3 w-100 f4 ba br1 b--dotted lh-solid h3 flex justify-between items-center">
           Miami
           <span className="fr ttu gray f7">Coming soon!</span>
         </div>
-        <div className="not-allowed pa3 mb3 w-100 f4 ba br1 b--dotted lh-open">
+        <div className="not-allowed ph3 mb3 w-100 f4 ba br1 b--dotted lh-solid h3 flex justify-between items-center">
           San Luis Obispo
           <span className="fr ttu gray f7">Coming soon!</span>
         </div>
