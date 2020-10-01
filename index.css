@@ -80,7 +80,7 @@
 
 .grid {
   display: grid;
-  gap: 1rem 0.5rem;
+  gap: 1rem 0.75rem;
   grid-template-columns:
     minmax(100px, 1fr)
     minmax(50%, 472px);
