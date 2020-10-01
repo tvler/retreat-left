@@ -10,6 +10,7 @@ type VoterGuideEntry = Readonly<{
 
 type VoterGuideCategory = string;
 
-export type VoterGuide = ReadonlyArray<
-  [VoterGuideCategory, ReadonlyArray<VoterGuideEntry>]
->;
+export type VoterGuide = {
+  sourceUrl: string;
+  guide: ReadonlyArray<[VoterGuideCategory, ReadonlyArray<VoterGuideEntry>]>;
+};

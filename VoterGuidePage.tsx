@@ -57,7 +57,7 @@ const VoterGuidePage: FC<{
         recommendations by the{" "}
         <a
           className="cool-red fw7 no-underline underline-pointer-hover"
-          href="https://www.dsausa.org/"
+          href={data.sourceUrl}
         >
           DSA
         </a>
@@ -74,7 +74,7 @@ const VoterGuidePage: FC<{
 
     {/* Grid */}
     <div className="grid relative mt4 mt-grid-ns">
-      {data.map(([category, options]) => (
+      {data.guide.map(([category, options]) => (
         <Fragment key={category}>
           {/* Left */}
           <div>
