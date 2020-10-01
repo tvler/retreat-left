@@ -1,4 +1,4 @@
-import { VoterGuide } from "../../types";
+import { VoterGuide } from "./types";
 
 export const data: VoterGuide = {
   sourceUrl: "https://dsa-la.org/2020voterguide",
