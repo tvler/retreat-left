@@ -32,8 +32,8 @@
 }
 
 .ph-app {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .cool-red {
@@ -48,12 +48,8 @@
   max-width: 360px;
 }
 
-.caret {
-  stroke: var(--cool-red);
-}
-
-.geo-caret {
-  top: 6px;
+.mb4\.5 {
+  margin-bottom: 3rem;
 }
 
 .not-allowed {
@@ -80,9 +76,9 @@
 
 .grid {
   display: grid;
-  gap: 1rem 0.7rem;
+  gap: 1rem 0.75rem;
   grid-template-columns:
-    minmax(min-content, 1fr)
+    minmax(100px, 1fr)
     minmax(50%, 472px);
 }
 
@@ -94,10 +90,6 @@
 
 .lh-static {
   line-height: 1.15rem;
-}
-
-.lh-open {
-  line-height: 2.15rem;
 }
 
 .details-reset > summary::-webkit-details-marker {
