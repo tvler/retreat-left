@@ -1,24 +1,10 @@
 import { VoterGuide } from "../../types";
 
 export const data: VoterGuide = {
-  sourceUrl: "https://www.dsa-la.org/2020_primary_voter_guide",
+  sourceUrl: "https://dsa-la.org/2020voterguide",
   guide: [
     [
-      "POTUS",
-      [
-        {
-          title: "Bernie Sanders",
-          desc: [
-            `This is the fight of our lives — led by the person who has been fighting his entire life on behalf of the working class. When other candidates were cozying up to segregationists, Bernie was getting arrested with civil rights leaders. When other candidates voted for war and bloated military budgets, Bernie showed he had the guts to oppose imperialism. While other candidates raise money from Wall Street and fossil fuels and big pharma and the insurance industry, Bernie steers his supporters to picket lines to support workers. While other candidates are fêted by the Democratic establishment and corporate media, Bernie makes enemies of the oligarchy. When other candidates campaign as if this is a personality contest, Bernie says, “Not me, Us.”`,
-            `Bernie is not the movement, but he has catalyzed a movement that will win Medicare for All, tuition-free college, a Green New Deal, expanded equality and the protection of reproductive rights. This movement will dismantle mass incarceration, endless wars, wall street omnipotence and anti-worker trade deals. This movement is the strongest coalition to take on the systemic issues of our time. Bernie Sander’s base is the most multi-racial, gender and sexual identity diverse, and, crucially, the most working-class. And only the working class can build the future we deserve.`,
-          ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#pres",
-          endorsed: true,
-        },
-      ],
-    ],
-    [
-      "House of Rep’s",
+      "Congress",
       [
         {
           subtitle: "Dist. 23",
@@ -28,7 +14,7 @@ export const data: VoterGuide = {
             "An Air Force veteran, systems engineer, and single mom with no political experience, Mangone has run a surprisingly strong grassroots campaign on a platform of not being Kevin McCarthy. She prioritizes universal health care, supports the Green New Deal, and promises to fight for working families and invest in bringing well-paying green jobs to her district.",
             "Mangone raised a total of $510,000, nearly 99% of which came from small donors who gave less than $200. More than two-thirds of that funding came in a sudden surge in Q2 of 2020—she brought in $360,000 in a single quarter. This still puts her severely behind McCarthy, who’s raised over $16.6 million, mostly from big donors like Comcast, Amazon, Big Pharma, and the fossil fuel industry. But Mangone’s momentum in fundraising is a sign that her grassroots support is growing. If anyone has a shot at unseating McCarthy, it’s her.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong23",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -40,7 +26,7 @@ export const data: VoterGuide = {
             "And yet, it is not easy to support Christy Smith. Her time in the State Assembly has shown her to be a corporate neoliberal who has cast plenty of bad votes. She voted against the California Tenant Protection Act of 2019. She also voted against allowing formerly incarcerated people to be on juries, against prohibiting landlords from rejecting applicants based on Section 8 status and voted in favor of eliminating oversight of telecom companies.",
             "But at the end of the day, Christy Smith is massively better than Mike Garcia, and she needs support in this extremely tight race.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong25",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -49,7 +35,7 @@ export const data: VoterGuide = {
           desc: [
             "While better than some of her 2020 primary challengers, incumbent Julia Brownley isn’t great. She voted YES on NAFTA2, NO on COVID-19 assistance, YES on the Defense Appropriations Act, YES on warrantless spying, and YES on exempting insurance companies from antitrust regulation. Her votes were in line with Trump legislation from 2016-2018. Although increased scrutiny has pushed her to be a more consistent Dem vote since 2018, as socialists we know this is not enough.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong26",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -58,7 +44,7 @@ export const data: VoterGuide = {
           desc: [
             "Chu supports Medicare for All, and she’s authored bills supporting women’s healthcare access and good bills on immigration. She won her primary by a comfortable 70,000+ vote margin and seems well liked in her district. We recommend Chu.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong27",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -71,7 +57,7 @@ export const data: VoterGuide = {
             "He is a reliable vote in support of any defense budget increase or military escalation—not surprising since he takes in loads of money from the likes of Raytheon, Boeing, Lockheed Martin, and Northrop Grumman. His deep connections to weapons manufacturers suggest a possible motive for his intense hawkishness and obsession with Russia.",
             "Schiff is running against Republican Johnny Nalbandian. In the primary, Schiff received almost 80% of the vote, so he will do just fine in the general.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong28",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -83,7 +69,7 @@ export const data: VoterGuide = {
             "Luckily, he’s facing a challenge from Angélica Dueñas, a DSA member and former president of the Sun Valley Neighborhood Council. A working-class mother of five, born and raised in Sun Valley, Dueñas served as a delegate for Bernie Sanders at the 2016 Democratic National Convention. She supports all the good stuff: Medicare for All, universal rent control, a universal basic income and tuition-free education.",
             "Having only received 23% of the primary vote, compared to Cardenas’ 58.5%, Dueñas is a definite underdog in this race—but she’s the candidate CD 29 deserves.x",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong29",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -92,7 +78,7 @@ export const data: VoterGuide = {
           desc: [
             "Brad Sherman is a Democrat incumbent facing Republican challenger Mark Reed for the fourth time. All of Reed’s platforms are vile, particularly his plans to fight the “homelessness industrial complex” with punitive and inhumane policies. Sherman handily defeated Reed in the last three elections and in the 2020 primary. As a very moderate, anti-BDS Democrat who vocally supported Congressman Eliot Engel in his race against DSA-endorsed challenger Jamaal Bowman, Sherman does not get our recommendation.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong30",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -103,7 +89,7 @@ export const data: VoterGuide = {
             "Napolitano is a member of the Progressive Caucus and is a reliable Democratic vote. Last year, she signed on with the Green New Deal and also recently co-sponsored Rep. Ilhan Omar’s bill HR 6515 that would cancel rent and mortgage throughout the COVID-19 pandemic.",
             "Her opponent is Joshua Scott, a Republican who supports an immediate reopening of the state from COVID-19 restrictions and, according to his website, believes that the health insurance market should be able to “operate freely and compete for business.”",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong32",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -115,7 +101,7 @@ export const data: VoterGuide = {
             "Unfortunately, Lieu also takes plenty of notably bad positions. He is a massive hawk who voted against the Iran Nuclear Deal and introduced legislation to co-develop directed energy weapons with Israel. In 2017, he also supported AIPAC-sponsored legislation that would make it a felony for Americans to support boycotting Israel. More recently, he voted against an amendment that would ban the military from recruiting teenagers on Twitch.",
             "Lieu is running against Republican James P. Bradley, who received only 17.5% of the vote in the March primary.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong33",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -126,7 +112,7 @@ export const data: VoterGuide = {
             "David Kim is a progressive much more in the 2020 mold: a veteran of Mejia’s 2017 campaign and a lawyer with past work in immigration and employment law, Kim boasts endorsements from Sunrise LA and Our Revolution. (who notably backed Gomez’s run in 2017). There are a ton of policy proposals posted on his campaign website, and alongside old favorites like Medicare for All and a Green New Deal are a bunch of other good ideas—a tenants’ bill of rights, ending the subminimum wage, police force reductions, and free public transit. He even advocates a $1,000-a-month UBI.",
             "Since Gomez has out-raised Kim by a 12-to-1 margin so far, this is a steep uphill battle. But Gomez has done the bare minimum to get the Bernie seal of approval in the past, and David Kim is running to truly push the status quo leftward.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong34",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -137,7 +123,7 @@ export const data: VoterGuide = {
             "Running against Torres is Republican army veteran Mike Cargile. In addition to the anti-immigrant policies proudly featured on his own website, a slapdash anti-Torres site Cargile seems to have set up features a whole page criticizing the Dem incumbent under a heading that just says “Islam.” In other words, Cargile is a nut—his own “Issues” page includes a big picture of the Soviet flag emblazoned with the word Socialism (he’s opposed), and the site he created to defame Torres claims that she “would be content with Sharia law instead of our Constitution.”",
             "Hopefully in two years a left-wing challenger will be ready to run against Torres, but this time the only other option is a loony Tea-Party throwback. No thanks.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong35",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -148,7 +134,7 @@ export const data: VoterGuide = {
             "But she could be a little better, you know? She voted for NAFTA 2.0, endorsed Joe Biden (granted it was after the California primary which is kind of funny but still) and she was a co-sponsor of SESTA-FOSTA. We hate SESTA-FOSTA because it puts sex workers in danger. Sex workers were as vocal as they could have been about that (having no lobbyists and whatnot), but apparently no one cared enough about their concerns to strip the bill of language that puts sex workers’ lives at risk.",
             "Listen, all workers deserve to be safe and have legislators that work to keep them safe. We’re not saying don’t vote for Karen Bass so much as we’re withholding a full embrace of her until she makes this right. Ro Khanna and Elizabeth Warren introduced H.R.5448 - SAFE SEX Workers Study Act which calls “to direct the Secretary of Health and Human Services to conduct a study to assess the unintended impacts on the health and safety of people engaged in transactional sex, in connection with the enactment of the Allow States and Victims to Fight Online Sex Trafficking Act of 2017.”  Conducting studies is usually a way for people to pass the buck on action but this is what we’ve got to work with right now and Karen Bass should join her California colleagues Barbara Lee and Judy Chu in cosponsoring H.R.5448.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong37",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -157,7 +143,7 @@ export const data: VoterGuide = {
           desc: [
             "Incumbent Linda Sanchez voted for Trump’s trade deal with Mexico and Canada and voted for each of Trump’s National Defense Authorization Acts, which included giving Saudi Arabia military aid to support their bombing of Yemen. Also, Sanchez doesn’t advocate for Medicare for All and her husband was indicted on federal corruption charges. Her opponent, Michael Tolar, campaigns for Medicare for All and rent control.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong38",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -166,7 +152,7 @@ export const data: VoterGuide = {
           desc: [
             "Gil Cisneros is in perhaps the most competitive race in Los Angeles after losing his primary by a mere 2,500 votes to Republican challenger Young Kim. We encourage you to vote for Cisneros so his seat does not flip into Republican control. But we’d be remiss if we didn’t mention that Cisneros has not supported the Green New Deal or Medicare for All and is heavily financed by the insurance, real estate and financial sectors.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong39",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -176,7 +162,7 @@ export const data: VoterGuide = {
             "Lucille Roybal-Allard has been a US Congresswoman since 1993 when she inherited the seat from her father Rep. Edward Roybal, and after 27 years in Congress, her top donor industry is the real estate sector. Like so many of her fellow Dems, she has rubber-stamped all of Trump’s NDAAs and waved through his USMCA trade deal. However, unlike most she also voted against Obama’s Iran deal, and even against giving him power to lift sanctions on the country. A member of the important House Appropriations Committee, she was a co-sponsor of the boneheaded 2019 bill condemning the BDS movement. And despite her longtime association with the DREAM Act and other pro-immigrant measures, she has been against defunding ICE even though she represents the most Latino congressional district in the country (and the most pro-Bernie district in CA).",
             "Roybal-Allard’s Republican opponent, C. Antonio Delgado, is a lawyer and businessman who owns a private immigration law practice and is pushing for “school choice, true family values and the rights of the unborn.” Unless you’re into charters and banning abortion, there’s nothing to see here.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong40",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -185,7 +171,7 @@ export const data: VoterGuide = {
           desc: [
             "In 1996, DSA endorsed Maxine Waters—how the times have changed. Waters is a capitalist and she has vowed that the Democratic Party will never be socialist. Nevertheless, she’s going up against a significantly worse candidate: young Republican and U.S. Navy veteran Joe Collins, who works as a financial planning professional and certified counselor for rape and sexual assault victims. Maxine Waters isn’t great, and her most frequent topic of legislation is finance. However, since she was elected, she’s been a leader in housing and homeless legislation. Plus, while she didn’t endorse Bernie in the primary, she didn’t endorse Biden either. We recommend CD 43 voters choose Waters.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong43",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -194,7 +180,7 @@ export const data: VoterGuide = {
           desc: [
             "Covering South LA and the Los Angeles Harbor Region, CD 44 is heavily Latinx and very Democratic-leaning. Nanette Barragán is the incumbent and was first elected in 2016. Since then, Barragán has been a solid rank-and-file member of the Democratic Party’s progressive caucus. She’s the natural choice against fellow Democrat Analilia Joya, who all but doesn’t exist. Her campaign website is a 404 error. Barely a single piece of information is available on Joya, apart from the fact that, somehow, she won 14% of the primary vote. So, vote for her or don’t, Barragán is going to win this one.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong44",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -205,7 +191,7 @@ export const data: VoterGuide = {
             "Lowenthal’s opponent is John Briscoe, a self-described “management expert” who owns and runs a property management company with his wife. In a campaign questionnaire he suggests that the greatest challenges facing America include high taxes, excessive reliance on China’s economy, and “an EMP event whereby all electrical systems could be rendered useless by just one high altitude space launched atomic bomb.”",
             "Lowenthal might not be a socialist, but organizers in the district have been able to genuinely move him left, and voters in CD 47 should support them in that push.",
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cong47",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
       ],
@@ -219,7 +205,7 @@ export const data: VoterGuide = {
           desc: [
             `Republican incumbent Scott Wilk is being challenged by Kipp Mueller, a labor lawyer with an Elizabeth Warren social-democrat platform. Mueller formerly worked for the Obama Justice Department and he’s been endorsed by California Teachers Association, Cal Dems, SEIU, Sierra Club, Planned Parenthood, Stonewall Club, NARAL, and other unions. The GOP incumbent won 100,000 votes to Mueller’s 35,000 in the primary, with the other three Dem challengers pulling in around 20,000 votes each. Even combined, 85,000 votes can’t win this race. However, we recommend SD 21 voters pick Mueller for the chance of flipping a State Senate seat blue.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#senate21",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -231,7 +217,7 @@ export const data: VoterGuide = {
             `He also seems to have a pattern of fearing confrontation and preferring the easy way out, as evidenced by his habit of quietly blocking bills in the Senate Appropriations Committee which he chairs. For example, AB 1022 would have required police officers to intervene in situations of excessive force. It was stalled without explanation in his committee and Portantino declined to comment.`,
             `His challenger is Republican Kathleen Hazelton, who received less than one thousand write-in votes in the primary, so Portantino is coasting to victory.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#senate25",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -243,7 +229,7 @@ export const data: VoterGuide = {
             `That said, the guy running against him is way worse. Republican Houman Salem is a former fashion executive with no political experience. He often retweets Trump. He plans to “resolve the Homless [sic] Crisis” by repealing a set of recent laws that made it easier for nonviolent offenders to get parole—so ostensibly his plan is, fewer people on the streets and more people in prison?`,
             `However, even with his endorsements from the California GOP and California Pro-Life Council, Salem pulled in only 36.2% of the primary vote—not exactly a close race. Stern will probably win whether you vote for him or not.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#senate27",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -252,7 +238,7 @@ export const data: VoterGuide = {
           desc: [
             `Josh Newman isn’t a DSA politician, but he has a shot at flipping SD 29 from red to blue, so this is a race to watch. Republican incumbent Ling Ling Chang won 100,000 votes to Newman’s 70,000, but the other Democratic primary challenger walked away with an additional 40,000 votes that are up for grabs. Newman advocates for renewable energy, quality affordable education, and funding mental health facilities for the homeless, and has the Cal Dems on his side as well as almost every union.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#senate29",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -262,7 +248,7 @@ export const data: VoterGuide = {
             `With just over a year in the State Senate, Democratic incumbent Lena Gonzalez doesn’t have the lengthiest public record to judge, but she has sponsored and co-sponsored some progressive bills that would authorize Medi-Cal benefits for the undocumented, require the AG to investigate police killings of unarmed civilians, ban chokeholds, raise taxes on millionaires, and establish a right to affordable housing. While those are all good things, one issue to flag is that Consumer Watchdog has formally requested an investigation of Gonzalez’s predecessor, Ricardo Lara, over what they believe is a pay-to-play scandal that may partly involve payments to and from Gonzalez’s campaign fund. The consumer advocacy group refers to Gonzalez as “Lara’s handpicked successor,” and though their request to the AG came just over a year ago we haven’t been able to find any public follow-up about an investigation. Meanwhile, almost 90% of the outside spending on Gonzalez’s campaign in the 2019-2020 cycle came from a single SuperPAC funded by major oil companies in a district which California Environmental Justice Alliance has said “houses CA’s worst environmental disasters and neighbors’ communities at ground zero for West Coast oil and gas operations.”`,
             `Gonzalez’s opponent is registered nurse Elizabeth Castillo, who jumped into the primary in a last-minute write-in campaign that prevented Gonzalez from holding her seat unopposed. Castillo is running on a clear anti-corporate, pro-worker platform: her website’s four listed key issues are rent control, pandemic protection, a clean environment, and single-payer healthcare, and she prominently declares her opposition to corporate campaign donors. In a candidate questionnaire she decries America’s unequal healthcare system as “a human rights violation and a form of apartheid,” and lists as a personal role model Mayan indigenous feminist Rigoberta Menchú. In other words, Castillo is a real-deal progressive, and though her campaign is a longshot, she’s doing SD 33 a service by not allowing the incumbent to hold a safely blue seat unopposed.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#senate33",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -272,7 +258,7 @@ export const data: VoterGuide = {
             `Stretching from Inglewood and Watts to San Pedro and the Port of Los Angeles, this district is population-dense and racially diverse. Incumbent Steven Bradford was elected to the seat in 2016, following five years in the State Assembly. As chair of the Assembly Committee on Utilities and Commerce, he authored a bill to increase penalties on natural gas pipeline operators for safety violations, as well as a bill to extend funding for solar energy subsidies. Throughout his career, Bradford has been dedicated to criminal justice reform—most recently, he authored a bill to decertify police officers who engage in serious misconduct. (It didn’t pass.)`,
             `Bradford’s challenger, former substitute teacher Anthony Perry, is a longshot, to say the least. He’s only raised $2,582, half of which was passed over from his failed campaign for the Compton Unified School District board in March. All in all, he seems like a wildcard. Perry won 24.3% of the primary vote, but the chances of him increasing that percentage in the general election are probably about zero.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#senate35",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
       ],
@@ -283,7 +269,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 36",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly36",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `AD 36 has got to be one of the strangest elections in LA County. For the last ten years, incumbent Republican Tom Lackey and Democratic(?) challenger Steve Fox have been running against each other in a bid for the district. Tom Lackey has been the Assembly Person since winning against Steve Fox in 2014. Steve Fox, an alleged Democrat whose platform includes “We must make our schools SAFE, we must install metal detectors, cameras, and increase police surveillance,” cost California taxpayers $100,000 for a sexual harassment suit filed against him by two co-workers the one time he was in office. COOL.`,
@@ -295,7 +281,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 38",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly38",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Located in northwestern LA County, this district is traditionally Republican, but in recent years Democrats have stood a better chance. Current Assembly person Christy Smith was the first Democrat to be elected to this seat since 1978. In this election however, there are two Republicans running. Lucie Lapointe Volotzky and Suzette Martinez Valladares are both pro-cop, pro-charter school, anti-tax, and anti-union.`,
@@ -304,7 +290,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 39",
           title: "Luz Rivas",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly39",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Covering the northeast San Fernando Valley, including Sylmar, Sun Valley, and Tujunga, AD 39 is one of the most heavily Latinx districts in LA County. The current incumbent, Luz Rivas, was first elected in the 2018 runoff, but she’s gotten a lot done in the past two years, including sponsoring a bill to require a state prosecutor to investigate certain officer-involved shootings. She co-authored a bill to create the first state-level office on homelessness, which was backed by organizations including Corporation for Supportive Housing and Housing California. She currently holds an “A” Courage Score from Courage California.`,
@@ -314,7 +300,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 41",
           title: "Chris Holden",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly41",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Incumbent Democrat Chris Holden is seeking reelection to a fifth term in this district, which stretches from Pasadena in the west to Upland in the East. Holden gets high marks from progressive organizations, with a 100% rating from the ACLU, the California Environmental Justice Alliance, CALPIRG, Health Access California and Planned Parenthood. In the final weeks of the last session, he voted in favor of the police reform measures and authored a bill that would have toughened penalties for police officers who fail to intervene when a fellow officer uses excessive force.`,
@@ -325,7 +311,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 43",
           title: "Laura Friedman",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly43",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Since winning this seat in a blanket primary in 2016, Laura Friedman has been on the right side of progressive legislation and earns high marks from progressive groups. She authored a host of bills this session and as Chair of the Natural Resources Committee tends to focus on environmental issues like water conservation, single-use packaging and clean energy investment. Friedman voted for all the police reform measures proposed during the final weeks of summer in the wake of George Floyd’s murder and withdrew her endorsement of Jackie Lacey in June.`,
@@ -336,7 +322,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 44",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly44",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Since flipping this seat in 2014, Democrat Jacqui Irwin has come under fire from progressive groups like Courage Campaign and Indivisible for a dismal voting record that caters to her big donors. She has taken in over $100,000 from police and prisons, and her top contributor is the California Correctional Peace Officers Association. Her votes in support of police militarization and to weaken accountability for the deadly use of force are a clear nod to the police state that lines her pockets. Even amidst the uprising following George Floyd’s murder, Irwin abstained from voting on a bill that would bolster oversight of sheriff’s departments.`,
@@ -347,7 +333,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 45",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly45",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `This suburban district is located in the San Fernando Valley, made up primarily of White and Latinx residents. It is regarded as a safe Democratic district.`,
@@ -359,7 +345,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 46",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly46",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Democratic incumbent Adrin Nazarian flipped this seat in a 2012 race with the support of outside spending from the AFL-CIO—and opposition from charter PAC EdVoice. For the most part he’s a decent California progressive, voting for collective bargaining for childcare workers, union employment in the UC school system, and affordable housing. But Nazarian has also abstained from a few votes pertaining to his biggest donors: last year he elected not to vote on AB 290 which specifically targeted shady practices by a nonprofit front for one of his major contributors, dialysis giant DaVita, as well as on a couple of police reform bills (after taking money from the LA Police Protective League). Nazarian has also taken money from big pharma outfits like PhRMA, Merck, Pfizer and Gilead Sciences and is chairman of the Assembly Select Committee on the 2028 Olympics.`,
@@ -370,7 +356,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 48",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly48",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Democrat incumbent Blanca Rubio is running unopposed for her third term in this majority Latino district, which primarily covers the eastern San Gabriel Valley and the surrounding foothill communities.`,
@@ -381,7 +367,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 49",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly49",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Incumbent Democrat Edwin Chau is seeking reelection to his fifth term in AD 49 against Republican challenger Burton Brink. Covering the western San Gabriel Valley just east of LA, the district is 53% Asian, 32% Latino and 13% White, and has a poverty rate of almost 25%.`,
@@ -392,7 +378,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 50",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly50",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Democratic incumbent Richard Bloom is seeking reelection to a fifth term in the district he flipped in 2012 after a campaign that pulled in donations from a gaggle of developers, CEOs, and the California Chamber of Commerce PAC. Bloom ran unopposed last year and has already crushed his (fake) Dem opponent in the primary by pulling in about 80% of the vote.`,
@@ -405,7 +391,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 51",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly51",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Democratic incumbent Wendy Carrillo is running uncontested in this district, which encompasses northeastern Los Angeles and is 71.6% Latino. In 2016, Carrillo lost a bid for Xavier Becerra’s vacated congressional seat to former AD 51 Assembly member Jimmy Gomez, and then immediately set her sights on Gomez’s vacated Assembly seat. After running for Congress as a progressive outsider, she promptly abandoned her commitment to policies like single payer healthcare and was propelled to victory in the Assembly by a flood of cash from major PACs and charter schools.`,
@@ -415,7 +401,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 52",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly52",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Democratic incumbent Freddie Rodriguez won this seat in a 2013 special election after Norma Torres moved up to the State Senate. This year he faces a rematch with his 2018 challenger, Republican Toni Holle, who he’s already trounced in the primary.`,
@@ -427,7 +413,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 53",
           title: "Godfrey Santos Plata",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly53",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Covering Koreatown, Westlake, DTLA, Boyle Heights, Vernon, and some of Huntington Park, this is a densely populated urban district. 68% of voters are Latinx, 19% are Asian/Pacific Islanders, and 58.6% of all households have a high housing cost burden. Especially amid the pandemic, housing and rent prices are a major concern for voters in this district — which is bad news for incumbent Miguel Santiago, who has taken a hell of a lot of money from real estate interests over the course of his career.`,
@@ -438,7 +424,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 54",
           title: "Tracy Bernard Jones",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly54",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Incumbent Assembly Member Sydney Kamlager-Dove was first elected in 2018 to represent AD 54, which stretches from the Crenshaw District and Leimert Park, through Culver City and Mar Vista, to Westwood and the UCLA campus. Kamlager-Dove succeeded Sebastian Ridley-Thomas, the son of outgoing LA County Supervisor and LA City Council candidate Mark Ridley-Thomas.`,
@@ -450,7 +436,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 55",
           title: "Andrew Rodriguez",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly55",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `This suburban district includes parts of Los Angeles, Orange, and San Bernardino counties. It has traditionally been a reliably red district, but changing demographics have made it increasingly competitive.`,
@@ -462,7 +448,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 57",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly57",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `This district in southeast LA County is heavily working-class, two-thirds Latinx, center-left, and has been controlled by the Calderon family since time immemorial.`,
@@ -474,7 +460,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 58",
           title: "Margaret Villa",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly58",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Incumbent Assembly member Cristina Garcia’s career in politics has been mired in scandal. She styles herself as a hero of the #MeToo movement, but has been accused by her staff of creating a hostile work environment, and been accused of sexual harassment by a former Capitol staff member and a Sacramento lobbyist. While the investigation into her misconduct was underway, her reelection campaign received over $10,000 in contributions from fellow legislators, including the co-chairs of the subcommittee charged with leading the investigation.`,
@@ -485,8 +471,8 @@ export const data: VoterGuide = {
         },
         {
           subtitle: "Dist. 59",
-          title: "Reginald Jones-Sawyer",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly59",
+          title: "Reginald Jones Sawyer",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Reginald Jones Sawyer boasts a strong progressive platform that includes Medicare for All, free public colleges and universities, amending Costa-Hawkins to enable rent freezes and other renter protections, canceling rent during COVID-19, accelerating public housing production, and more. Sawyer is in an extremely close race with Efren Martinez, a decidedly unprogressive challenger who formerly managed a Republican Political Action Committee and has been embroiled in corruption scandals.`,
@@ -495,7 +481,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 62",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly62",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Incumbent Democrat Autumn Burke jumped from work in the NGO sector straight into a State Assembly seat in 2014, aided by the influence and reputation of her mother, former LA County Supervisor Yvonne Brathwaite Burke, and by outside spending from PACs representing big oil (including the Koch-funded CJAC), agribusiness (including Prop 15 opponent CFBF), big tobacco, big pharma, charter groups, real estate, and prison guards. She also drew support in the 2014 race from scandal-plagued Inglewood mayor James T. Butts and Compton election fraudster Basil Kimbrew.`,
@@ -507,7 +493,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 63",
           title: "Maria Estrada",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly63",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Maria Estrada first ran against Anthony Rendon in 2018, after he single-handedly killed the single-payer healthcare bill SB 562. (Rendon has accepted more than $500,000 in campaign contributions from health insurance and pharmaceutical companies.) Estrada lost her 2018 general election race by just under 10 percentage points. She was behind Rendon in the 2020 primary by 17 percentage points, earning 22,000 votes to Rendon’s 31,000.`,
@@ -520,7 +506,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 64",
           title: "Fatima S. Iqbal-Zubair",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly64",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: true,
           desc: [
             `Encompassing parts of South LA, this district is mostly poor and working-class, with 22.5% living in poverty. Also significant is that 25% of California’s oil refineries are located in this single district. For that reason, pollution is a major concern to everyone in the district except the incumbent Mike Gipson whose major contributors include fossil fuel interests.`,
@@ -531,7 +517,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 66",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly66",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Located in the South Bay, this district stretches from Manhattan Beach down to the Palos Verdes Peninsula, and includes Gardena and Torrance. The demographics are primarily white, Latinx, and Asian. This district is generally regarded as safe for Democrats, but this seat narrowly flipped red for one term in 2014.`,
@@ -542,7 +528,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Dist. 70",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#assembly70",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `This district is largely composed of Long Beach and also includes part of the Channel Islands. It is a safe district for Democrats. Notably, this district is the home of several fossil fueled gas plants that are toxic to its residents.`,
@@ -554,12 +540,12 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "State Ballot Measures",
+      "State Measures",
       [
         {
           subtitle: "Proposition 14",
           title: "No",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `The results of publicly-funded research should be provided to the public at a reasonable cost. Unfortunately, Prop 14 perpetuates the lack of accountability and makes it worse by exempting its programs from legislative oversight, with any amendment requiring a 70% vote. These flaws might be due to a real estate developer putting this measure on the ballot without even direct input from the existing stem cell board, the California Institute for Regenerative Medicine (CIRM). Finally, as a bond measure, Californians will have to pay back nearly double the amount that we borrow from wealthy people to finance it. We support stem cell research, which is already legal and underway in California for over a decade, but Prop 14 isn’t necessary and will undermine the public interest. We agree with the California Environmental Justice Alliance: vote No on Prop 14.`,
@@ -568,7 +554,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 15",
           title: "Yes",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: true,
           desc: [
             `Proposition 15, Schools and Communities First, is on the ballot this November with the goal of ending a tax loophole that gives billions of dollars a year to large commercial property owners and wealthy investors. It reallocates those funds to K-12 public schools, community colleges, and local public services such as parks, libraries, homeless services, health clinics, and public transit. Prop 15 will reclaim $10-12 billion annually by requiring wealthy owners of commercial properties with assessed value over $3 million to pay taxes based on market value, rather than purchase price.`,
@@ -579,7 +565,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 16",
           title: "Yes",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `This proposition undoes the 1996 Prop 209 “California Civil Right Initiative” which sounds nice but wasn’t. It was introduced by the high rolling, white Southern California Republicans that were defending their right to be at the front of the line no matter what, even if they were late. Prop 209 essentially banned any form of affirmative action in public education, public employment, or public contracting and really caused Black and Latino enrollment in the UC system to plummet. Prop 209 thought reverse racism is a thing, Prop 16 says it is not.`,
@@ -588,7 +574,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 17",
           title: "Yes",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Changes the California Constitution to allow people on parole for felony convictions to vote. Everyone that wants to vote should be able to vote, period.`,
@@ -597,7 +583,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 18",
           title: "Yes",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `You can vote in a primary if you are 17 as long as you will be 18 when the general election takes place. Real simple stuff. I don’t know what anyone opposing this law is trying to do with their lives but they should get a hobby.`,
@@ -606,7 +592,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 19",
           title: "No",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `It’s no wonder that REALTORS® are spending millions to push Prop 19: it will increase displacement in rapidly-gentrifying neighborhoods while draining the state treasury to give some of the wealthier people in society more property tax breaks. Specifically, it will limit the value of the capped assessment that children who live in their parents’ home can get to $1 million, allowing the value above that amount to be assessed at a higher rate. $1 million is already less than the market value of increasing numbers of houses in areas like the Crenshaw District and Echo Park that working class families used to be able to afford. Having to pay property tax on the full market value above the cap will force these working class families to sell and move out, which means more sales for REALTORS®. Also, Prop 19 increases the number of times homeowners can claim this cap from once (i.e., when you retire) to three times, further increasing inequality. While removing the current cap on houses inherited by people who don’t live in them is good, and earmarking some revenue for wildfires is too, this ballot measure causes more harm than good. Some people might confuse this with Prop 15 because both change property taxes, but they couldn’t be more different, so please let people know: No on Prop 19.`,
@@ -615,7 +601,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 20",
           title: "No",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `In 2011 the Supreme Court ordered the State of California to immediately let people out of jail so that their prisons were no more than 137% over capacity. Many jails are still in violation of this and operating at over 137% capacity which is cruel to people and a great way to spread COVID-19. In 2014, Prop 47 turned some felonies into misdemeanors (shoplifting, theft up to $950, personal use of most illegal drugs), and people convicted of those crimes were eligible to come out of jail. Two years later, Prop 57 changed the rules around parole, allowing people convicted of nonviolent offenses to be eligible for parole and requiring judges, rather than prosecutors, to decide whether or not to charge juveniles as adults.`,
@@ -625,7 +611,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 21",
           title: "Yes",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `This modifies Costa-Hawkins, eliminating the statewide requirement that rent control cannot be applied to any housing built more recently than 1995, and imposes a new “rolling rent control” so that any housing unit over fifteen years old would be eligible for local rent control policy. The measure allows for vacancy control to be implemented where it already exists but is not currently allowed by Costa-Hawkins. According to a study from Stanford, people who lived in rent-controlled properties when Costa-Hawkins was passed ended up saving a cumulative total of $7 billion over eighteen years, which is a hell of an argument that rent control is a big tool to have when trying to solve our homelessness crisis.`,
@@ -634,7 +620,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 22",
           title: "No",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `All the way back in the fall of 2019, AB 5 reclassified gig employees as employees of the companies they work for, not independent contractors. This meant that their employers had to pay them minimum wage and all worker protections from the state and federal government applied to the people from whose labor they were profiting.`,
@@ -646,7 +632,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 23",
           title: "Yes",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Kidney dialysis centers are, for some reason, not subjected to the same levels of oversight as other healthcare centers. They go largely unregulated and cause harm not only to people’s health but also to their finances. Prop 23 requires that dialysis centers have a licensed physician or a nurse practitioner on site during treatment in outpatient facilities. You might think to yourself, why isn’t there already a doctor on site?! How is there not a doctor on site?! They are cleaning people’s actively circulating blood, how is this legal?!`,
@@ -657,7 +643,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 24",
           title: "No recommendation",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `Prop 24 is tricky and everyone seems to be at odds on it. In theory, Prop 24 would establish the California Privacy Protection Agency, which enforces legislation targeting companies that don’t respect that you pushed a button on a Conde-Nast site saying you don’t want them to sell your data. It also closes a loophole in the California Consumer Privacy Act of 2018 which allows Facebook and Google to say they are “sharing” instead of “selling” your data.`,
@@ -669,7 +655,7 @@ export const data: VoterGuide = {
         {
           subtitle: "Proposition 25",
           title: "No",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#prop13",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
             `We advocate for prison abolition. This will have the opposite effect. Don’t be fooled: Prop 25 (1) automates racial profiling through algorithms, (2) gives unchecked power to judges, and (3) increases power and funding for probation departments. Nor do we support keeping bail bonds. Instead we support Measure J, which includes elements of pre-trial reform, as well as a zero bail schedule similar to what California court temporarily implemented for COVID-19 this spring.`,
@@ -679,7 +665,69 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "LA County Measure",
+      "LA County Board of Supervisors",
+      [
+        {
+          subtitle: "Dist. 2",
+          title: "Holly Mitchell",
+          desc: [
+            `The five members of the Board of Supervisors oversee the county’s $30 billion annual budget. District 2, which covers most of south LA, represents nearly two million people. All this to say, it’s one of the most powerful seats in the entire nation. The incumbent, Mark Ridley-Thomas, has reached his term limit, so he’s attempting to swap jobs with LA City Councilmember Herb Wesson Jr.`,
+            `As City Council President from 2012 to January 2020, Wesson ran the city like a game of political chess. Over 99% of City Council votes were unanimous, and Wesson has sometimes publicly clashed with colleagues who refused to fall in line. Meanwhile, under his watch, homelessness skyrocketed, as did rent prices—that is, for everyone except his son, who was getting a huge discount from his landlord in exchange for Wesson’s help approving a controversial high-rise project.`,
+            `On the other hand, his opponent, State Senator Holly Mitchell, has a plan to scale up affordable housing, combat gentrification, and provide immediate housing stabilization loans to people at risk of homelessness. As senator of California’s District 30 (representing Crenshaw, Culver City, South Central, and parts of Downtown Los Angeles and Inglewood), she co-authored the “Equity and Justice” package, a set of bills to reduce sentencing for juvenile offenders and place more focus on preventative and rehabilitative services. Mitchell has also called for turning LA’s run-down juvenile detention halls into centers for community services and mental health counseling.`,
+            `In the 7-way primary, Wesson received 30.63% of the vote, to Mitchell’s 28.43%. This could be anyone’s race.`,
+          ],
+          link: "https://dsa-la.org/2020voterguide",
+          endorsed: false,
+        },
+      ],
+    ],
+    [
+      "LA County District Attorney",
+      [
+        {
+          link: "https://dsa-la.org/2020voterguide",
+          endorsed: false,
+          title: "George Gascón",
+          desc: [
+            `By now, most Angelenos know about incumbent Jackie Lacey’s appalling eight-year reign as District Attorney, thanks to tireless organizing by Black Lives Matter. BLM’s anti-Lacey campaign has brought urgent attention to Lacey’s negligence, with over 600 people murdered by police under her watch. Earlier this year, a BLM protest outside Lacey’s home ended with her husband pulling a gun on protesters. Lacey has set an extremely low bar for DA, but George Gascón would be a notable improvement. As the former San Francisco DA, Gascón has a relatively progressive record that includes decriminalizing drug possession, expunging marijuana convictions, and advocating for divestment from jails and investment in mental health facilities. Gascón is far from perfect, but it is imperative that we vote Lacey out of office and this could be a close race. Vote Gascón, if for no other reason than ‘Jackie Lacey must go!’`,
+          ],
+        },
+      ],
+    ],
+    [
+      "LA County Superior Court",
+      [
+        {
+          subtitle: "Office 72",
+          title: "Myanna Dellinger",
+          link: "https://dsa-la.org/2020voterguide",
+          endorsed: false,
+          desc: [
+            `Dellinger has a wealth of experience and is a former Fulbright Scholar in climate change law and policy.`,
+          ],
+        },
+        {
+          subtitle: "Office 80",
+          title: "Klint James McKay",
+          link: "https://dsa-la.org/2020voterguide",
+          endorsed: false,
+          desc: [
+            `Currently an administrative law judge trying Affordable Care Act appeals for the Department of Social Services, he describes himself as valuing empathy and mercy and approaches cases with an understanding of the lives of working people.`,
+          ],
+        },
+        {
+          subtitle: "Office 145",
+          title: "Troy Slaten",
+          link: "https://dsa-la.org/2020voterguide",
+          endorsed: false,
+          desc: [
+            `Slaten is campaigning on alternatives to incarceration including women’s re-entry programs and collaborative courts. He is the clear choice over Adam Montalban, a district attorney with a history of misconduct.`,
+          ],
+        },
+      ],
+    ],
+    [
+      "LA County Measures",
       [
         {
           subtitle: "Measure J",
@@ -688,7 +736,7 @@ export const data: VoterGuide = {
             `If passed by voters, Reimagine LA would shift ten percent of unrestricted county funding away from law enforcement and into services and programs for under-resourced communities. LA County Sheriff Alex Villanueva is absolutely furious that this ballot measure is making its way onto the ballot because it takes money away from the LA County Sheriff’s Department. While the ballot measure does call for access to capital for small minority-owned businesses, with a focus on Black-owned businesses, the other things its calls for are: rent assistance, housing vouchers and accompanying supportive services for those at risk of losing their housing or without stable housing, capital funding for transitional, affordable and supportive housing (job training for the construction of that housing!) as well as alternatives to incarceration, including community-based restorative justice programs, pre-trial non-custody services and treatment, and community-based health services, health promotion, counseling, wellness and prevention programs, and mental health and substance use disorder services. All of those things are absolutely worth letting that one business-friendly part of the measure fly.`,
           ],
           endorsed: false,
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
         },
       ],
     ],
@@ -704,7 +752,7 @@ export const data: VoterGuide = {
             `Ryu entered City Hall as a progressive outsider, but has quickly embedded himself within the Los Angeles Democratic Party establishment. His donor list reads as a who’s who of corporate and real estate lobbies with profit-seeking interests in the city council district, including Disney, Amazon, NBC Universal, and others in entertainment, real estate development, and the hotel industry.`,
             `Raman is a dues-paying member of DSA-LA, and other endorsing organizations include national DSA, CHIRLA Action Fund, Ground Game LA, the LA League of Conservation Voters, People’s Action, Sunrise Movement LA, and the Working Families Party.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cc4",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: true,
         },
         {
@@ -717,7 +765,7 @@ export const data: VoterGuide = {
             `Then there’s Grace Yoo, who is running for the CD10 seat for a second time. Grace Yoo is likely preferable to MRT, but here’s the thing: Koreatown has seen an explosion in homeless residents over the last decade and it is a legitimate humanitarian crisis. Current CD 10 Councilperson, Herb Wesson, was going to put bridge housing in a space on South Vermont that currently is a city parking lot. However, there was a very vocal contingent of residents in Koreatown who felt that Herb Wesson was bypassing their wishes as constituents by not notifying the community of the plan or holding any public comment until it was already underway—which is a legitimate gripe to have. However, the campaign against it was clearly not just about a matter of process. You can be “for” bridge housing in theory, but when you’re against it where homeless people actually live, your support becomes a hard purchase for us to make. It’s understandable that Koreatown residents should want a public say about public works, but the unhoused are residents as well, and if their voices don’t count then how is protesting bridge housing not the NIMBYism of the more fortunate?`,
             `Yoo’s current platform is generally headed in the right direction, and she has a track record of fighting for more affordable housing in Koreatown, but it’s difficult to square her sometimes vitriolic 2018 protesting of the proposed bridge housing with her 2020 proposals to create it. Vote your conscience CD 10, because you’re getting one or the other.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#cc10",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
       ],
@@ -734,7 +782,7 @@ export const data: VoterGuide = {
             `This summer, as the Black Lives Matter uprisings led to calls for defunding the LAUSD school police, Schmerelson voted against a measure to reduce the school police department’s $70 million budget by 35%. While this vote is problematic and it may cause voters to rethink their support for Schmerelson, there is no question that public education in Los Angeles would be further eroded if a cheerleader for the charter school industry like Koziatek were to be elected.`,
             `Schmerelson comfortably led Koziatek and another opponent in the primary election, but did not secure the 50% threshold required to avoid a runoff election in November. Vote for Scott Schmerelson.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#school3",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
         {
@@ -743,7 +791,7 @@ export const data: VoterGuide = {
           desc: [
             `A pro-union public school champion, Patricia Castellanos is an excellent candidate in a very close race. She is facing charter-backed candidate Tanya Ortiz Franklin, who has benefited from more than $1.3 million in independent expenditures by pro-charter school philanthropist Bill Bloomfield. Castellanos is committed to smaller class sizes, safe school recovery in the wake of COVID-19, increased social support for students, and reinvestment in public schools. If elected, she would be the only board member with a child attending LAUSD. DSA-LA joins a long list of unions and progressive groups supporting Castellanos including UTLA, Jackie Goldberg, Dolores Huerta and many more.`,
           ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#school7",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
         },
       ],
@@ -752,99 +800,20 @@ export const data: VoterGuide = {
       "LA Community College",
       [
         {
-          title: "Nichelle Henderson",
-          link: "#",
+          title: "Andra Hoffman, David Vela, Mike Fong, Nichelle Henderson",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           desc: [
+            `In solidarity with the American Federation of Teachers, the faculty and the deans, we recommend incumbents Andra Hoffman, David Vela, and Mike Fong as well as challenger Nichelle Henderson - the #CollegesWeAllDeserve slate.`,
+            `The LACCD Board holds significant power over the city college system’s $5,600,000,000 annual budget. Within this budget, the board oversees an $18 million dollar contract with the LA County Sheriff’s Department, allocating law enforcement resources to the city college campuses. Historically, this office has been a stepping stone for many politicians including former Governor Jerry Brown and AD 54 representative, Miguel Santiago.`,
+            `It also should be no surprise that charter school advocates are also interested in controlling these education seats in order to take hold of public funds. A charter challenge slate is also running for these seats.`,
+            `The #CollegesWeAllDeserve slate wants to keep public control of our schools.`,
             `Nichelle Henderson is an African American union educator at Cal State LA who teaches education. 20% of LACCD’s students are African American, yet there is currently no black representation on the board. Henderson is a leader in California faculty and is endorsed by her colleague at Cal-State, Dr. Melina Abdullah, co-founder of Black Lives Matter LA.`,
             `Her incumbent opponent Scott Svonkin, a former parole officer, was censured after threatening Board President Andra Hoffman and frequently insults non-white students in public comment.`,
             `We also recommend Henderson’s slate-mates, incumbents who vote on the side of unions and public schools.`,
-          ],
-        },
-        {
-          title: "David Vela",
-          link: "#",
-          endorsed: false,
-          desc: [
             `David Vela is a Latinx and LGBT political consultant with the Lee Andrews Group. Formerly a jobs policy lead for Jackie Goldberg (LAUSD Board Member), Vela advocates for more community college funding in the state capital and in his past term advocated for giving monetary and technology resources directly to students during the COVID-19 shutdown. He’s also been endorsed by UTLA.`,
-          ],
-        },
-        {
-          title: "Mike Fong",
-          link: "#",
-          endorsed: false,
-          desc: [
             `Mike Fong works for the Economic & Workforce Development Department and serves as Director of Policy and Government Relations of the Department of Neighborhood Empowerment, the city agency that oversees the Neighborhood Councils. With his connections in city hall, he’s prioritized workforce development for the city by insisting on job programs that don’t require students to transfer to four year universities.`,
-          ],
-        },
-        {
-          title: "Andra Hoffman",
-          link: "#",
-          endorsed: false,
-          desc: [
             `Andra Hoffman is running for re-election for seat 1. In addition to her position on the LACCD board, she serves as Second Vice President of the Community College League of California Trustee Board, advocating for LACC funding at the state level. After the COVID-19 shutdown, Hoffman took swift action to ensure student workers continued to receive pay through the semester. She also worked to make community colleges “sanctuary campuses” that would protect students from ICE and the sheriff’s department.`,
-          ],
-        },
-      ],
-    ],
-    [
-      "LA County Supervisor",
-      [
-        {
-          subtitle: "Dist. 2",
-          title: "Holly Mitchell",
-          desc: [
-            `The five members of the Board of Supervisors oversee the county’s $30 billion annual budget. District 2, which covers most of south LA, represents nearly two million people. All this to say, it’s one of the most powerful seats in the entire nation. The incumbent, Mark Ridley-Thomas, has reached his term limit, so he’s attempting to swap jobs with LA City Councilmember Herb Wesson Jr.`,
-            `As City Council President from 2012 to January 2020, Wesson ran the city like a game of political chess. Over 99% of City Council votes were unanimous, and Wesson has sometimes publicly clashed with colleagues who refused to fall in line. Meanwhile, under his watch, homelessness skyrocketed, as did rent prices—that is, for everyone except his son, who was getting a huge discount from his landlord in exchange for Wesson’s help approving a controversial high-rise project.`,
-            `On the other hand, his opponent, State Senator Holly Mitchell, has a plan to scale up affordable housing, combat gentrification, and provide immediate housing stabilization loans to people at risk of homelessness. As senator of California’s District 30 (representing Crenshaw, Culver City, South Central, and parts of Downtown Los Angeles and Inglewood), she co-authored the “Equity and Justice” package, a set of bills to reduce sentencing for juvenile offenders and place more focus on preventative and rehabilitative services. Mitchell has also called for turning LA’s run-down juvenile detention halls into centers for community services and mental health counseling.`,
-            `In the 7-way primary, Wesson received 30.63% of the vote, to Mitchell’s 28.43%. This could be anyone’s race.`,
-          ],
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#sup2",
-          endorsed: false,
-        },
-      ],
-    ],
-    [
-      "LA District Attorney",
-      [
-        {
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#da",
-          endorsed: false,
-          title: "George Gascón",
-          desc: [
-            `By now, most Angelenos know about incumbent Jackie Lacey’s appalling eight-year reign as District Attorney, thanks to tireless organizing by Black Lives Matter. BLM’s anti-Lacey campaign has brought urgent attention to Lacey’s negligence, with over 600 people murdered by police under her watch. Earlier this year, a BLM protest outside Lacey’s home ended with her husband pulling a gun on protesters. Lacey has set an extremely low bar for DA, but George Gascón would be a notable improvement. As the former San Francisco DA, Gascón has a relatively progressive record that includes decriminalizing drug possession, expunging marijuana convictions, and advocating for divestment from jails and investment in mental health facilities. Gascón is far from perfect, but it is imperative that we vote Lacey out of office and this could be a close race. Vote Gascón, if for no other reason than ‘Jackie Lacey must go!’`,
-          ],
-        },
-      ],
-    ],
-    [
-      "LA County Superior Court",
-      [
-        {
-          subtitle: "Office 72",
-          title: "Myanna Dellinger",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#judge72",
-          endorsed: false,
-          desc: [
-            `Dellinger has a wealth of experience and is a former Fulbright Scholar in climate change law and policy.`,
-          ],
-        },
-        {
-          subtitle: "Office 80",
-          title: "Klint James McKay",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#judge80",
-          endorsed: false,
-          desc: [
-            `Currently an administrative law judge trying Affordable Care Act appeals for the Department of Social Services, he describes himself as valuing empathy and mercy and approaches cases with an understanding of the lives of working people.`,
-          ],
-        },
-        {
-          subtitle: "Office 145",
-          title: "Troy Slaten",
-          link: "https://www.dsa-la.org/2020_primary_voter_guide#judge145",
-          endorsed: false,
-          desc: [
-            `Slaten is campaigning on alternatives to incarceration including women’s re-entry programs and collaborative courts. He is the clear choice over Adam Montalban, a district attorney with a history of misconduct.`,
           ],
         },
       ],
@@ -854,7 +823,7 @@ export const data: VoterGuide = {
       [
         {
           subtitle: "Dist. 4",
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           title: "Sasha Renée Pérez",
           desc: [
@@ -867,7 +836,7 @@ export const data: VoterGuide = {
       "Baldwin Park Mayor",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           title: "Emmanuel Estrada",
           desc: [
@@ -880,7 +849,7 @@ export const data: VoterGuide = {
       "Burbank City Council",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: true,
           subtitle: "Council At-Large Seat",
           title: "Konstantine Anthony",
@@ -892,10 +861,26 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "Burbank Ballot Measures",
+      "Burbank Measures",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
+          endorsed: false,
+          subtitle: "RC",
+          title: "Yes",
+          desc: [
+            `Measure RC, backed by the Burbank Tenants’ Rights Committee and DSA-LA Burbank City Council candidate Konstantine Anthony, would significantly improve the stability of renters in Burbank. Despite common misperceptions about the City of Burbank, renters make up 59% of the city’s population, which is 14% higher than the statewide average, and the median household income in the city is $69,000. Bernie Sanders won a clear plurality of the 2020 primary vote in Burbank, where he earned 8,500 votes. 5,400 Burbank voters went for Joe Biden, 5,100 for Donald Trump, and 5,000 for Elizabeth Warren.`,
+            `Without meaningful controls on the cost of renting a home in Burbank or elsewhere, the property-owning class is essentially free to increase rents as it pleases. Renters also tend to have very little power in the court system compared to landlords, especially in eviction cases, where renters rarely have legal representation but landlords almost always do. Unregulated increases in the cost of renting a home lead to frequent moves among low-income renters, which destabilizes communities and inhibits childhood development among kids growing up in working class households. Uncontrolled rent increases also lead to new instances of homelessness as households with the lowest incomes are “priced out” of not only their homes, but also—in the worst cases—entire communities or cities.`,
+            `Enter Measure RC. This measure applies a rent cap on homes built before February 1, 1995, capping annual rent increases at 7% or the increase in the Consumer Price Index, whichever is lower. The measure implements a “just cause” standard on eviction proceedings in the city. The measure also establishes an updated Landlord-Tenant Commission with the ability to initiate lawsuits, implement new renter protections, and operate independently from the city council, city manager, and city attorney. Measure RC would add stability to the lives of the 59% of Burbank residents who rent their homes and expand the possibility of who can afford to live in the city in the future. Vote YES on Measure RC.`,
+          ],
+        },
+      ],
+    ],
+    [
+      "Central Basin Municipal Water District",
+      [
+        {
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           subtitle: "Division 4",
           title: "Leticia Vasquez-Wilson",
@@ -904,7 +889,7 @@ export const data: VoterGuide = {
           ],
         },
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           subtitle: "Division 5",
           title: "Rodolfo Cortes Barragan",
@@ -918,7 +903,7 @@ export const data: VoterGuide = {
       "College of the Canyons Board of Trustees",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           subtitle: "Trustee Area 3",
           title: "Sebastian Cazares",
@@ -932,7 +917,7 @@ export const data: VoterGuide = {
       "Downey City Council",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           subtitle: "Dist. 3",
           title: "Catherine Alvarez",
@@ -941,7 +926,7 @@ export const data: VoterGuide = {
           ],
         },
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           subtitle: "Dist. 5",
           title: "Juan Martinez",
@@ -955,7 +940,7 @@ export const data: VoterGuide = {
       "El Monte Mayor",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           title: "Irma Zamorano",
           desc: [
@@ -968,7 +953,7 @@ export const data: VoterGuide = {
       "El Monte City Council",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           subtitle: "Council At-Large Seat",
           title: "Gabriel Ramirez",
@@ -979,10 +964,10 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "El Monte Ballot Measures",
+      "El Monte Measures",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           endorsed: false,
           subtitle: "HN",
           title: "Yes",
@@ -996,7 +981,7 @@ export const data: VoterGuide = {
       "Montebello City Council",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Scarlet Peralta",
           endorsed: false,
           desc: [
@@ -1006,10 +991,10 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "Mountains and Recreation Conservation Authority Measures",
+      "Mountains and Rec. Conserv. Authority Measures",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Yes",
           subtitle: "HH",
           endorsed: false,
@@ -1020,10 +1005,10 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "Water Replenishment District of Southern California Board of Directors",
+      "Water Replnmt. District of SoCal Board of Directors",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Leticia Vasquez-Wilson",
           subtitle: "Division 5",
           endorsed: false,
@@ -1037,7 +1022,7 @@ export const data: VoterGuide = {
       "Whittier City School District Board of Education",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Caro Jauregui",
           subtitle: "Trustee Area 1",
           endorsed: false,
@@ -1051,7 +1036,7 @@ export const data: VoterGuide = {
       "Culver City Council",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Yasmine-Imani McMorrin, Freddy Puza, and Darrel Menthe",
           endorsed: false,
           desc: [
@@ -1064,11 +1049,12 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "Culver City Unified School District Board of Education",
+      "Culver City Unified School District",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Kelly Kent and Paula Amezola de Herrera",
+          subtitle: "Board of Education",
           endorsed: false,
           desc: [
             `The race for the five-member Governing Board of the Culver City Unified School District features incumbents Anne Allaire Burke and Kelly Kent, as well as challengers Scott Zeidman and Paula Amezola de Herrera. Chamber of Commerce-backed incumbent Burke is running for another term, while former Board member Scott Zeidman is coming out of retirement after being urged to step into the race “by numerous stakeholders.” Zeidman apparently intends to focus on “fiscal responsibility” and “safety in our schools” (i.e. cutting budgets and keeping cops in schools) and, not surprisingly, he’s endorsed by the Culver City Police Officers’ Association.`,
@@ -1079,10 +1065,10 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "Culver City Ballot Measures",
+      "Culver City Measures",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "No",
           subtitle: "Measure B",
           endorsed: false,
@@ -1093,7 +1079,7 @@ export const data: VoterGuide = {
           ],
         },
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Yes",
           subtitle: "Measure RE",
           endorsed: false,
@@ -1109,7 +1095,7 @@ export const data: VoterGuide = {
       "El Camino College Board of Trustees",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "George A. Turner, Jr.",
           subtitle: "Trustee Area 1",
           endorsed: false,
@@ -1118,7 +1104,7 @@ export const data: VoterGuide = {
           ],
         },
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Peter Elhamey Aziz",
           subtitle: "Trustee Area 3",
           endorsed: false,
@@ -1129,11 +1115,12 @@ export const data: VoterGuide = {
       ],
     ],
     [
-      "Manhattan Beach Unified School District Board of Trustees",
+      "Manhattan Beach Unified School District",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Jason Boxer",
+          subtitle: "Board of Trustees",
           endorsed: false,
           desc: [
             `Jason Boxer is a DSA-LA member, a Bernie 2020 delegate, and an educator who’s running for a seat on a board currently controlled by business and finance leaders. Jason is fighting for more school funding, better teacher pay, no cuts to students, YES on Prop 15, and bringing democracy to the classroom by giving students the opportunity to design their own curricula. Jason is a grassroots activist in Manhattan Beach with firsthand classroom experience as a teacher and student in the district. They’re another great DSA candidate and if you’re in this district, we give Jason Boxer for Manhattan Beach Unified School District a strong recommendation.`,
@@ -1145,7 +1132,7 @@ export const data: VoterGuide = {
       "West Hollywood City Council",
       [
         {
-          link: "#",
+          link: "https://dsa-la.org/2020voterguide",
           title: "Shepi Shyne and Marco Colantonio",
           endorsed: false,
           desc: [
@@ -1155,22 +1142,6 @@ export const data: VoterGuide = {
             `West Hollywood isn’t going to return to its progressive roots anytime soon but that isn’t to say that the possibility isn’t always stirring below the surface. The options here are not great; most of the candidates are either extremely focused on businesses, have fairly open disdain for their homeless neighbors, are against defunding the police or are part of the non-profit industrial complex. The one thing most of these candidates do agree on is renter protections. This is especially important because there is a significant population of seniors from the LGBTQ community who are dependent on living in their rent-protected apartments and often do not have family members to count on for help. West Hollywood residents that look at the DSA-LA voter guide for advice on who to vote for would be best off electing Shepi Shyne and Marco Colantonio.`,
             `Shepi Shyne has pledged not to take any developer money, which is something she has actually stuck to and is calling for increased renter protections and supportive and transitional housing. She wants to move some of West Hollywood’s funding from their contract with the LA County Sheriff’s Department to more public works and social programs to address crime and increase MET teams. She also calls for making bathroom and laundry facilities available 24 hours a day for houseless residents. She is endorsed by AFL-CIO and UNITE Here Local 11`,
             `Marco Colantonio is a realtor and the publisher of WeHo Times. The only reason we’re even suggesting him is because unlike most of the other people running in this race, at least Colantonio doesn’t want to push his unhoused neighbors out of the city limits and understands that trust from the unhoused community is something that must be built for programs to succeed. He supports transitional housing and wants the West Hollywood Chamber of Commerce to dissolve its political PAC.`,
-          ],
-        },
-      ],
-    ],
-    [
-      "Central Basin Municipal Water District",
-      [
-        {
-          link: "#",
-          endorsed: false,
-          subtitle: "RC",
-          title: "Yes",
-          desc: [
-            `Measure RC, backed by the Burbank Tenants’ Rights Committee and DSA-LA Burbank City Council candidate Konstantine Anthony, would significantly improve the stability of renters in Burbank. Despite common misperceptions about the City of Burbank, renters make up 59% of the city’s population, which is 14% higher than the statewide average, and the median household income in the city is $69,000. Bernie Sanders won a clear plurality of the 2020 primary vote in Burbank, where he earned 8,500 votes. 5,400 Burbank voters went for Joe Biden, 5,100 for Donald Trump, and 5,000 for Elizabeth Warren.`,
-            `Without meaningful controls on the cost of renting a home in Burbank or elsewhere, the property-owning class is essentially free to increase rents as it pleases. Renters also tend to have very little power in the court system compared to landlords, especially in eviction cases, where renters rarely have legal representation but landlords almost always do. Unregulated increases in the cost of renting a home lead to frequent moves among low-income renters, which destabilizes communities and inhibits childhood development among kids growing up in working class households. Uncontrolled rent increases also lead to new instances of homelessness as households with the lowest incomes are “priced out” of not only their homes, but also—in the worst cases—entire communities or cities.`,
-            `Enter Measure RC. This measure applies a rent cap on homes built before February 1, 1995, capping annual rent increases at 7% or the increase in the Consumer Price Index, whichever is lower. The measure implements a “just cause” standard on eviction proceedings in the city. The measure also establishes an updated Landlord-Tenant Commission with the ability to initiate lawsuits, implement new renter protections, and operate independently from the city council, city manager, and city attorney. Measure RC would add stability to the lives of the 59% of Burbank residents who rent their homes and expand the possibility of who can afford to live in the city in the future. Vote YES on Measure RC.`,
           ],
         },
       ],

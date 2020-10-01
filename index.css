@@ -31,6 +31,10 @@
   outline: none;
 }
 
+.f8 {
+  font-size: 0.68rem;
+}
+
 .ph-app {
   padding-left: 14px;
   padding-right: 14px;
@@ -76,9 +80,9 @@
 
 .grid {
   display: grid;
-  gap: 1rem 0.7rem;
+  gap: 1rem 0.5rem;
   grid-template-columns:
-    minmax(min-content, 1fr)
+    minmax(100px, 1fr)
     minmax(50%, 472px);
 }
 

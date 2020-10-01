@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { AppProps } from "next/app";
-import "tachyons/css/tachyons.min.css";
 import "../index.css";
+import "tachyons/css/tachyons.min.css";
 import Head from "next/head";
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {

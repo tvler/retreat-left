@@ -80,7 +80,7 @@ const VoterGuidePage: FC<{
           <div>
             <div className="dotted-divider" />
 
-            <span className="db sticky pt3 ttu top-0 break-word lh-static f7 fw7">
+            <span className="db sticky pt3 ttu top-0 break-word lh-static f7-l f8 fw7">
               {category}
             </span>
           </div>
