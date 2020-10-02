@@ -33,7 +33,10 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
           name="twitter:description"
           content="DSA voter guide for the 2020 election in Los Angeles County. Great for bringing to the polls and using as a reference while voting."
         ></meta>
-        <meta name="twitter:image" content="/twitter-image.jpg"></meta>
+        <meta
+          name="twitter:image"
+          content="https://retreat-left.com/og-image.jpg"
+        ></meta>
 
         <meta
           name="viewport"
