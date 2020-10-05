@@ -3,15 +3,14 @@ import Link from "next/link";
 
 import { VoterGuide } from "./types";
 
+const defaultLogo = <img alt="" src="/dsa@2x.png" className="h3" />;
+
 const VoterGuidePage: FC<{
   data: VoterGuide;
   logo?: JSX.Element;
-  chapter: string;
-}> = ({
-  data,
-  logo = <img alt="" src="/dsa@2x.png" className="h3" />,
-  chapter,
-}) => (
+  chapterDistrict: string;
+  chapterName?: string;
+}> = ({ data, logo = defaultLogo, chapterDistrict, chapterName = "DSA" }) => (
   <div className="mw-app center pb6-ns pb5 pt5 ph-app">
     {/* Header */}
     <div className="flex flex-column items-start">
@@ -47,7 +46,7 @@ const VoterGuidePage: FC<{
       </span>
 
       <span className="f4 fw7 lh-copy pt3">
-        {chapter}
+        {chapterDistrict}
         <br />
         November 3, 2020
       </span>
@@ -59,9 +58,9 @@ const VoterGuidePage: FC<{
           className="cool-red fw7 no-underline underline-pointer-hover"
           href={data.sourceUrl}
         >
-          DSA
+          {chapterName}
         </a>
-        . Want a new {chapter} voter guide every election?{" "}
+        . Want a new {chapterDistrict} voter guide every election?{" "}
         <a
           className="cool-red fw7 no-underline underline-pointer-hover"
           href="https://tinyletter.com/retreat-left"
