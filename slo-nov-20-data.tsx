@@ -8,6 +8,7 @@ export const data: VoterGuide = {
       [
         {
           title: "John Laird",
+          subtitle: "Dist. 17",
           link: "https://www.instagram.com/p/CF8IKRXHGBS/",
           endorsed: false,
         },
@@ -153,6 +154,75 @@ export const data: VoterGuide = {
         {
           title: "Yes",
           subtitle: "C-20",
+          link: "https://www.instagram.com/p/CF8IKRXHGBS/",
+          endorsed: false,
+        },
+      ],
+    ],
+    [
+      "Grover Beach Mayor",
+      [
+        {
+          title: "Jeff Lee",
+          link: "https://www.instagram.com/p/CF8IKRXHGBS/",
+          endorsed: false,
+        },
+      ],
+    ],
+    [
+      "Grover Beach City Council",
+      [
+        {
+          title: "Anna Miller",
+          link: "https://www.instagram.com/p/CF8IKRXHGBS/",
+          endorsed: false,
+        },
+        {
+          title: "Joseph Holmes",
+          link: "https://www.instagram.com/p/CF8IKRXHGBS/",
+          endorsed: false,
+        },
+      ],
+    ],
+    [
+      "Oceano Community Services District",
+      [
+        {
+          title: "Cynthia Repogle",
+          subtitle: "Board Member",
+          link: "https://www.instagram.com/p/CF8IKRXHGBS/",
+          endorsed: false,
+        },
+      ],
+    ],
+    [
+      "Paso Robles Measures",
+      [
+        {
+          title: "Yes",
+          subtitle: "J-20",
+          link: "https://www.instagram.com/p/CF8IKRXHGBS/",
+          endorsed: false,
+        },
+      ],
+    ],
+    [
+      "San Miguel Measures",
+      [
+        {
+          title: "Yes",
+          subtitle: "I-20",
+          link: "https://www.instagram.com/p/CF8IKRXHGBS/",
+          endorsed: false,
+        },
+      ],
+    ],
+    [
+      "Shandon Measures",
+      [
+        {
+          title: "Yes",
+          subtitle: "H-20",
           link: "https://www.instagram.com/p/CF8IKRXHGBS/",
           endorsed: false,
         },
