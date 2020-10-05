@@ -4,7 +4,7 @@ export const data: VoterGuide = {
   sourceUrl: "https://dsa-la.org/2020voterguide",
   guide: [
     [
-      "US Reps",
+      "U.S. Reps",
       [
         {
           subtitle: "Dist. 23",
