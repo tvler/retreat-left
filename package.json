@@ -9,7 +9,7 @@
     "lint": "eslint --fix . --ext js,jsx,ts,tsx"
   },
   "dependencies": {
-    "next": "^9.5.3",
+    "next": "^9.5.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "tachyons": "^4.12.0"
